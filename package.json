@@ -1,8 +1,10 @@
 {
-  "name": "your-project-name",
+  "name": "11ty",
   "private": true
 }
 
 "scripts": {
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "build:webpack": "webpack",
+    "watch": "webpack --watch"
 }
