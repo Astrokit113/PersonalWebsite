@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <meta name="author" content="[your name here]">
+    <meta name="description" content="[write about your site here]">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    
+    <div id="container">
+
+    <aside id="sidebar">
+        <div class="flex">
+            
+            <div id="icon">
+                <a href="/">
+                    <img src="/images/icon.png" alt="icon">
+                </a>
+            </div>
+            
+            <section id="profile">
+                <h1>
+                    <a href="/">Pastille</a>
+                </h1>
+                <p>from Syrup and the Ultimate Sweet + Starry Flowers!</p>
+                
+                <div id="bio">
+                    <p>pronouns: he/him</p>
+                    <p>age: 26</p>
+                    <p>site: <a href="/">[your site here]</a></p>
+                </div>
+                
+                <p>Shop Assistant at Atelier Sweets, and secretly a witch. (Well, it's not a secret anymore...)</p>
+                
+            </section>
+        </div>
+        
+        <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/links">Links</a></li>
+        </ul>
+        </nav>
+        
+        <section id="stamps" class="center pc-only">
+            <a target="_blank" href="https://neocities.org/">
+                <img src="/images/site-button.gif" alt="site button">
+            </a>
+        </section>
+        
+        <p class="center small-text">site template by <a href="https://nomnomnami.com">NomnomNami</a></p>
+        
+    </aside>
+    
+    <main class="tagged">
+        
+        <section id="status" class="pinned">
+            <details open>
+                <summary>status <time>6/10/2025</time></summary>
+                <ul>
+                    <li>reading:</li>
+                    <li>books about magic</li>
+                    
+                    <li>listening to:</li>
+                    <li><a href="https://youtu.be/lM2dfhv4lsI" target="_blank">Lovely Date</a> from the Starry Flowers OST</li>
+                    
+                    <li>playing:</li>
+                    <li>sudoku. oh, you meant video games...? sorry, i'm not playing any right now.</li>
+                </ul>
+            </details>
+        </section>
+        
+        <section id="tag-filters" class="pinned">
+            <details open>
+                <summary>tag filters</summary>
+                <label><input type="radio" id="all" name="tag" checked>all</label>
+                <label><input type="radio" id="intro" name="tag">#intro</label>
+                <label><input type="radio" id="personal" name="tag">#personal</label>
+                <label><input type="radio" id="art" name="tag">#art</label>
+                <label><input type="radio" id="secret" name="tag">#secret</label>
+            </details>
+        </section>
+        
+        {{ content | safe }}
+        
+        <section id="page-nav">
+            <p class="center"><a href="#">back to top</a></p>
+        </section>
+        
+    </main>
+
+    <footer>
+      © 2026 [your name here]
+    </footer>      
+    </div>
+  </body>
+</html>
