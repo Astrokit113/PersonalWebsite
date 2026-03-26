@@ -7,7 +7,7 @@ module.exports = async function (eleventyConfig) {
 
   // Create a collection of blog posts
   eleventyConfig.addCollection("posts", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("content/blog/*.md");
+    return collectionApi.getFilteredByTag("post");
   });
 
   // Add a readable date filter
