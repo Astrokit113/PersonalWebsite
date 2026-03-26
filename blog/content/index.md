@@ -1,8 +1,16 @@
 ---
 layout: myTemplate.njk
-title: Welcome to My Neocities Site!
+title: My Blog
 ---
 
-## Hello World!
+## Blog Posts
 
-This is my brand new homepage. The server is working perfectly!
+<p><a href="/feed.xml">Subscribe to my RSS feed</a></p>
+
+<ul>
+{% for post in collections.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a> - <time>{{ post.date | readableDate }}</time>
+  </li>
+{% endfor %}
+</ul>

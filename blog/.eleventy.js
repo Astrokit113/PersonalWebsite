@@ -1,13 +1,21 @@
 const htmlmin = require("html-minifier-terser");
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+  const pluginRss = await import("@11ty/eleventy-plugin-rss");
+  // Add plugins
+  eleventyConfig.addPlugin(pluginRss.default);
 
-  // 1. Blog content is passed through (no separate CSS/images needed)
+  // Create a collection of blog posts
+  eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("content/blog/*.md");
+  });
 
-  // 2. Custom permalink structure
-  eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
+  // Add a readable date filter
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return new Date(dateObj).toDateString();
+  });
 
-  // 3. Minify HTML (Moved above the return statement so it actually runs!)
+  // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content) {
     if ((this.page.outputPath || "").endsWith(".html")) {
       let minified = htmlmin.minify(content, {
@@ -22,8 +30,9 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  // 4. Return the folder configuration at the VERY END
+  // Return the folder configuration
   return {
+    markdownTemplateEngine: "njk",
     dir: {
       input: "content",
       output: "../public/blog",
