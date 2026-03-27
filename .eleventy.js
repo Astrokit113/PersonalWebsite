@@ -15,9 +15,11 @@ module.exports = async function (eleventyConfig) {
   });
 
   // Tell 11ty to copy your CSS and Images to the public folder
-  eleventyConfig.addPassthroughCopy({ "style.css": "style.css" });
-  eleventyConfig.addPassthroughCopy({ "simplified-style.css": "simplified-style.css" });
+  eleventyConfig.addPassthroughCopy({ "static-pages/css/style.css": "style.css" });
+  eleventyConfig.addPassthroughCopy({ "static-pages/simplified-style.css": "simplified-style.css" });
   eleventyConfig.addPassthroughCopy({ "images": "images" });
+
+  eleventyConfig.addPassthroughCopy({ "static-pages/index.html": "index.html" });
 
   // Custom permalink structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
