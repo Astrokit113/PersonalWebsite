@@ -10,7 +10,7 @@ title: My Blog
 <ul>
 {% for post in collections.posts %}
   <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a> - <time>{{ post.date | readableDate }}</time>
+    <a href="{{ post.url }}">{{ post.data.title }}</a> - <time>{{ post.date }}</time>
   </li>
 {% endfor %}
 </ul>

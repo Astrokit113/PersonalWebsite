@@ -1,15 +1,25 @@
 const htmlmin = require("html-minifier-terser");
 
-module.exports = function (eleventyConfig) {
+// 1. Make the export an async function so we can use 'await' inside it
+module.exports = async function (eleventyConfig) {
+  
+  // 2. Dynamically import the ESM plugin inside the function block
+  const pluginRss = await import("@11ty/eleventy-plugin-rss");
+  eleventyConfig.addPlugin(pluginRss.default);
 
-  // 1. Tell 11ty to copy your CSS and Images to the public folder
-  eleventyConfig.addPassthroughCopy("style.css");
-  eleventyConfig.addPassthroughCopy("images");
+  // 3. Moved inside the function where 'eleventyConfig' is actually defined
+  eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi.getFilteredByTag("post");
+  });
 
-  // 2. Custom permalink structure
+  // Tell 11ty to copy your CSS and Images to the public folder
+  eleventyConfig.addPassthroughCopy({ "style.css": "style.css" });
+  eleventyConfig.addPassthroughCopy({ "images": "images" });
+
+  // Custom permalink structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 
-  // 3. Minify HTML (Moved above the return statement so it actually runs!)
+  // Minify HTML 
   eleventyConfig.addTransform("htmlmin", function (content) {
     if ((this.page.outputPath || "").endsWith(".html")) {
       let minified = htmlmin.minify(content, {
@@ -24,7 +34,7 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  // 4. Return the folder configuration at the VERY END
+  // Return the folder configuration at the VERY END
   return {
     dir: {
       input: "content",

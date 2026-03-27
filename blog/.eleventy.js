@@ -14,21 +14,21 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return new Date(dateObj).toDateString();
   });
-
+  
   // Minify HTML
-  eleventyConfig.addTransform("htmlmin", function (content) {
-    if ((this.page.outputPath || "").endsWith(".html")) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        minifyCSS: true,
-        minifyJS: true,
-      });
-      return minified;
-    }
-    return content;
-  });
+  // eleventyConfig.addTransform("htmlmin", function (content) {
+  //   if ((this.page.outputPath || "").endsWith(".html")) {
+  //     let minified = htmlmin.minify(content, {
+  //       useShortDoctype: true,
+  //       removeComments: true,
+  //       collapseWhitespace: true,
+  //       minifyCSS: true,
+  //       minifyJS: true,
+  //     });
+  //     return minified;
+  //   }
+  //   return content;
+  // });
 
   // Return the folder configuration
   return {
