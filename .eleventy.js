@@ -2,6 +2,8 @@ const htmlmin = require("html-minifier-terser");
 
 // 1. Make the export an async function so we can use 'await' inside it
 module.exports = async function (eleventyConfig) {
+  const isProduction = process.env.ELEVENTY_ENV === 'production';
+  eleventyConfig.addGlobalData("isProduction", isProduction);
   
   // 2. Dynamically import the ESM plugin inside the function block
   const pluginRss = await import("@11ty/eleventy-plugin-rss");
@@ -14,6 +16,7 @@ module.exports = async function (eleventyConfig) {
 
   // Tell 11ty to copy your CSS and Images to the public folder
   eleventyConfig.addPassthroughCopy({ "style.css": "style.css" });
+  eleventyConfig.addPassthroughCopy({ "simplified-style.css": "simplified-style.css" });
   eleventyConfig.addPassthroughCopy({ "images": "images" });
 
   // Custom permalink structure
@@ -38,7 +41,7 @@ module.exports = async function (eleventyConfig) {
   return {
     dir: {
       input: "content",
-      output: "public/blog",
+      output: "public",
     },
   };
 };

@@ -3,13 +3,16 @@
   "private": true,
   "scripts": {
     "build": "npx @11ty/eleventy",
+    "build:production": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
     "build:webpack": "webpack",
     "watch": "webpack --watch",
     "build:commit": "npx @11ty/eleventy && git add public/blog && (git diff --cached --quiet || git commit -m 'Build: Update blog')"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
-    "@11ty/eleventy-plugin-rss": "^3.0.0"
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
     "html-minifier-terser": "^7.2.0",

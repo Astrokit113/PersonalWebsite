@@ -5,28 +5,28 @@
   /*or like this for just a solid color:*/
   /*--site-bg: #FFE1C6; */
   
-  --post-bg: white;
-  --post-text: #4E223D;
+  --post-bg: #470a0a;
+  --post-text: #ffffff;
   --post-header-text: #DA587E;
-  --border-color: #FB8AAB;
-  --border-shadow: #DA587E80;
+  --border-color: #b21c0e;
+  --border-shadow: #470a0a;
   
-  --sidebar-text: #4E223D;
-  --sidebar-bg: #FB8AAB;
-  --sidebar-button-bg: #FFD2E0;
+  --sidebar-text: #ffffff;
+  --sidebar-bg: #b21c0e;
+  --sidebar-button-bg: #470a0a;
   --sidebar-button-bg-hover: #FFE1C6;
-  --sidebar-button-text: #4E223D;
+  --sidebar-button-text: #ffffff;
   --sidebar-button-text-hover: #DA587E;
   --sidebar-border-color: #DA587E;
   
  /*this is for the collapsible sections at the top (status and tag filters)*/
-  --pinned-text: #4E223D;
-  --pinned-bg: #FFD2E0;
+  --pinned-text: #ffffff;
+  --pinned-bg: #c70e0e;
   /*tag filter button colors*/
-  --button-bg: #FFD2E0;
+  --button-bg: #bc4f5e;
   --button-bg-hover: #FFE1C6;
-  --button-bg-selected: #FB8AAB;
-  --button-text: #4E223D;
+  --button-bg-selected: #cb0e40;
+  --button-text: #ffffff;
   --button-border-color: #DA587E;
   
   /*these next two colors are for when you highlight text on the page*/
