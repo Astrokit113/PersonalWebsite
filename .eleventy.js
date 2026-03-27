@@ -16,7 +16,9 @@ module.exports = async function (eleventyConfig) {
 
   // Tell 11ty to copy your CSS and Images to the public folder
   eleventyConfig.addPassthroughCopy({ "static-pages/css/style.css": "style.css" });
-  eleventyConfig.addPassthroughCopy({ "static-pages/simplified-style.css": "simplified-style.css" });
+  eleventyConfig.addPassthroughCopy({ "static-pages/normalize.css": "normalize.css" });
+  eleventyConfig.addPassthroughCopy({ "blog-css/style.css": "blog-css/style.css" });
+  eleventyConfig.addPassthroughCopy({ "blog-css/simplified-style.css": "blog-css/simplified-style.css" });
   eleventyConfig.addPassthroughCopy({ "images": "images" });
 
   eleventyConfig.addPassthroughCopy({ "static-pages/index.html": "index.html" });
