@@ -1,6 +1,6 @@
 ---
-layout: myTemplate.njk
-title: My Blog
+layout: article_1.njk
+title: Blog Homepage
 ---
 
 ## Blog Posts

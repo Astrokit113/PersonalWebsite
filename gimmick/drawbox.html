@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawbox Mini</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 10px;
+      }
+
+      canvas {
+        border: 2px solid black;
+        cursor: crosshair;
+        touch-action: none;
+      }
+
+      #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
+      .image-container {
+        border: 1px solid #ccc;
+        padding: 5px;
+        width: 150px;
+        text-align: center;
+      }
+
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Added some CSS so the color blocks actually show up */
+      .stroke-color {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid #000;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+
+      .controls {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="drawboxcanvas" width="400" height="300"></canvas>
+
+    <div class="controls">
+      <div
+        onclick="change_color(this)"
+        style="background: red"
+        class="stroke-color"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        style="background: blue"
+        class="stroke-color"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        style="background: green"
+        class="stroke-color"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        style="background: yellow"
+        class="stroke-color"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        style="background: pink"
+        class="stroke-color"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        style="background: purple"
+        class="stroke-color"
+      ></div>
+      <div
+        onclick="change_color(this)"
+        style="background: black"
+        class="stroke-color"
+      ></div>
+      <input
+        type="color"
+        oninput="stroke_color = this.value"
+        style="vertical-align: middle"
+      />
+
+      <label style="colour: white">Brush Size:</label>
+      <input
+        type="range"
+        min="1"
+        max="100"
+        oninput="stroke_width = this.value"
+        style="vertical-align: middle"
+      />
+    </div>
+
+    <div class="controls">
+      <button onclick="Restore()">Undo</button>
+      <button onclick="Clear()">Clear</button>
+      <button id="submit">Submit drawing</button>
+      <span id="status"></span>
+    </div>
+
+    <h3 style="color: white">Submitted Drawings ☻</h3>
+    <div id="gallery"></div>
+
+    <script src="drawbox.js"></script>
+  </body>
+</html>

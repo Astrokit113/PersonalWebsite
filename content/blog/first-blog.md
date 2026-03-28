@@ -1,6 +1,9 @@
 ---
 layout: myTemplate.njk
 title: My Thoughts on Electric Cars
+date: 2026-03-28
+tags: post
+permalink: /blog/first-blog.html
 ---
 
 Here is my brand new blog post about electric vehicles.
