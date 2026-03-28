@@ -79,11 +79,11 @@
         --footer-link: #ea7878;
     }
 }
-
 @font-face {
     font-family: "Nunito";
     font-display: swap;
     src: url(../fonts/Nunito-VariableFont_wght.ttf);
+
 }
 
 @font-face {
