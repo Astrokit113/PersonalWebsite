@@ -21,6 +21,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "blog-css/simplified-style.css": "blog-css/simplified-style.css" });
   eleventyConfig.addPassthroughCopy({ "images": "images" });
   eleventyConfig.addPassthroughCopy({ "fonts": "fonts" });
+  eleventyConfig.addPassthroughCopy({ "gimmick": "gimmick" });
   eleventyConfig.addPassthroughCopy({ "static-pages/index.html": "index.html" });
 
   // Custom permalink structure

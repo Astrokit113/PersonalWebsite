@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawbox 2.0</title>
+    <link rel="icon" type="image/x-icon" href="https://cutekawaiiresources.wordpress.com/wp-content/uploads/2016/11/cinnamoroll-bullet-15.gif">
+    <style>
+    
+    @font-face {
+            font-family: "Gazpacho";
+            src: url('https://files.catbox.moe/87b746.ttf');
+        }
+    
+    	* {
+  box-sizing: border-box;
+  font-family: 'Gazpacho', sans-serif;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-image: url('https://file.garden/Z3nf4eZzZUtRPfhK/strawpage/ship.png');
+  background-attachment : fixed;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-color: #def0ff;
+}
+
+h1 {
+  color: #5b9bd5;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.description-box {
+  background-color: #d4e6f7;
+  border-radius: 10px;
+  border: 2px outset #bac8e0;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color: #2e6da4;
+}
+
+.description-box p {
+	font-size: 1.3em;
+	color: #030042;
+}
+
+.description-box a {
+	text-decoration: none;
+	color: #ff1f5a;
+}
+
+.description-box a:hover {
+	font-style: italic;
+	color: #400085;
+}
+
+canvas {
+  border: 3px solid #5b9bd5;
+  border-radius: 10px;
+  cursor: crosshair;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.color-picker-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.stroke-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.stroke-color:hover {
+  transform: scale(1.2);
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #5471ff;
+  color: #000936;
+  font-size: 1.0em;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  background-color: #4a8bc2;
+  transform: translateY(-2px);
+  color: white;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#submit {
+  background-color: #64b5f6;
+  padding: 10px 20px;
+  font-size: 1.1em;
+}
+
+input[type="color"] {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: none;
+  overflow: hidden;
+}
+
+input[type="range"] {
+  width: 200px;
+  height: 10px;
+  border-radius: 5px;
+  background: #d4e6f7;
+  outline: none;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #5b9bd5;
+  cursor: pointer;
+}
+
+#status {
+  color: #5b9bd5;
+  font-weight: bold;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #a3aee3;
+  border: 2px dashed #4c568c;
+}
+
+#gallery::-webkit-scrollbar {
+  width: 10px;
+}
+
+#gallery::-webkit-scrollbar-track {
+  background: #d4e6f7;
+  border-radius: 10px;
+}
+
+#gallery::-webkit-scrollbar-thumb {
+  background: #5b9bd5;
+  border-radius: 10px;
+}
+
+#gallery::-webkit-scrollbar-thumb:hover {
+  background: #4a8bc2;
+}
+
+.image-container {
+  border: 2px solid #9cc3e4;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.image-container p {
+  margin: 5px 0 0 0;
+  font-size: 0.8em;
+  color: #5b9bd5;
+}
+    </style>
+</head>
+<body>
+    <h1>Drawbox</h1>
+    
+    <div class="description-box">
+        <p>This is the new drawbox, now with the gallery implemented! Thank you to <a href="https://drawbox.nekoweb.org/">drawbox.nekoweb.org</a> for making this possible, go check it out if you want your own!</p>
+        <p>So yeah, submit a masterpiece and it'll automatically show up
+ below. Please refrain from sending anything rude or inappropriate that 
+minors might see, or else it'll be deleted from the gallery. Other than 
+that, have fun sending me drawings!</p>
+        <p><a href="https://electric-tenshi.nekoweb.org/top">Back to TOP</a></p>
+        <p><small><em>models in the background are by mamama, posed by me</em></small></p>
+    </div>
+    
+    <canvas id="drawboxcanvas" width="500" height="500"></canvas>
+    
+    <div class="controls-container">
+        <div class="color-picker-container">
+            <div onclick="change_color(this)" style="background:red" class="stroke-color"></div>
+            <div onclick="change_color(this)" style="background:blue" class="stroke-color"></div>
+            <div onclick="change_color(this)" style="background:green" class="stroke-color"></div>
+            <div onclick="change_color(this)" style="background:yellow" class="stroke-color"></div>
+            <div onclick="change_color(this)" style="background:pink" class="stroke-color"></div>
+            <div onclick="change_color(this)" style="background:purple" class="stroke-color"></div>
+            <div onclick="change_color(this)" style="background:black" class="stroke-color"></div>
+            <input type="color" oninput="stroke_color = this.value" value="#000000">
+        </div>
+        
+        <div>
+            <label for="brush-size">Brush Size:</label>
+            <input id="brush-size" type="range" min="1" max="50" value="2" oninput="stroke_width = this.value">
+        </div>
+        
+        <div class="button-container">
+            <button onclick="Restore()">Undo</button>
+            <button onclick="Clear()">Clear</button>
+            <button id="submit">Submit!</button>
+        </div>
+        
+        <p id="status"></p>
+    </div>
+
+    <h1>Gallery</h1>
+    <div id="gallery"><div class="image-container">
+                    <img src="Drawbox%202.0_files/UOzktsP.png" alt="drawing">
+                    <p>3/18/2026 4:35:15</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/mh7ivG6.png" alt="drawing">
+                    <p>3/16/2026 14:25:20</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/pCyTQsJ.png" alt="drawing">
+                    <p>3/9/2026 17:04:54</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/jK9t2fg.png" alt="drawing">
+                    <p>3/9/2026 12:52:41</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/v2D6j3t.png" alt="drawing">
+                    <p>3/6/2026 12:18:07</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/bxmUJkL.png" alt="drawing">
+                    <p>3/4/2026 3:52:41</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/dJSVKh3.png" alt="drawing">
+                    <p>3/4/2026 3:51:28</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/FN4OAh7.png" alt="drawing">
+                    <p>3/4/2026 1:53:00</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Bcngd52.png" alt="drawing">
+                    <p>3/1/2026 20:04:24</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/pUV8hRq.png" alt="drawing">
+                    <p>2/28/2026 3:31:01</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/LOT7GzL.png" alt="drawing">
+                    <p>2/27/2026 23:04:39</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/fhs9so6.png" alt="drawing">
+                    <p>2/27/2026 14:09:01</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/mgBsxwz.png" alt="drawing">
+                    <p>2/26/2026 17:29:07</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/UJhKi6w.png" alt="drawing">
+                    <p>2/26/2026 12:47:17</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/sEmxlQd.png" alt="drawing">
+                    <p>2/26/2026 11:13:57</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/k1bKhfw.png" alt="drawing">
+                    <p>2/26/2026 11:11:04</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Z2HjHlx.png" alt="drawing">
+                    <p>2/24/2026 19:44:26</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/oaxFtol.png" alt="drawing">
+                    <p>2/24/2026 6:49:57</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/9yMLvMZ.png" alt="drawing">
+                    <p>2/24/2026 4:00:27</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/mxqwliB.png" alt="drawing">
+                    <p>2/24/2026 1:07:51</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ILbhaKK.png" alt="drawing">
+                    <p>2/23/2026 1:23:05</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/WZOnjnj.png" alt="drawing">
+                    <p>2/22/2026 5:24:02</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/e5jZ67D.png" alt="drawing">
+                    <p>2/22/2026 2:42:44</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/FtL8FNl.png" alt="drawing">
+                    <p>2/21/2026 21:24:08</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/shX4rTY.png" alt="drawing">
+                    <p>2/20/2026 0:59:20</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/KLSQhYW.png" alt="drawing">
+                    <p>2/18/2026 3:36:34</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/kVkkdsv.png" alt="drawing">
+                    <p>2/18/2026 3:27:33</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/EvCWwcT.png" alt="drawing">
+                    <p>2/18/2026 3:26:37</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ENQ6FeL.png" alt="drawing">
+                    <p>2/18/2026 3:24:40</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/e5pPyXG.png" alt="drawing">
+                    <p>2/13/2026 8:46:52</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/rX3nDGL.png" alt="drawing">
+                    <p>2/11/2026 18:29:04</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/TBAOf7N.png" alt="drawing">
+                    <p>2/8/2026 17:19:55</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/QVtD0XX.png" alt="drawing">
+                    <p>2/4/2026 12:43:20</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/nShVkEy.png" alt="drawing">
+                    <p>2/3/2026 21:46:36</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Nh6LczQ.png" alt="drawing">
+                    <p>2/3/2026 15:24:02</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/U8aR2Uf.png" alt="drawing">
+                    <p>2/3/2026 15:17:40</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/IWOooKT.png" alt="drawing">
+                    <p>2/2/2026 16:25:46</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/hrQpuGB.png" alt="drawing">
+                    <p>2/1/2026 9:55:04</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/sVpDvRN.png" alt="drawing">
+                    <p>1/29/2026 6:56:35</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/hWBtId7.png" alt="drawing">
+                    <p>1/24/2026 3:14:06</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Uk9Ggb7.png" alt="drawing">
+                    <p>1/24/2026 2:44:09</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/WUUyB1h.png" alt="drawing">
+                    <p>1/24/2026 2:25:41</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/FJnVIhW.png" alt="drawing">
+                    <p>1/24/2026 0:23:17</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/APWRnES.png" alt="drawing">
+                    <p>1/22/2026 18:07:39</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/DUcWLWl.png" alt="drawing">
+                    <p>1/22/2026 17:38:01</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/K9D84a6.png" alt="drawing">
+                    <p>1/20/2026 23:19:14</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/n9VGxM5.png" alt="drawing">
+                    <p>1/18/2026 10:09:03</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/1Y6E6En.png" alt="drawing">
+                    <p>1/17/2026 10:57:24</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/wlb3yu2.png" alt="drawing">
+                    <p>1/17/2026 2:38:52</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/WdKiPkK.png" alt="drawing">
+                    <p>1/16/2026 15:43:21</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/4cpGwMs.png" alt="drawing">
+                    <p>1/11/2026 13:10:19</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/6a18t7m.png" alt="drawing">
+                    <p>1/10/2026 23:39:42</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/G86miCn.png" alt="drawing">
+                    <p>1/10/2026 0:02:04</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/luuN3oP.png" alt="drawing">
+                    <p>1/8/2026 16:01:19</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/11gyoQj.png" alt="drawing">
+                    <p>1/5/2026 15:31:11</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/2eTEwdO.png" alt="drawing">
+                    <p>1/4/2026 6:00:58</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/oQsSiwH.png" alt="drawing">
+                    <p>1/4/2026 3:44:04</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/RkqsM2M.png" alt="drawing">
+                    <p>1/3/2026 14:21:21</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/f6zxVJs.png" alt="drawing">
+                    <p>1/3/2026 3:58:27</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ovGgeuQ.png" alt="drawing">
+                    <p>1/3/2026 3:54:00</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/rHbvrXa.png" alt="drawing">
+                    <p>12/26/2025 2:57:23</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/JLTOJdx.png" alt="drawing">
+                    <p>12/17/2025 5:51:38</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/QN9Bzrp.png" alt="drawing">
+                    <p>12/16/2025 23:42:52</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/3lRw7u1.png" alt="drawing">
+                    <p>12/14/2025 6:19:39</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/tUdhaxL.png" alt="drawing">
+                    <p>12/13/2025 22:42:21</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/PkHeGAw.png" alt="drawing">
+                    <p>11/30/2025 4:01:44</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/bzAaN6l.png" alt="drawing">
+                    <p>11/25/2025 12:51:40</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/6utXDE2.png" alt="drawing">
+                    <p>11/21/2025 16:56:05</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/fzMVvba.png" alt="drawing">
+                    <p>11/17/2025 9:53:50</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/tF1gFom.png" alt="drawing">
+                    <p>11/16/2025 17:33:58</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/68zLnXA.png" alt="drawing">
+                    <p>10/30/2025 21:41:09</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/64Q892x.png" alt="drawing">
+                    <p>10/19/2025 21:22:35</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/RxsRLIg.png" alt="drawing">
+                    <p>10/11/2025 2:21:42</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/FpmdBdF.png" alt="drawing">
+                    <p>10/6/2025 6:49:42</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/kDAPrxq.png" alt="drawing">
+                    <p>10/6/2025 3:36:29</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/8Hj0uOX.png" alt="drawing">
+                    <p>10/3/2025 20:40:58</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/H3HUHPV.png" alt="drawing">
+                    <p>10/3/2025 18:24:08</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/cIyDQRV.png" alt="drawing">
+                    <p>10/3/2025 18:08:49</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ui5QpgG.png" alt="drawing">
+                    <p>10/3/2025 7:27:35</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/597oxqV.png" alt="drawing">
+                    <p>9/26/2025 12:28:12</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/6w2gT1v.png" alt="drawing">
+                    <p>9/26/2025 3:30:41</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/obRAnmJ.png" alt="drawing">
+                    <p>9/17/2025 11:47:01</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/LsV7iJQ.png" alt="drawing">
+                    <p>9/13/2025 10:35:15</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Ic2Zzrp.png" alt="drawing">
+                    <p>9/9/2025 22:32:25</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/HkTGdAR.png" alt="drawing">
+                    <p>9/7/2025 7:24:38</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/3cwueIi.png" alt="drawing">
+                    <p>9/6/2025 19:24:31</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/rGbJ5wQ.png" alt="drawing">
+                    <p>9/6/2025 19:22:44</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/jk5V3az.png" alt="drawing">
+                    <p>9/6/2025 19:22:22</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ooQZ4fx.png" alt="drawing">
+                    <p>9/6/2025 19:21:59</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/N3D9tqm.png" alt="drawing">
+                    <p>9/2/2025 14:03:21</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ZhFxaTW.png" alt="drawing">
+                    <p>8/29/2025 1:29:23</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/SSAgjku.png" alt="drawing">
+                    <p>8/27/2025 7:51:16</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/pxBWq8d.png" alt="drawing">
+                    <p>8/26/2025 22:29:11</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/hicd4WE.png" alt="drawing">
+                    <p>8/23/2025 14:45:14</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/q7haeO7.png" alt="drawing">
+                    <p>8/23/2025 13:22:26</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/r8hhgZK.png" alt="drawing">
+                    <p>8/21/2025 9:32:25</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/pozkTuY.png" alt="drawing">
+                    <p>8/21/2025 2:48:04</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ORtMcS6.png" alt="drawing">
+                    <p>8/19/2025 5:48:13</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/w8WOSTN.png" alt="drawing">
+                    <p>8/18/2025 4:44:50</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/jz6Mhku.png" alt="drawing">
+                    <p>8/17/2025 10:01:01</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/2DIpLji.png" alt="drawing">
+                    <p>8/15/2025 22:50:45</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/KiO8JUs.png" alt="drawing">
+                    <p>8/14/2025 11:15:11</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/gl9IhPR.png" alt="drawing">
+                    <p>8/13/2025 21:04:45</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/x6vZPzQ.png" alt="drawing">
+                    <p>8/13/2025 10:59:41</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/SLCJaFR.png" alt="drawing">
+                    <p>8/13/2025 10:34:16</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Tjr0Ls7.png" alt="drawing">
+                    <p>8/13/2025 7:47:12</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ullNGqs.png" alt="drawing">
+                    <p>8/13/2025 2:54:34</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/B9MOJxw.png" alt="drawing">
+                    <p>8/13/2025 0:48:48</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/8L6uTY7.png" alt="drawing">
+                    <p>8/12/2025 18:36:26</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/bWxP499.png" alt="drawing">
+                    <p>8/12/2025 18:35:03</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/bdtBUyC.png" alt="drawing">
+                    <p>8/12/2025 12:04:54</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/oaLGGE7.png" alt="drawing">
+                    <p>8/10/2025 11:33:24</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/VMTs0c3.png" alt="drawing">
+                    <p>8/7/2025 0:54:41</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/70Er2fE.png" alt="drawing">
+                    <p>8/6/2025 16:23:18</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/zYw19Fr.png" alt="drawing">
+                    <p>8/6/2025 15:26:46</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Td19cKH.png" alt="drawing">
+                    <p>8/6/2025 5:49:35</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/zXHqxjz.png" alt="drawing">
+                    <p>8/5/2025 4:34:58</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/sZHY7jJ.png" alt="drawing">
+                    <p>8/4/2025 20:53:31</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/JWRpfKl.png" alt="drawing">
+                    <p>8/4/2025 14:43:46</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Xa1pm3Y.png" alt="drawing">
+                    <p>8/2/2025 17:27:41</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/KKn20Nd.png" alt="drawing">
+                    <p>8/2/2025 9:18:19</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/fPqZGj7.png" alt="drawing">
+                    <p>8/2/2025 7:37:31</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/zTaoW2s.png" alt="drawing">
+                    <p>8/2/2025 6:09:49</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/y9QrTFS.png" alt="drawing">
+                    <p>8/1/2025 7:21:10</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/mNd3wWy.png" alt="drawing">
+                    <p>7/31/2025 22:12:42</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/mvl5kiT.png" alt="drawing">
+                    <p>7/31/2025 3:12:46</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/qBn9TVl.png" alt="drawing">
+                    <p>7/30/2025 13:31:26</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/sRWroJI.png" alt="drawing">
+                    <p>7/29/2025 20:40:20</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ElfAhts.png" alt="drawing">
+                    <p>7/29/2025 14:36:16</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/bHu2Wwy.png" alt="drawing">
+                    <p>7/27/2025 22:52:23</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/wkEZoJQ.png" alt="drawing">
+                    <p>7/26/2025 11:50:20</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/maGLtws.png" alt="drawing">
+                    <p>7/26/2025 11:36:03</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/3dwSrQ6.png" alt="drawing">
+                    <p>7/26/2025 11:14:44</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Mu0ovd4.png" alt="drawing">
+                    <p>7/26/2025 11:06:29</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/9SWmoA5.png" alt="drawing">
+                    <p>7/24/2025 11:39:54</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/9vJgu8j.png" alt="drawing">
+                    <p>7/24/2025 2:45:38</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/8r3u9Qw.png" alt="drawing">
+                    <p>7/23/2025 2:17:50</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/SbAJlLE.png" alt="drawing">
+                    <p>7/18/2025 17:19:09</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/KD4HHym.png" alt="drawing">
+                    <p>7/17/2025 2:30:02</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/MDa8CE3.png" alt="drawing">
+                    <p>7/13/2025 14:49:02</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/mYEggWy.png" alt="drawing">
+                    <p>7/11/2025 4:08:19</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/517Ps3K.png" alt="drawing">
+                    <p>7/11/2025 2:57:19</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/6oPYnX1.png" alt="drawing">
+                    <p>7/9/2025 9:53:35</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Rc89FNV.png" alt="drawing">
+                    <p>7/7/2025 8:59:35</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/0yPLMKj.png" alt="drawing">
+                    <p>7/5/2025 11:38:43</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/xk79cS9.png" alt="drawing">
+                    <p>7/3/2025 22:44:35</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/64Nfq4r.png" alt="drawing">
+                    <p>6/27/2025 19:15:07</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/uI2Hafd.png" alt="drawing">
+                    <p>6/27/2025 6:29:01</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/yKaiQFB.png" alt="drawing">
+                    <p>6/26/2025 20:38:49</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/gCzOrdC.png" alt="drawing">
+                    <p>6/24/2025 18:38:53</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/p9m8t3T.png" alt="drawing">
+                    <p>6/23/2025 7:00:24</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/X4Z2J0Y.png" alt="drawing">
+                    <p>6/21/2025 11:24:43</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/gQlGdFo.png" alt="drawing">
+                    <p>6/20/2025 0:47:39</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/lL4F9fy.png" alt="drawing">
+                    <p>6/19/2025 13:17:55</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/a2TjGjV.png" alt="drawing">
+                    <p>6/19/2025 3:20:41</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/T6fIJny.png" alt="drawing">
+                    <p>6/17/2025 12:50:39</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Dntff8n.png" alt="drawing">
+                    <p>6/16/2025 22:54:20</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/BJZcHIL.png" alt="drawing">
+                    <p>6/14/2025 14:30:27</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/gpZ7BUh.png" alt="drawing">
+                    <p>6/13/2025 18:22:40</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/XiGTucB.png" alt="drawing">
+                    <p>6/13/2025 13:41:52</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/z7zNxOI.png" alt="drawing">
+                    <p>6/9/2025 1:20:45</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/RgdLuvP.png" alt="drawing">
+                    <p>6/7/2025 9:18:21</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/htZ5qWX.png" alt="drawing">
+                    <p>6/6/2025 16:57:38</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/EFiezCr.png" alt="drawing">
+                    <p>5/27/2025 6:17:43</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ob5Tf9R.png" alt="drawing">
+                    <p>5/26/2025 14:21:14</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/CdqObKz.png" alt="drawing">
+                    <p>5/26/2025 12:37:03</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/bEFTEwS.png" alt="drawing">
+                    <p>5/26/2025 0:55:43</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/IpeeRAo.png" alt="drawing">
+                    <p>5/23/2025 0:27:31</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/sSdkQNe.png" alt="drawing">
+                    <p>5/20/2025 18:48:26</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/Kypu8hq.png" alt="drawing">
+                    <p>5/20/2025 13:08:39</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/WG4RyX9.png" alt="drawing">
+                    <p>5/18/2025 10:53:55</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/bm4lZEA.png" alt="drawing">
+                    <p>5/17/2025 5:00:56</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/0Ay9BW6.png" alt="drawing">
+                    <p>5/16/2025 11:17:55</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/qpQjfSC.png" alt="drawing">
+                    <p>5/14/2025 0:29:19</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/8mi47Hr.png" alt="drawing">
+                    <p>5/13/2025 17:20:12</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/jJ18Kmq.png" alt="drawing">
+                    <p>5/13/2025 16:51:17</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/hoL5xm3.png" alt="drawing">
+                    <p>5/12/2025 23:49:06</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/HYH9UIo.png" alt="drawing">
+                    <p>5/12/2025 22:57:40</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/olbxIwD.png" alt="drawing">
+                    <p>5/11/2025 20:07:59</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/WTCJllx.png" alt="drawing">
+                    <p>5/11/2025 19:46:16</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/AV7RgX0.png" alt="drawing">
+                    <p>5/9/2025 21:57:00</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/1xc4lgT.png" alt="drawing">
+                    <p>5/9/2025 20:52:42</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/KlhinH2.png" alt="drawing">
+                    <p>5/9/2025 20:00:13</p>
+                </div><div class="image-container">
+                    <img src="Drawbox%202.0_files/ISZgPtz.png" alt="drawing">
+                    <p>5/9/2025 18:54:45</p>
+                </div></div>
+
+    <script src="Drawbox%202.0_files/drawbox.js"></script>
+
+</body></html>
