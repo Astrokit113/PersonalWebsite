@@ -83,13 +83,13 @@
 @font-face {
     font-family: "Nunito";
     font-display: swap;
-    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+    src: url(fonts/Nunito-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "Playfair";
     font-display: swap;
-    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 /* -------------------------------------------------------- */
