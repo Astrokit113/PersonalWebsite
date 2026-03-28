@@ -1,15 +1,14 @@
 /*
-        
         FILL IN THESE VARIABLES BASED ON THE GUIDE AT https://drawbox.nekoweb.org
         
         IF YOU HAVE ANY QUESTION, SUGGESTIONS, OR NEED HELP, PLEASE EMAIL ME AT drawbox@jhorn.net OR @MONKEYBATION on DISCORD
         
-				      /`·.¸
-				     /¸...¸`:·
-				 ¸.·´  ¸   `·.¸.·´)
-				: © ):´;      ¸  {
-				 `·.¸ `·  ¸.·´\`·¸)
-				     `\\´´\¸.·´
+              /`·.¸
+             /¸...¸`:·
+         ¸.·´  ¸   `·.¸.·´)
+         : © ):´;      ¸  {
+          `·.¸ `·  ¸.·´\`·¸)
+              `\\´´\¸.·´
         
 */
 const GOOGLE_FORM_ID = "1FAIpQLSfeABQM1GIHTq_OUQxuegiJ3coOk8lBh7WWF_jUDq6G7lP5OQ";
@@ -18,12 +17,11 @@ const GOOGLE_SHEET_ID = "1mby0lFRTfyMhZR4UtIdp1pUpztzavFxs6Z_EpvjzO74";
 const DISPLAY_IMAGES = true;
 
 /*
-        
         DONT EDIT BELOW THIS POINT IF YOU DONT KNOW WHAT YOU ARE DOING.
-        
 */
 
-const CLIENT_ID = "b4fb95e0edc434c";
+const IMGBB_API_KEY = "75db6c7dc4c36ec332c7a370e55d52f4"; // <-- PASTE YOUR TOKEN HERE
+
 const GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/" + GOOGLE_SHEET_ID + "/export?format=csv";
 const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/" + GOOGLE_FORM_ID + "/formResponse";
 
@@ -109,7 +107,7 @@ function Clear() {
 }
 
 context.drawImage = function() {
-	console.warn("noo >:(");
+  console.warn("noo >:(");
 };
 
 document.getElementById("submit").addEventListener("click", async function () {
@@ -119,31 +117,34 @@ document.getElementById("submit").addEventListener("click", async function () {
   submitButton.disabled = true;
   statusText.textContent = "Uploading...";
 
-  const imageData = canvas.toDataURL("image/png");
-  const blob = await (await fetch(imageData)).blob();
-  const formData = new FormData();
-  formData.append("image", blob, "drawing.png");
-
   try {
-    const response = await fetch("https://api.imgur.com/3/image", {
+    const imageData = canvas.toDataURL("image/png");
+    // ImgBB requires the base64 string without the data URI prefix
+    const base64Image = imageData.split(',')[1]; 
+    
+    const formData = new FormData();
+    formData.append("image", base64Image);
+
+    // Upload to ImgBB
+    const response = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB_API_KEY}`, {
       method: "POST",
-      headers: { Authorization: `Client-ID ${CLIENT_ID}` },
       body: formData,
     });
 
     const data = await response.json();
-    if (!data.success) throw new Error("Imgur upload failed");
+    if (!data.success) throw new Error("ImgBB upload failed");
 
-    const imageUrl = data.data.link;
+    const imageUrl = data.data.url;
     console.log("Uploaded image URL:", imageUrl);
 
+    // Submit the URL to Google Forms
     const googleFormData = new FormData();
     googleFormData.append(ENTRY_ID, imageUrl);
 
     await fetch(GOOGLE_FORM_URL, {
       method: "POST",
       body: googleFormData,
-      mode: "no-cors",
+      mode: "no-cors", // Required to avoid CORS errors with Google Forms
     });
 
     statusText.textContent = "Upload successful!";
