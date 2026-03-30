@@ -5,7 +5,9 @@ layout: myTemplate.njk
 <article class="post intro">
   <div class="post-header">
     @redforroseline
-    <time datetime="{{ build.timestamp }}">{{ build.displayTime }}</time>
+    <time datetime="{{ page.date | isoDate }}">{{
+      page.date | displayDate
+    }}</time>
   </div>
 
   {{ content | safe }}

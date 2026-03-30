@@ -7,10 +7,11 @@ title: Blog Homepage
 
 <p><a href="/feed.xml">Subscribe to my RSS feed</a></p>
 
-<ul>
-{% for post in collections.posts | reverse %}
+<ul class="post-list">
+{% for post in collections.postsReversed %}
   <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a> - <time>{{ post.date }}</time>
+    <a href="{{ post.url }}" class="post-title">{{ post.data.title }}</a>
+    <time class="post-date">{{ post.date }}</time>
   </li>
 {% endfor %}
 </ul>

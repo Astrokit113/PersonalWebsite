@@ -1,7 +1,7 @@
 ---
 layout: article_1.njk
 title: Actually first blog ever
-date: 2026-03-27
+date: 2026-03-27T10:31:00+07:00
 tags: post
 permalink: /blog/second-blog.html
 ---

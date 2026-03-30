@@ -1,7 +1,7 @@
 ---
 layout: article_1.njk
 title: First life update-ish?
-date: 2026-03-30
+date: 2026-03-30T11:31:00+07:00
 tags: post
 permalink: /blog/LifeUpdate01.html
 ---

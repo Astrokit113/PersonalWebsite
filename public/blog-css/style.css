@@ -315,6 +315,45 @@ main {
 .post a {color:var(--post-text);}
 .post a:hover {text-decoration: none;}
 
+/* 1. Target the list to remove default bullet points (optional but recommended for blogs) */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* 2. Turn each list item into a vertical Flexbox column */
+.post-list li {
+  display: flex;
+  flex-direction: column;
+  /* Stacks the title and date vertically */
+  margin-bottom: 1rem;
+  /* Adds breathing room between each blog post */
+}
+
+/* 3. Let the title breathe and take up the full width */
+.post-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.4;
+  /* Makes multi-line titles easier to read */
+  margin-bottom: 0.25rem;
+  /* A tiny gap between the title and the date */
+  
+}
+.post-title:hover {
+  text-decoration: underline;
+}
+
+/* 4. Push the date to the right side */
+.post-date {
+  align-self: flex-end;
+  /* This is the magic line that pushes it right! */
+  font-size: 0.85rem;
+  color: #666;
+  /* Makes the date a softer gray so the title stands out */
+}
+
 /*this is for lists*/
 .post li {
 /*you can change the normal dot to anything you want :)*/
