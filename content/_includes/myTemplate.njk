@@ -1,104 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title }}</title>
-    <meta name="author" content="Roseline">
-    <meta name="description" content="The blog section of my personal web where I write things in more in-depth. Feel free to read about my rambles, I promise they're fun!">
-    <link href="/blog-css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" type="image/webp" href="https://files.catbox.moe/6rl2jm.png" />
-
+    <meta name="author" content="Roseline" />
+    <meta
+      name="description"
+      content="The blog section of my personal web where I write things in more in-depth. Feel free to read about my rambles, I promise they're fun!"
+    />
+    <link
+      href="/blog-css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      href="https://files.catbox.moe/6rl2jm.png"
+    />
   </head>
   <body>
-    
     <div id="container">
-
-    <aside id="sidebar">
+      <aside id="sidebar">
         <div class="flex">
-            
-            <div id="icon">
-                <a href="/">
-                    <img src="/images/icon.png" alt="icon">
-                </a>
+          <div id="icon">
+            <a href="/">
+              <img src="/images/icon.png" alt="icon" />
+            </a>
+          </div>
+
+          <section id="profile">
+            <h1>
+              <a href="/">Roseline</a>
+            </h1>
+            <p>
+              The one and only! Arts enjoyer, hyperfixates on everything! No
+              seriously!
+            </p>
+
+            <div id="bio">
+              <p>Pronouns: She/him</p>
+              <p>Age: 21+</p>
+              <p>
+                Site: <a href="/">https://redforroseline.neocities.org/</a>Main
+                Page
+              </p>
             </div>
-            
-            <section id="profile">
-                <h1>
-                    <a href="/">Roseline</a>
-                </h1>
-                <p>The one and only! Arts enjoyer, hyperfixates on everything! No seriously!</p>
-                
-                <div id="bio">
-                    <p>Pronouns: She/him</p>
-                    <p>Age: 21+</p>
-                    <p>Site: <a href="/">https://redforroseline.neocities.org/</a>Main Page</p>
-                </div>
-                
-                <p>An attempt to write down my thoughts. A longer effort. Way longer. I need to let my fingers dance, if not they'll rot. I'm sure you'll understan, yes?</p>
-                
-            </section>
+
+            <p>
+              An attempt to write down my thoughts. A longer effort. Way longer.
+              I need to let my fingers dance, if not they'll rot. I'm sure
+              you'll understan, yes?
+            </p>
+          </section>
         </div>
-        
+
         <nav>
-        <ul>
+          <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">WIP</a></li>
             <li><a href="/blog">WIP</a></li>
             <li><a href="/links">WIP</a></li>
-        </ul>
+          </ul>
         </nav>
-        
-        <section id="stamps" class="center pc-only">
-            <a target="_blank" href="https://neocities.org/">
-                <img src="/images/site-button.gif" alt="site button">
-            </a>
-        </section>
-        
-        <p class="center small-text">site template by <a href="https://nomnomnami.com">NomnomNami</a></p>
-        
-    </aside>
-    
-    <main class="tagged">
-        
-        <section id="status" class="pinned">
-            <details open>
-                <summary>status <time>6/10/2025</time></summary>
-                <ul>
-                    <li>reading:</li>
-                    <li>books about high-context culture~</li>
-                    
-                    <li>listening to:</li>
-                    <li><a href="https://open.spotify.com/track/18FDon2xn5UO0jLnk53C24?si=2b0282577b65427f" target="_blank">Checkout Luv</a>, I randomly found this song from a Voyager (R1999) edit. It's kinda catchy!</li>
-                    
-                    <li>playing:</li>
-                    <li>marathon babey. That games etches onto my soul at this point.</li>
-                </ul>
-            </details>
-        </section>
-        
-        <section id="tag-filters" class="pinned">
-            <details open>
-                <summary>tag filters</summary>
-                <label><input type="radio" id="all" name="tag" checked>all</label>
-                <label><input type="radio" id="intro" name="tag">#intro</label>
-                <label><input type="radio" id="personal" name="tag">#personal</label>
-                <label><input type="radio" id="art" name="tag">#art</label>
-                <label><input type="radio" id="secret" name="tag">#secret</label>
-            </details>
-        </section>
-        
-        {{ content | safe }}
-        
-        <section id="page-nav">
-            <p class="center"><a href="#">back to top</a></p>
-        </section>
-        
-    </main>
 
-    <footer>
-      © 2026 [your name here]
-    </footer>      
+        <section id="stamps" class="center pc-only">
+          <a target="_blank" href="https://neocities.org/">
+            <img src="/images/site-button.gif" alt="site button" />
+          </a>
+        </section>
+
+        <p class="center small-text">
+          site template by <a href="https://nomnomnami.com">NomnomNami</a>
+        </p>
+      </aside>
+
+      <main class="tagged">
+        <section id="status" class="pinned">
+          <details open>
+            <summary>status <time>6/10/2025</time></summary>
+            <ul>
+              <li>reading:</li>
+              <li>books about high-context culture~</li>
+
+              <li>listening to:</li>
+              <li>
+                <a
+                  href="https://open.spotify.com/track/18FDon2xn5UO0jLnk53C24?si=2b0282577b65427f"
+                  target="_blank"
+                  >Checkout Luv</a
+                >, I randomly found this song from a Voyager (R1999) edit. It's
+                kinda catchy!
+              </li>
+
+              <li>playing:</li>
+              <li>
+                marathon babey. That games etches onto my soul at this point.
+              </li>
+            </ul>
+          </details>
+        </section>
+
+        <section id="tag-filters" class="pinned">
+          <details open>
+            <summary>tag filters</summary>
+            <label><input type="radio" id="all" name="tag" checked />all</label>
+            <label><input type="radio" id="intro" name="tag" />#intro</label>
+            <label
+              ><input type="radio" id="personal" name="tag" />#personal</label
+            >
+            <label><input type="radio" id="art" name="tag" />#art</label>
+            <label><input type="radio" id="secret" name="tag" />#secret</label>
+          </details>
+        </section>
+
+        {{ content | safe }}
+
+        <section id="page-nav">
+          <p class="center"><a href="#">back to top</a></p>
+        </section>
+      </main>
+
+      <footer>© 2026 [your name here]</footer>
     </div>
   </body>
 </html>
