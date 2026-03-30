@@ -3,7 +3,10 @@ layout: myTemplate.njk
 ---
 
 <article class="post intro">
-  <div class="post-header">@redforroseline <time>30/3/2026, 10:01am</time></div>
+  <div class="post-header">
+    @redforroseline
+    <time datetime="{{ build.timestamp }}">{{ build.displayTime }}</time>
+  </div>
 
   {{ content | safe }}
 </article>
