@@ -4,6 +4,7 @@ title: What Is Rose Playing?! 01
 date: 2026-04-06T12:23:00+07:00
 tags: post
 permalink: /blog/Game-Update-01.html
+description: A short update on Rose's gaming experience for this week. It's pretty fun!
 ---
 
 # Rose has been engaging with Games?! What?!
