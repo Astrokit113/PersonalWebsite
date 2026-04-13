@@ -2,19 +2,20 @@
 layout: article_1.njk
 title: First life update-ish?
 date: 2026-03-30T11:31:00+07:00
-tags: post
+tags:
+  - post
+  - life
+  - vent
 permalink: /blog/LifeUpdate01.html
 ---
 
-## Hey friends!
+## Update I guess
 
 It's been a while, truly. I've basically dissapeared from the face of the internet, with only my twitter as my public gateaway. But even so my twitter era has been long past it's prime, i've been tweeting less that I could've been. I used to be content with this, but deep down I was made to share my thoughts (lmao). And I've been procastinating on this for such a long time, because I'm just too comfortable within my own solitude. Just a preface, I will be vagueposting alot, but if you know my irl you'd probably can figure out some stuff. Safety on the internet, I think they call it!
 
 I don't know where to start? For my itboomfs, I'm doing better - way better now. Sure, I did had freedom back then, but my academic workload has been much more merciful rather back in physics. Socially, it's really weird though Legitimate middle-upper rich kids occupying my class room. They don't have any passion or commitment to the classes - which to be fair, who really _Is_ passionate for this specific degree? I don't blame them, and while the dress code is definitely less strict, atleast come in class in time. There's no way that you came in class, late, with your LV mini-bag walking like it's a drag show and claiming you were praying. Atleast be honest about it. I'm the class coordinator so I have to deal with all this shit.
 
 But despite the many, other complains about this damn university, It's okay to say the least (it better be. I'm paying a lot of money for this tuition.) Life daily has been good. I will say, that majority of it was good, but there are still some pretty sad moments I went through. Had two friend group incidents that affected me alot personally (still shaken me to this day and some other minor stuff.
-
-For the first friend group, a group I've been for a long time, it's more of I exited the group, but really, is the same thing as getting kicked. Basically, it started in around 2 years ago I believe? I had recently switched unis and was settling life back at my hometown, and it wasn't the smoothest transition because I was very fatigued at life. And it irreversibly affected by relationships, which affected this friend group. The problem got serious because we were preaparing for a con and basically afterwards I was in charge of shipping and I had such a bad time processing them. In normal scenario, I would've communicated, but I wasn't in the correct headspace so I freezed the whole time. It didn't helped that in this stage, my relationship with my ex was getting on a rapid decline, and that contributed to my already bad mental state. I don't really remember what happened, but the aftermath was I basically wasn't allowed to talk in the group until my friends were okay with it. For the first few days, I was okay with it. But after waiting, it got me thinking, how the more I waited, the more I realized that I was basically treated wrong there and others fucked up more but they were still okay? Way back then, we had a roleplay group of some sorts. Thing is, the way each character was introduced had some space, so we would get turns getting introduced to the story. My character, was being the last one. And unfortunately, by the time my character was introduced, we were already graduating (so basically never got introduced). All this time, I thought that it was okay for me to did that, but I realized that trend continued until I got out of the friend group, that I was always the one in the background while some of my friends took center spotlight. They loved to vc until midnight while I don't like vc that much and I don't stay up late anyways. Our interests are very varied, atleast me versus them, so I never got the chance to talk about. Bottom line
 
 Second friend group's conflict is more sudden and also more sad. We only started to talk around a year ago, where we eventually hosted our own tabletop roleplaying game (We use pathfinder 2E), and our campaign ran for a good 6 months more? The confict happened because some people had suspected this particular friend of a certain allegation, which turned out to be miscommunication but the "owner" of the server decided to kick this person for some reason. Under a week, that friend group combusted internally and our campaign also went down with it. It's sad, I've sunk many investments here. I've commisioned arts for my playable character, I've set up a wiki so we can archive the information so far, I've made countless of memes, hell we were planning to advertise our campaign to the world. I'm still very distraught and affected, but I've been better. I think I learn eventually which people that is actually mature and which ones are not to be trusted.
 
