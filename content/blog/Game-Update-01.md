@@ -21,13 +21,13 @@ The biggest single-player narrative game I've played, and damn it changed my lif
 
 ![](https://i.ibb.co/8gF3djGw/Hades2.jpg)
 
-I really like roguelike. You can simultaniously turn on and off your brain to enjoy they game and you get to win. Both high skill ceiling and low skill floor. And most of all, they're mostly chaotic. And there seems to have an unlimited amount of roguelike games in the market, so I'll never get bored of the progression. I've recently finished 100% (close enough) Hades 2. It was a fun game, and like other people, I think narratively (especially the ending) they could've tried better. Gameplay wise, straight up upgrade. You also can't really speedrun with stupid zeus rails unlike before (lmao), I love the combos and the weapon variety. Plus, it's greek mythology!!! Who could ever say no man.
+I really like roguelike. You can simultaniously turn on and off your brain to enjoy they game and you get to win. Both high skill ceiling and low skill floor. And most of all, they're mostly chaotic. And there seems to have an unlimited amount of roguelike games in the market, so I'll never get bored of the progression. I've recently finished 100% (close enough) Hades [[2]]. It was a fun game, and like other people, I think narratively (especially the ending) they could've tried better. Gameplay wise, straight up upgrade. You also can't really speedrun with stupid zeus rails unlike before (lmao), I love the combos and the weapon variety. Plus, it's greek mythology!!! Who could ever say no man.
 
 ## Marathon
 
 ![](https://i.ibb.co/cXwgMJ7L/Marathon-Hero.png)
 
-This is the only game that I bought in the last 2 years. I bought it because I love the game, it is genuinely such a fun graphical satisfaction. It brought me back my imagination and I just love the universe that they made. I listen to their osts, and the only thing holding me back is I can only play the game in my main pc and I can't play it, also it's an extraction shooter, not my cup of tea. I prefer just shooters like overwatch or apex or MOBAs like deadlock.
+This is the only game that I bought in the last [[2]] years. I bought it because I love the game, it is genuinely such a fun graphical satisfaction. It brought me back my imagination and I just love the universe that they made. I listen to their osts, and the only thing holding me back is I can only play the game in my main pc and I can't play it, also it's an extraction shooter, not my cup of tea. I prefer just shooters like overwatch or apex or MOBAs like deadlock.
 
 Oh yeah, some other misc games like trying out deadlock, some megabonk here and there. Pretty fun, but let's continue our show!
 
@@ -43,7 +43,7 @@ For the first few rounds, you will not understand how to win, or how the game is
 
 When you understand how to play, you can feel the dopamine flowing in your mind. The same rush as balatro. You understand the relation between combos and scores, the fact that you need to go big or space out your coins. There's so much mechanics to dance around that you won't be bored playing in a single character. It provides more RNG, because the coins are all dependent on the local physics engine, so you can only pray that your coin lands in the position that you intended.
 
-Overall 8/10 I highly recommend is this game, please try it !!
+Overall [[8]]/10 I highly recommend is this game, please try it !!
 
 ## What Returns of Edith Flinch
 
@@ -59,8 +59,8 @@ This is actually a bit funny. I was about to try the Return of the Obra Dhinn, b
 
 ![](https://i.ibb.co/Z6cLLFSW/Returnof-Obra-Dhinn2.png)
 
-Finally! The game I've been searching for. I actually don't know what to expect, all I remember was the very interesting graphics and thats it. I wasn't expecting much, but oh boy, this was one of the best experiences I've played! I was still confused for the first 30 minutes, but I quickly understood on what to do. I took notes. Many notes. I still haven't deducted alot of things, I'm still finishing chapter 1. I don't know how to proceed (maybe i have to solve some people first), but man, this game is genuinely beautiful. It managed to hook me the entire seat by intentionally making the chapters non-linear and leaving so many gaps of information that I am tasked to fill. You can just take you time here. Oh yeah, you need to solve the murder/dissapearance of the members of the obra dhinn, which originally contained 60 people. Oh yeah, murder mystery of 60 people? And you need to map and figure out who is who on the ship.
+Finally! The game I've been searching for. I actually don't know what to expect, all I remember was the very interesting graphics and thats it. I wasn't expecting much, but oh boy, this was one of the best experiences I've played! I was still confused for the first 30 minutes, but I quickly understood on what to do. I took [[Notes]]. Many [[Notes]]. I still haven't deducted alot of things, I'm still finishing chapter [[1]]. I don't know how to proceed (maybe i have to solve some people first), but man, this game is genuinely beautiful. It managed to hook me the entire seat by intentionally making the chapters non-linear and leaving so many gaps of information that I am tasked to fill. You can just take you time here. Oh yeah, you need to solve the murder/dissapearance of the members of the obra dhinn, which originally contained 60 people. Oh yeah, murder mystery of 60 people? And you need to map and figure out who is who on the ship.
 
-8/10 migt be higher after I finish!
+[[8]]/10 migt be higher after I finish!
 
 ![](https://i.ibb.co/v4C0QnmR/Return-Of-Obra-Dhinn.png)
