@@ -118,42 +118,42 @@ document.getElementById("submit").addEventListener("click", async function () {
   statusText.textContent = "Uploading...";
 
   try {
-    const imageData = canvas.toDataURL("image/png");
-    // ImgBB requires the base64 string without the data URI prefix
-    const base64Image = imageData.split(',')[1]; 
-    
-    const formData = new FormData();
-    formData.append("image", base64Image);
+    const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/png"));
 
-    // Upload to ImgBB
+    const formData = new FormData();
+    formData.append("image", blob);
+
     const response = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB_API_KEY}`, {
       method: "POST",
       body: formData,
+    }).catch(err => {
+      throw new Error(`Upload failed: ${err.message}. This might be due to network restrictions. Try allowing api.imgbb.com in your security settings.`);
     });
 
     const data = await response.json();
-    if (!data.success) throw new Error("ImgBB upload failed");
+    if (!data.success) throw new Error(`ImgBB error: ${data.error?.message || "Upload failed"}`);
 
     const imageUrl = data.data.url;
     console.log("Uploaded image URL:", imageUrl);
 
-    // Submit the URL to Google Forms
     const googleFormData = new FormData();
     googleFormData.append(ENTRY_ID, imageUrl);
 
     await fetch(GOOGLE_FORM_URL, {
       method: "POST",
       body: googleFormData,
-      mode: "no-cors", // Required to avoid CORS errors with Google Forms
+      mode: "no-cors",
+    }).catch(err => {
+      console.warn("Form submission error (may still have succeeded):", err);
     });
 
     statusText.textContent = "Upload successful!";
     alert("Image uploaded and submitted successfully ☻");
     location.reload();
   } catch (error) {
-    console.error(error);
-    statusText.textContent = "Error uploading image.";
-    alert("Error uploading image or submitting to Google Form.");
+    console.error("Upload error:", error);
+    statusText.textContent = `Error: ${error.message}`;
+    alert(`Error: ${error.message}`);
   } finally {
     submitButton.disabled = false;
   }
@@ -165,19 +165,38 @@ async function fetchImages() {
     return;
   }
 
+  console.log("Fetching from:", GOOGLE_SHEET_URL);
+
   try {
     const response = await fetch(GOOGLE_SHEET_URL);
+    console.log("Fetch response status:", response.status);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
     const csvText = await response.text();
+    console.log("CSV text length:", csvText.length);
+    console.log("CSV preview:", csvText.substring(0, 200));
+
     const rows = csvText.split("\n").slice(1);
+    console.log("Total rows:", rows.length);
 
     const gallery = document.getElementById("gallery");
     gallery.innerHTML = "";
-    rows.reverse().forEach((row) => {
-      const columns = row.split(",");
-      if (columns.length < 2) return;
 
-      const timestamp = columns[0].trim();
-      const imgUrl = columns[1].trim().replace(/"/g, "");
+    let imageCount = 0;
+    rows.reverse().forEach((row) => {
+      if (!row.trim()) return;
+
+      const firstCommaIndex = row.indexOf(",");
+      if (firstCommaIndex === -1) return;
+
+      const timestamp = row.substring(0, firstCommaIndex).trim();
+      let imgUrl = row.substring(firstCommaIndex + 1).trim();
+      imgUrl = imgUrl.replace(/^"|"$/g, "");
+
+      console.log("Timestamp:", timestamp, "URL:", imgUrl);
 
       if (imgUrl.startsWith("http")) {
         const div = document.createElement("div");
@@ -188,11 +207,18 @@ async function fetchImages() {
                     <p>${timestamp}</p>
                 `;
         gallery.appendChild(div);
+        imageCount++;
       }
     });
+
+    console.log("Images loaded:", imageCount);
   } catch (error) {
     console.error("Error fetching images:", error);
-    document.getElementById("gallery").textContent = "Failed to load images.";
+    const gallery = document.getElementById("gallery");
+    gallery.innerHTML = `<div style="color: var(--font-color); padding: 10px; text-align: center;">
+      <p>Unable to load images due to network restrictions.</p>
+      <p style="font-size: 0.9em;">If you're behind a firewall or corporate network, try allowing <code>docs.google.com</code> in your security settings.</p>
+    </div>`;
   }
 }
 

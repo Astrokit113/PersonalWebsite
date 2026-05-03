@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob:; img-src * data: blob:; font-src * data: blob:; media-src * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline';" />
 
     <!-- Site Title -->
     <title>Rose's Atelier</title>
@@ -49,6 +50,7 @@
                         Autistic ADHD Enthusiast that loves Art too much. Being curious is my speciality. Hope you enjoy
                         your momentary stay here, friends ( •̀ ω •́ )✧
                     </p>
+                    <button id="themeToggle" style="width: 100%; margin-top: 10px; padding: 8px;">Change Web Mode!</button>
                 </div>
             </div>
             <nav>
@@ -58,6 +60,7 @@
                 <a href="https://backloggd.com/u/RoxyRoseline/">Backloggd</a>
                 <a href="https://letterboxd.com/f_lux/">Letterboxd</a>
                 <a href="https://redforroseline.neocities.org/blog/">Blog</a>
+                <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-41235-1c">Guestbook</a>
                 <!-- most likely will drop this, doesn't work well on mobile -->
                 <!--<details>
                         <summary>dropdown</summary>
@@ -763,9 +766,11 @@
     <footer>2025. bloggy template by <a href="https://vgen.co/asuraid">asuraid</a>.</footer>
 
     <!-- Scroll to Top -->
-    <script src="../js/scroll-to-top.js"></script>
+    <script src="/js/scroll-to-top.js"></script>
     <!-- Preload Images -->
-    <script src="../js/preload-images.js"></script>
+    <script src="/js/preload-images.js"></script>
+    <!-- Theme Toggle -->
+    <script src="/js/theme-toggle.js"></script>
 </body>
 
 </html>
