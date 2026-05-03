@@ -44,8 +44,44 @@
 
     --footer-text: #000000;
     --footer-link: #891212;
+}
 
-    @media (prefers-color-scheme: dark) {
+html[data-theme="dark"] {
+    --font-color: #ecdddd;
+
+    --focus-color: #e81f1f;
+
+    --header-color: #dd5e85;
+    --h1-deco: url(https://files.catbox.moe/w8vuu4.webp);
+    --h2-deco: url(https://files.catbox.moe/dcuirc.webp);
+
+    --bold: #f53e84;
+    --italics: #cb5382;
+    --blockquote: #101010;
+    --accent: #b21c0e;
+    --font-on-accent: #ffffff;
+
+    --quote-color: #400000;
+
+    --background: #141515;
+    --background-image: url(https://sadhost.neocities.org/images/tiles/stars6.webp);
+
+    --links: #f77abd;
+    --links-hover: #ffffff;
+
+    --borders: #cb0e40;
+    --body-bg: #1a1818;
+    --body-shadows: rgba(242, 125, 183, 0.41);
+
+    --nav-bg-hover: #620d1d;
+    --nav-text-hover: #ffffff;
+
+    --footer-text: #ffffff;
+    --footer-link: #ea7878;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) {
         --font-color: #ecdddd;
 
         --focus-color: #e81f1f;

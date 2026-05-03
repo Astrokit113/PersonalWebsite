@@ -46,7 +46,6 @@
     --footer-link: #891212;
 }
 
-html[data-theme="dark"],
 html[data-theme="dark"] {
     --font-color: #ecdddd;
 
