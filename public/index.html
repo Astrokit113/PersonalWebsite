@@ -6,6 +6,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self'; 
+    script-src 'self' 'unsafe-inline'; 
+    connect-src 'self' data: blob: https://api.imgbb.com https://docs.google.com; 
+    img-src 'self' data: https://i.ibb.co;
+">
 
     <!-- Site Title -->
     <title>Rose's Atelier</title>
@@ -59,6 +65,7 @@
                 <a href="https://backloggd.com/u/RoxyRoseline/">Backloggd</a>
                 <a href="https://letterboxd.com/f_lux/">Letterboxd</a>
                 <a href="https://redforroseline.neocities.org/blog/">Blog</a>
+                <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-41235-1c">Guestbook</a>
                 <!-- most likely will drop this, doesn't work well on mobile -->
                 <!--<details>
                         <summary>dropdown</summary>
