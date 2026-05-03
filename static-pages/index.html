@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Site Version: 2026-05-03 Enhanced Theme Script with Inline Styles -->
     <!-- Setting character encoding and viewport size. Do not remove. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -772,32 +773,46 @@
     <!-- Theme Toggle -->
     <script>
 (function() {
-  function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    document.documentElement.classList.remove('theme-light', 'theme-dark');
-    document.documentElement.classList.add('theme-' + theme);
-    document.documentElement.style.colorScheme = theme;
+  const html = document.documentElement;
+
+  function getTheme() {
+    return localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  }
+
+  function setTheme(theme) {
+    // Set attribute
+    html.setAttribute('data-theme', theme);
+    // Set style.colorScheme
+    html.style.colorScheme = theme;
+    // Add class
+    html.classList.remove('theme-light', 'theme-dark');
+    html.classList.add('theme-' + theme);
+    // Save to localStorage
     localStorage.setItem('theme', theme);
+    // Dispatch event for iframe
     window.dispatchEvent(new CustomEvent('themechanged', { detail: { theme } }));
+    // Add inline style backup
+    if (theme === 'dark') {
+      document.body.style.backgroundColor = '#1a1818';
+      document.body.style.color = '#ecdddd';
+    } else {
+      document.body.style.backgroundColor = '#f7f3f3';
+      document.body.style.color = '#1f1c1c';
+    }
   }
 
-  function initTheme() {
-    const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = saved || (prefersDark ? 'dark' : 'light');
-    applyTheme(theme);
-  }
+  // Initialize immediately on page load
+  setTheme(getTheme());
 
-  initTheme();
-
+  // Handle button clicks after DOM is ready
   document.addEventListener('DOMContentLoaded', function() {
     const btn = document.getElementById('themeToggle');
     if (btn) {
       btn.addEventListener('click', function(e) {
         e.preventDefault();
-        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const current = getTheme();
         const next = current === 'light' ? 'dark' : 'light';
-        applyTheme(next);
+        setTheme(next);
       });
     }
   });
