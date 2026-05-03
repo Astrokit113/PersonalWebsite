@@ -771,33 +771,36 @@
     <script src="/js/preload-images.js"></script>
     <!-- Theme Toggle -->
     <script>
+window.applyTheme = function(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  document.documentElement.style.colorScheme = theme;
+  localStorage.setItem('theme', theme);
+  console.log('Theme applied:', theme);
+};
+
+window.initTheme = function() {
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  window.applyTheme(theme);
+  console.log('Theme initialized:', theme);
+};
+
+window.initTheme();
+
 document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('themeToggle');
-  const htmlElement = document.documentElement;
-
-  function applyTheme(theme) {
-    htmlElement.setAttribute('data-theme', theme);
-    htmlElement.style.colorScheme = theme;
-    localStorage.setItem('theme', theme);
-  }
-
-  function initTheme() {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = savedTheme || (prefersDark ? 'dark' : 'light');
-    applyTheme(theme);
-  }
-
   if (themeToggle) {
     themeToggle.addEventListener('click', function(e) {
       e.preventDefault();
-      const currentTheme = htmlElement.getAttribute('data-theme') || localStorage.getItem('theme') || 'light';
+      const currentTheme = document.documentElement.getAttribute('data-theme') || localStorage.getItem('theme') || 'light';
       const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      applyTheme(newTheme);
+      console.log('Button clicked, toggling from', currentTheme, 'to', newTheme);
+      window.applyTheme(newTheme);
     });
+  } else {
+    console.warn('Theme toggle button not found with id="themeToggle"');
   }
-
-  initTheme();
 });
     </script>
 </body>
