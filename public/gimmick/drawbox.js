@@ -118,12 +118,11 @@ document.getElementById("submit").addEventListener("click", async function () {
   statusText.textContent = "Uploading...";
 
   try {
-    const imageData = canvas.toDataURL("image/png");
-    // ImgBB requires the base64 string without the data URI prefix
-    const base64Image = imageData.split(',')[1]; 
-    
+    // Convert canvas to blob (proper format for image upload)
+    const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/png"));
+
     const formData = new FormData();
-    formData.append("image", base64Image);
+    formData.append("image", blob);
 
     // Upload to ImgBB
     const response = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB_API_KEY}`, {
@@ -132,7 +131,7 @@ document.getElementById("submit").addEventListener("click", async function () {
     });
 
     const data = await response.json();
-    if (!data.success) throw new Error("ImgBB upload failed");
+    if (!data.success) throw new Error(`ImgBB error: ${data.error?.message || "Upload failed"}`);
 
     const imageUrl = data.data.url;
     console.log("Uploaded image URL:", imageUrl);
@@ -151,9 +150,9 @@ document.getElementById("submit").addEventListener("click", async function () {
     alert("Image uploaded and submitted successfully ☻");
     location.reload();
   } catch (error) {
-    console.error(error);
-    statusText.textContent = "Error uploading image.";
-    alert("Error uploading image or submitting to Google Form.");
+    console.error("Upload error:", error);
+    statusText.textContent = `Error: ${error.message}`;
+    alert(`Error: ${error.message}`);
   } finally {
     submitButton.disabled = false;
   }
@@ -173,11 +172,12 @@ async function fetchImages() {
     const gallery = document.getElementById("gallery");
     gallery.innerHTML = "";
     rows.reverse().forEach((row) => {
-      const columns = row.split(",");
+      // Parse CSV properly: handle quoted fields
+      const columns = row.match(/(".*?"|[^,]*)/g)?.map(col => col.trim().replace(/^"|"$/g, "")) || [];
       if (columns.length < 2) return;
 
-      const timestamp = columns[0].trim();
-      const imgUrl = columns[1].trim().replace(/"/g, "");
+      const timestamp = columns[0];
+      const imgUrl = columns[1];
 
       if (imgUrl.startsWith("http")) {
         const div = document.createElement("div");
