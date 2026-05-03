@@ -27,6 +27,28 @@ module.exports = async function (eleventyConfig) {
   // Custom permalink structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 
+  // 1. Filter for the machine-readable datetime attribute
+  eleventyConfig.addFilter("isoDate", function(dateObj) {
+    if (!dateObj) return "";
+    return new Date(dateObj).toISOString();
+  });
+
+  // 2. Filter for the human-readable text on your site
+  eleventyConfig.addFilter("displayDate", function(dateObj) {
+    if (!dateObj) return "";
+    return new Date(dateObj).toLocaleString('en-US', { 
+        timeZone: 'Asia/Jakarta', // Keeps your timestamps pinned to WIB
+        dateStyle: 'medium', 
+        timeStyle: 'short' 
+    });
+  });
+
+  // Create a safe, pre-reversed copy of your posts
+  eleventyConfig.addCollection("postsReversed", function(collectionApi) {
+    // The [...] creates a clone of the array so we don't mutate the original!
+    return [...collectionApi.getFilteredByTag("post")].reverse();
+  });
+
   // Minify HTML 
   eleventyConfig.addTransform("htmlmin", function (content) {
     if ((this.page.outputPath || "").endsWith(".html")) {
