@@ -164,20 +164,39 @@ async function fetchImages() {
     return;
   }
 
+  console.log("Fetching from:", GOOGLE_SHEET_URL);
+
   try {
     const response = await fetch(GOOGLE_SHEET_URL);
+    console.log("Fetch response status:", response.status);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
     const csvText = await response.text();
+    console.log("CSV text length:", csvText.length);
+    console.log("CSV preview:", csvText.substring(0, 200));
+
     const rows = csvText.split("\n").slice(1);
+    console.log("Total rows:", rows.length);
 
     const gallery = document.getElementById("gallery");
     gallery.innerHTML = "";
-    rows.reverse().forEach((row) => {
-      // Parse CSV properly: handle quoted fields
-      const columns = row.match(/(".*?"|[^,]*)/g)?.map(col => col.trim().replace(/^"|"$/g, "")) || [];
-      if (columns.length < 2) return;
 
-      const timestamp = columns[0];
-      const imgUrl = columns[1];
+    let imageCount = 0;
+    rows.reverse().forEach((row) => {
+      if (!row.trim()) return;
+
+      // Split only on first comma to avoid breaking URLs
+      const firstCommaIndex = row.indexOf(",");
+      if (firstCommaIndex === -1) return;
+
+      const timestamp = row.substring(0, firstCommaIndex).trim();
+      let imgUrl = row.substring(firstCommaIndex + 1).trim();
+      imgUrl = imgUrl.replace(/^"|"$/g, "");
+
+      console.log("Timestamp:", timestamp, "URL:", imgUrl);
 
       if (imgUrl.startsWith("http")) {
         const div = document.createElement("div");
@@ -188,11 +207,14 @@ async function fetchImages() {
                     <p>${timestamp}</p>
                 `;
         gallery.appendChild(div);
+        imageCount++;
       }
     });
+
+    console.log("Images loaded:", imageCount);
   } catch (error) {
     console.error("Error fetching images:", error);
-    document.getElementById("gallery").textContent = "Failed to load images.";
+    document.getElementById("gallery").textContent = "Failed to load images. Check console for details.";
   }
 }
 
