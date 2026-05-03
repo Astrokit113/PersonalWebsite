@@ -231,15 +231,20 @@
 
         if (isDark) {
           document.documentElement.setAttribute("data-theme", "dark");
+          document.documentElement.classList.remove('theme-light');
+          document.documentElement.classList.add('theme-dark');
           document.documentElement.style.colorScheme = "dark";
         } else {
           document.documentElement.setAttribute("data-theme", "light");
+          document.documentElement.classList.remove('theme-dark');
+          document.documentElement.classList.add('theme-light');
           document.documentElement.style.colorScheme = "light";
         }
       }
 
       applyDrawboxTheme();
       window.addEventListener("storage", applyDrawboxTheme);
+      window.addEventListener("themechanged", applyDrawboxTheme);
       window
         .matchMedia("(prefers-color-scheme: dark)")
         .addEventListener("change", applyDrawboxTheme);
