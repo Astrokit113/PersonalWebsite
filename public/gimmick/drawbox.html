@@ -63,7 +63,7 @@
       }
 
       .image-container p {
-        color: #ffffff;
+        color: var(--font-color);
         margin: 5px 0 0 0;
         font-size: 0.85em;
         background: rgba(0, 0, 0, 0.6);
@@ -137,7 +137,7 @@
       }
 
       label {
-        color: #ffffff;
+        color: var(--font-color);
         margin-right: 8px;
         font-weight: bold;
       }
@@ -220,5 +220,27 @@
     <div id="gallery"></div>
 
     <script src="/gimmick/drawbox.js"></script>
+    <script>
+      function applyDrawboxTheme() {
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        const isDark =
+          savedTheme === "dark" || (savedTheme === null && prefersDark);
+
+        if (isDark) {
+          document.documentElement.style.colorScheme = "dark";
+        } else {
+          document.documentElement.style.colorScheme = "light";
+        }
+      }
+
+      applyDrawboxTheme();
+      window.addEventListener("storage", applyDrawboxTheme);
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", applyDrawboxTheme);
+    </script>
   </body>
 </html>
