@@ -14,6 +14,11 @@ module.exports = async function (eleventyConfig) {
     return collectionApi.getFilteredByTag("post");
   });
 
+  // Collection for TTRPG posts
+  eleventyConfig.addCollection("ttrpgPosts", function (collectionApi) {
+    return collectionApi.getFilteredByTag("ttrpg");
+  });
+
   // Tell 11ty to copy your CSS and Images to the public folder
   eleventyConfig.addPassthroughCopy({ "static-pages/css/style.css": "style.css" });
   eleventyConfig.addPassthroughCopy({ "static-pages/normalize.css": "normalize.css" });
@@ -47,6 +52,11 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addCollection("postsReversed", function(collectionApi) {
     // The [...] creates a clone of the array so we don't mutate the original!
     return [...collectionApi.getFilteredByTag("post")].reverse();
+  });
+
+  // Create a safe, pre-reversed copy of your TTRPG posts
+  eleventyConfig.addCollection("ttrpgPostsReversed", function(collectionApi) {
+    return [...collectionApi.getFilteredByTag("ttrpg")].reverse();
   });
 
   // Minify HTML 

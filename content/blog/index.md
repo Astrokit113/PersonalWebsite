@@ -5,7 +5,10 @@ title: Blog Homepage
 
 ## Blog Posts
 
-<p><a href="/feed.xml">Subscribe to my RSS feed</a></p>
+<p>
+  <a href="/feed.xml">Subscribe to all posts RSS</a> | 
+  <a href="/feed-ttrpg.xml">Subscribe to TTRPG RSS</a>
+</p>
 
 <ul class="post-list">
 {% for post in collections.postsReversed %}
