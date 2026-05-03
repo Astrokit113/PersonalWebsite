@@ -118,16 +118,16 @@ document.getElementById("submit").addEventListener("click", async function () {
   statusText.textContent = "Uploading...";
 
   try {
-    // Convert canvas to blob (proper format for image upload)
     const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/png"));
 
     const formData = new FormData();
     formData.append("image", blob);
 
-    // Upload to ImgBB
     const response = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB_API_KEY}`, {
       method: "POST",
       body: formData,
+    }).catch(err => {
+      throw new Error(`Upload failed: ${err.message}. This might be due to network restrictions. Try allowing api.imgbb.com in your security settings.`);
     });
 
     const data = await response.json();
@@ -136,14 +136,15 @@ document.getElementById("submit").addEventListener("click", async function () {
     const imageUrl = data.data.url;
     console.log("Uploaded image URL:", imageUrl);
 
-    // Submit the URL to Google Forms
     const googleFormData = new FormData();
     googleFormData.append(ENTRY_ID, imageUrl);
 
     await fetch(GOOGLE_FORM_URL, {
       method: "POST",
       body: googleFormData,
-      mode: "no-cors", // Required to avoid CORS errors with Google Forms
+      mode: "no-cors",
+    }).catch(err => {
+      console.warn("Form submission error (may still have succeeded):", err);
     });
 
     statusText.textContent = "Upload successful!";
@@ -188,7 +189,6 @@ async function fetchImages() {
     rows.reverse().forEach((row) => {
       if (!row.trim()) return;
 
-      // Split only on first comma to avoid breaking URLs
       const firstCommaIndex = row.indexOf(",");
       if (firstCommaIndex === -1) return;
 
@@ -214,7 +214,11 @@ async function fetchImages() {
     console.log("Images loaded:", imageCount);
   } catch (error) {
     console.error("Error fetching images:", error);
-    document.getElementById("gallery").textContent = "Failed to load images. Check console for details.";
+    const gallery = document.getElementById("gallery");
+    gallery.innerHTML = `<div style="color: var(--font-color); padding: 10px; text-align: center;">
+      <p>Unable to load images due to network restrictions.</p>
+      <p style="font-size: 0.9em;">If you're behind a firewall or corporate network, try allowing <code>docs.google.com</code> in your security settings.</p>
+    </div>`;
   }
 }
 
