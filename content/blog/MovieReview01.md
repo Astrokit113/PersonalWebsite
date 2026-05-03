@@ -1,7 +1,7 @@
 ---
 layout: article_1.njk
 title: April Movie Review
-date: 2026-04-22917:47:50+07:00
+date: 2026-04-22T17:47:50+07:00
 tags: post
 permalink: /blog/Blog-Title.html
 description: Been into the movies and reviewing 3 of the movies that Rose watched and anticipated.
