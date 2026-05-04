@@ -3,7 +3,7 @@ layout: article_1.njk
 title: April Movie Review
 date: 2026-04-22T17:47:50+07:00
 tags: post
-permalink: /blog/Blog-Title.html
+permalink: /blog/MovieReview01.html
 description: Been into the movies and reviewing 3 of the movies that Rose watched and anticipated.
 ---
 ## I forgot how fun movies are.
