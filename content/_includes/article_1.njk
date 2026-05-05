@@ -14,11 +14,9 @@ layout: myTemplate.njk
 
   {% if not noComments %}
   <section id="comments-section" style="margin-top: 40px; padding-top: 30px; border-top: 3px solid #b21c0e;">
-    <div id="commentbox"></div>
-    <script async src="https://unpkg.com/commentbox.io/dist/commentBox.umd.js"></script>
-    <script>
-      commentBox('5703801856065536-proj');
-    </script>
+    <h3 style="color: #DA587E; font-family: 'Nunito', sans-serif;">Comments</h3>
+    <div id="commentbox" data-projectid="5703801856065536-proj"></div>
   </section>
+  <script async src="https://unpkg.com/commentbox.io/dist/commentBox.umd.js"></script>
   {% endif %}
 </article>
