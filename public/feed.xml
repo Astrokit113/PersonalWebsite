@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/rss-style.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>@redforroseline Blog</title>
@@ -7,7 +6,7 @@
     <description>Personal blog covering anime, games, and more</description>
     <language>en-us</language>
     <atom:link href="https://redforroseline.neocities.org/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 05 May 2026 07:52:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 13:20:38 GMT</lastBuildDate>
     
       <item>
         <title>Ramblings about TTRPG</title>
@@ -26,7 +25,7 @@
       </item>
     
       <item>
-        <title>AnimeUpdate01</title>
+        <title>Anime I've been watching 01</title>
         <link>https://redforroseline.neocities.org/blog/AnimeUpdate01.html</link>
         <description>Some of my most hyped anime this season that I will see religiously. These series I've loved before and I'm very hyped to see the future.</description>
         <pubDate>Wed, 08 Apr 2026 00:37:16 GMT</pubDate>

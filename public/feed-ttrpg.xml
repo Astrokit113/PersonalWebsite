@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/rss-style.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>@redforroseline Blog - TTRPG</title>
@@ -7,7 +6,7 @@
     <description>TTRPG blog posts</description>
     <language>en-us</language>
     <atom:link href="https://redforroseline.neocities.org/feed-ttrpg.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 05 May 2026 07:52:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 13:20:38 GMT</lastBuildDate>
     
       <item>
         <title>Ramblings about TTRPG</title>

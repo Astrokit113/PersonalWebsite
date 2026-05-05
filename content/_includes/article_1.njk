@@ -12,13 +12,13 @@ layout: myTemplate.njk
 
   {{ content | safe }}
 
-  {% if page.url != "/blog/" %}
-  <div id="commentbox"></div>
-  <script src="https://unpkg.com/commentbox.io/dist/commentBox.umd.js"></script>
-  <script>
-    commentBox('5703801856065536-proj', {
-      backgroundColor: '#470a0a'
-    });
-  </script>
+  {% if not noComments %}
+  <section id="comments-section" style="margin-top: 40px; padding-top: 30px; border-top: 3px solid #b21c0e;">
+    <div id="commentbox"></div>
+    <script async src="https://unpkg.com/commentbox.io/dist/commentBox.umd.js"></script>
+    <script>
+      commentBox('5703801856065536-proj');
+    </script>
+  </section>
   {% endif %}
 </article>

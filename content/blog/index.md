@@ -1,6 +1,7 @@
 ---
 layout: article_1.njk
 title: Blog Homepage
+noComments: true
 ---
 
 ## Blog Posts
