@@ -757,7 +757,7 @@
 
                 <p>Trying to implement a drawbox, this should be easy? Let's see.</p>
 
-                <iframe src="/gimmick/drawbox.html" width="100%" height="600px" style="border:none; overflow:auto;""></iframe>
+                <iframe src="/gimmick/drawbox.html" width="100%" height="600px" style="border:none; overflow:auto;"></iframe>
 
 
             </section>    
@@ -771,53 +771,7 @@
     <!-- Preload Images -->
     <script src="/js/preload-images.js"></script>
     <!-- Theme Toggle -->
-    <script>
-(function() {
-  const html = document.documentElement;
-
-  function getTheme() {
-    return localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  }
-
-  function setTheme(theme) {
-    // Set attribute
-    html.setAttribute('data-theme', theme);
-    // Set style.colorScheme
-    html.style.colorScheme = theme;
-    // Add class
-    html.classList.remove('theme-light', 'theme-dark');
-    html.classList.add('theme-' + theme);
-    // Save to localStorage
-    localStorage.setItem('theme', theme);
-    // Dispatch event for iframe
-    window.dispatchEvent(new CustomEvent('themechanged', { detail: { theme } }));
-    // Add inline style backup
-    if (theme === 'dark') {
-      document.body.style.backgroundColor = '#1a1818';
-      document.body.style.color = '#ecdddd';
-    } else {
-      document.body.style.backgroundColor = '#f7f3f3';
-      document.body.style.color = '#1f1c1c';
-    }
-  }
-
-  // Initialize immediately on page load
-  setTheme(getTheme());
-
-  // Handle button clicks after DOM is ready
-  document.addEventListener('DOMContentLoaded', function() {
-    const btn = document.getElementById('themeToggle');
-    if (btn) {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const current = getTheme();
-        const next = current === 'light' ? 'dark' : 'light';
-        setTheme(next);
-      });
-    }
-  });
-})();
-    </script>
+    <script src="/js/theme-toggle.js"></script>
 </body>
 
 </html>

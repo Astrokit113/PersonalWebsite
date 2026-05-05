@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', function() {
     htmlElement.setAttribute('data-theme', theme);
     htmlElement.style.colorScheme = theme;
     localStorage.setItem('theme', theme);
+    window.dispatchEvent(new CustomEvent('themechanged', { detail: { theme } }));
+    if (theme === 'dark') {
+      document.body.style.backgroundColor = '#1a1818';
+      document.body.style.color = '#ecdddd';
+    } else {
+      document.body.style.backgroundColor = '#f7f3f3';
+      document.body.style.color = '#1f1c1c';
+    }
   }
 
   function initTheme() {
