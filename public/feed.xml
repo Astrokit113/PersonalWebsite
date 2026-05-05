@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/rss-style.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>@redforroseline Blog</title>
+    <link>https://redforroseline.neocities.org</link>
+    <description>Personal blog covering anime, games, and more</description>
+    <language>en-us</language>
+    <atom:link href="https://redforroseline.neocities.org/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 May 2026 07:52:33 GMT</lastBuildDate>
+    
+      <item>
+        <title>Ramblings about TTRPG</title>
+        <link>https://redforroseline.neocities.org/blog/TTRPGEsperience01.html</link>
+        <description>I ramble about the local TTRPG scene and the hurdles of newcomers to this hobby, and how we can potentially bridge that gap altogether</description>
+        <pubDate>Mon, 04 May 2026 12:36:52 GMT</pubDate>
+        <guid>https://redforroseline.neocities.org/blog/TTRPGEsperience01.html</guid>
+      </item>
+    
+      <item>
+        <title>April Movie Review</title>
+        <link>https://redforroseline.neocities.org/blog/MovieReview01.html</link>
+        <description>Been into the movies and reviewing 3 of the movies that Rose watched and anticipated.</description>
+        <pubDate>Wed, 22 Apr 2026 10:47:50 GMT</pubDate>
+        <guid>https://redforroseline.neocities.org/blog/MovieReview01.html</guid>
+      </item>
+    
+      <item>
+        <title>AnimeUpdate01</title>
+        <link>https://redforroseline.neocities.org/blog/AnimeUpdate01.html</link>
+        <description>Some of my most hyped anime this season that I will see religiously. These series I've loved before and I'm very hyped to see the future.</description>
+        <pubDate>Wed, 08 Apr 2026 00:37:16 GMT</pubDate>
+        <guid>https://redforroseline.neocities.org/blog/AnimeUpdate01.html</guid>
+      </item>
+    
+      <item>
+        <title>What Is Rose Playing?! 01</title>
+        <link>https://redforroseline.neocities.org/blog/Game-Update-01.html</link>
+        <description>A short update on Rose's gaming experience for this week. It's pretty fun!</description>
+        <pubDate>Mon, 06 Apr 2026 05:23:00 GMT</pubDate>
+        <guid>https://redforroseline.neocities.org/blog/Game-Update-01.html</guid>
+      </item>
+    
+  </channel>
+</rss>

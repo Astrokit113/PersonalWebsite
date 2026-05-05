@@ -4,7 +4,7 @@ const htmlmin = require("html-minifier-terser");
 module.exports = async function (eleventyConfig) {
   const isProduction = process.env.ELEVENTY_ENV === 'production';
   eleventyConfig.addGlobalData("isProduction", isProduction);
-  
+
   // 2. Dynamically import the ESM plugin inside the function block
   const pluginRss = await import("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss.default);
@@ -29,6 +29,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "js": "js" });
   eleventyConfig.addPassthroughCopy({ "gimmick": "gimmick" });
   eleventyConfig.addPassthroughCopy({ "static-pages/index.html": "index.html" });
+  eleventyConfig.addPassthroughCopy({ "content/rss-style.xsl": "rss-style.xsl" });
 
   // Custom permalink structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
@@ -42,11 +43,17 @@ module.exports = async function (eleventyConfig) {
   // 2. Filter for the human-readable text on your site
   eleventyConfig.addFilter("displayDate", function(dateObj) {
     if (!dateObj) return "";
-    return new Date(dateObj).toLocaleString('en-US', { 
+    return new Date(dateObj).toLocaleString('en-US', {
         timeZone: 'Asia/Jakarta', // Keeps your timestamps pinned to WIB
-        dateStyle: 'medium', 
-        timeStyle: 'short' 
+        dateStyle: 'medium',
+        timeStyle: 'short'
     });
+  });
+
+  // RSS Date filter (RFC 822 format)
+  eleventyConfig.addFilter("rssDate", function(dateObj) {
+    if (!dateObj) return "";
+    return new Date(dateObj).toUTCString();
   });
 
   // Create a safe, pre-reversed copy of your posts

@@ -15,6 +15,9 @@ title: Blog Homepage
   <li>
     <a href="{{ post.url }}" class="post-title">{{ post.data.title }}</a>
     <time class="post-date">{{ post.date }}</time>
+    {% if post.data.description %}
+      <p class="post-description">{{ post.data.description }}</p>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>

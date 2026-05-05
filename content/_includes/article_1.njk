@@ -11,4 +11,14 @@ layout: myTemplate.njk
   </div>
 
   {{ content | safe }}
+
+  {% if page.url != "/blog/" %}
+  <div id="commentbox"></div>
+  <script src="https://unpkg.com/commentbox.io/dist/commentBox.umd.js"></script>
+  <script>
+    commentBox('5703801856065536-proj', {
+      backgroundColor: '#470a0a'
+    });
+  </script>
+  {% endif %}
 </article>

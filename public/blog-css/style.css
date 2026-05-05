@@ -518,3 +518,15 @@ footer {
     opacity:100%;
   }
 }
+
+/* Commentbox.io styling */
+#commentbox {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 3px solid var(--border-color);
+}
+
+/* Style commentbox iframe to match site theme */
+#commentbox iframe {
+  border-color: var(--border-color) !important;
+}
