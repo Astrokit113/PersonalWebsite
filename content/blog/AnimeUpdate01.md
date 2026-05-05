@@ -1,6 +1,6 @@
 ---
 layout: article_1.njk
-title: AnimeUpdate01
+title: Anime I've been watching 01
 date: 2026-04-08T07:37:16+07:00
 tags:
   - post
@@ -16,7 +16,7 @@ Without further ado, let's list out the more niche ones before going to the main
 
 ## Non-seasonals that I am watching!
 
-![](https://i.ibb.co/dsSf48wp/Magilumiere-Magical-Girls-Inc-2024.png)
+![Magilumere](https://i.ibb.co/dsSf48wp/Magilumiere-Magical-Girls-Inc-2024.png)
 
 If I were to pitch this to you, imagine a [[Magical girl]] but combined with start up / capitalism. It's an easy anime to watch, surprisingly comforting, and the worldbuilding is pretty damn cool. You can definitely see the parallels to an IT start-up (they're not being subtle lmao) but in a way, this anime tries to be positive and celebrate the start-up culture, which directly oppose the conversative big companies. In a way, that's pretty progressive? The pacing is also really nice, I like how the fights are, not realistic, but rather they're written very nicely. I'm not even mad or like reduce my expectations, but magiluemere supriringsly lives up. The minus is there are some production issues here and there, but hey, JC staff made this, but there's a certain merit and baseline for production.
 
@@ -27,9 +27,7 @@ Also, season two starts airing next season. Go watch it!!!
 
 ### Witch Hat Atelier
 
-![](https://i.ibb.co/CpB3rJQG/Witch-Hat-Atelier.jpg)
-
-
+![Witch Hat Atelier](https://i.ibb.co/CpB3rJQG/Witch-Hat-Atelier.jpg)
 
 I think if you have a mutual that's into anime, they will definitely pressure you to watch this. They are right. 
 
@@ -38,13 +36,13 @@ I can't forget the first time i've read to WHA's first chapters. It was genuinel
 ### Dorehodoro Season 2
 
 
-![](https://i.ibb.co/hFNsndNW/Dorehodoro.jpg)
+![Dorehodoro](https://i.ibb.co/hFNsndNW/Dorehodoro.jpg)
 
 I'm going to intentionally not fill this out. Watch it. The first season atleast. It is so much fun. 
 
 ### Akane Banashi
 
-![](https://i.ibb.co/qYqN6b1L/Akane-Banashi.jpg)
+![Akane Banashi](https://i.ibb.co/qYqN6b1L/Akane-Banashi.jpg)
 
 Passion anime is the reason this heart still beats. You can see when the author is truly passionate about the subjects they bring as theme for the manga. Akane boshi is one of them. I remember reading the manga, and I can feel the passion oozing through the images. AB is about rakugo, which is honestly amazing that the manga can capture it's essence. The anime is especially spectacular, living up to my expectations. It's funny. It's inspiring. It's entertaining. The voice acting is awesome, the visuals are spectacular, and the pacing is nice in the eyes too. I will definitely watch this weekly, and I'll glaze this anime until i die. Highly recommend even if you're not familiar with rakugo itself.
 
@@ -53,7 +51,7 @@ Watched the first two episodes and I cannot say anything but compliments. I love
 
 ### NSO
 
-![](https://i.ibb.co/9dMsxdb/Needy-Girl-Overdose.png)
+![Needy Streamer Overload](https://i.ibb.co/9dMsxdb/Needy-Girl-Overdose.png)
 
 
 #### TW: Self-harm
@@ -70,7 +68,7 @@ I suggest watching it and forming your opinion on it. Would love to see discussi
 
 ### The Story Between a Dumb Prefect and a High School Girl with an Inappropriate Skirt Length 
 
-![](https://i.ibb.co/szW0VYc/The-Story-Between-a-Dumb-Prefect-and-a-High-School-Girl-with-an-Inappropriate-Skirt-Length.jpg)
+![The Story Between a Dumb Prefect and a High School Girl with an Inappropriate Skirt Length ](https://i.ibb.co/szW0VYc/The-Story-Between-a-Dumb-Prefect-and-a-High-School-Girl-with-an-Inappropriate-Skirt-Length.jpg)
 
 If you've never heard of this, the first thought in your head would be "what the fuck is that title???". Have you heard of onani master kurosawa...? popularized by twitter user psycholad? Well, no worries if you've never heard. But either way, this anime is just a good, fun romance. It's those famous stoic male lead and gyaru female lead. The difference is, I trust the author, and I'm glad I did. Yes, they'll be endgame, and the journey there is equally fun too. I love their dynamic, I think I'm just biased, anything that this author puts is really fun. Check out the author's other title, "The world is about to end" (I think that's the title...?), it's romance but also about magic the gathering...yes...the most famous card game in the world arguebly....
 
@@ -78,7 +76,7 @@ If you've never heard of this, the first thought in your head would be "what the
 ### Botan Kamiina Fully Blossoms When Drunk
 
 
-![](https://i.ibb.co/qY0S0D6w/Botan-Kamiina-Fully-Blossoms-When-Drunk.jpg)
+![Botan Kamiina Fully Blossoms When Drunk](https://i.ibb.co/qY0S0D6w/Botan-Kamiina-Fully-Blossoms-When-Drunk.jpg)
 
 College Yuri. Artstyle of Boochi the rock. Awesome production quality. If you LOVE yuri, this is a good one. Go watch it.
 
@@ -86,20 +84,20 @@ College Yuri. Artstyle of Boochi the rock. Awesome production quality. If you LO
 
 ### Ganbare! Nakamura kun
 
-![](https://i.ibb.co/Q38ytt0b/Ganbare-Nakamura-kun.jpg)
+![Ganbare! Nakamura kun](https://i.ibb.co/Q38ytt0b/Ganbare-Nakamura-kun.jpg)
 
 ### Niwatori Fighter
 
-![](https://i.ibb.co/DDssVzm0/Niwatori-Fighter.jpg)
+![Niwatori Fighter](https://i.ibb.co/DDssVzm0/Niwatori-Fighter.jpg)
 
 
 ### Scenes from Awajima
 
-![](https://i.ibb.co/v49npKnw/Scenes-from-Awajima.jpg)
+![Scenes from Awajima](https://i.ibb.co/v49npKnw/Scenes-from-Awajima.jpg)
 
 
 ### Agents of the Four Seasons Dance of Spring
 
-![](https://i.ibb.co/6GjjjrM/[[AGENTS]]-of-the-Four-Seasons-Dance-of-Spring.jpg)
+![Agents of the Four Seasons Dance of Spring](https://i.ibb.co/6GjjjrM/[[AGENTS]]-of-the-Four-Seasons-Dance-of-Spring.jpg)
 
 Next blog, I'll write about the upcoming season and which anime I'm especially hyped!! (I spoiled one already!!!)

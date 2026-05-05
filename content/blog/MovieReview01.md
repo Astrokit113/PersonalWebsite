@@ -1,6 +1,6 @@
 ---
 layout: article_1.njk
-title: April Movie Review
+title: April Movie Review 
 date: 2026-04-22T17:47:50+07:00
 tags: post
 permalink: /blog/MovieReview01.html
