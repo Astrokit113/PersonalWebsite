@@ -1,4 +1,4 @@
-name: Deploy to Neocities
+name: Deploy static site
 
 on:
   push:
@@ -6,13 +6,60 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Deploy to neocities
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build 11ty site
+        run: npm run build
+
+      - name: Upload public artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: public
+          path: public
+
+  deploy-neocities:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download public artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: public
+
+      - name: Deploy to Neocities
         uses: bcomnes/deploy-to-neocities@v1
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           dist_dir: public
           cleanup: true
+
+  deploy-nekoweb:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download public artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: public
+          path: public
+
+      - name: Deploy to Nekoweb
+        uses: indiefellas/deploy2nekoweb@main
+        with:
+          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-domain: "redforroseline.nekoweb.org"
+          nekoweb-username: "redforroseline"
+          directory: "public"
