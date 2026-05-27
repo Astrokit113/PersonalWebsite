@@ -15,9 +15,42 @@ layout: myTemplate.njk
   {% if not noComments %}
   <section id="comments-section" style="margin-top: 40px; padding-top: 30px; border-top: 3px solid #b21c0e;">
     <h3 style="color: #ffffff; font-family: 'Nunito', sans-serif; margin-bottom: 20px;">Comments</h3>
-    <div class="commentbox"></div>
-    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-    <script>commentBox('5703801856065536-proj')</script>
-  </section>
-  {% endif %}
+    
+    <div id="comment-wrapper"></div>
+</section>
+
+<script>
+  (function () {
+    var host = window.location.hostname || '';
+    var wrapper = document.getElementById('comment-wrapper');
+    if (!wrapper) return;
+
+    function loadScript(src, onLoad) {
+      var script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      if (typeof onLoad === 'function') {
+        script.onload = onLoad;
+      }
+      script.onerror = function () {
+        console.warn('Comment script failed to load:', src);
+      };
+      document.head.appendChild(script);
+    }
+
+    if (host.indexOf('neocities') !== -1) {
+      wrapper.innerHTML = '<div class="commentbox"></div>';
+      loadScript('https://unpkg.com/commentbox.io/dist/commentBox.min.js', function () {
+        if (typeof commentBox === 'function') {
+          commentBox('5703801856065536-proj');
+        }
+      });
+    } else {
+      wrapper.innerHTML = '<div id="c_widget"></div>';
+      
+      // CHANGE THE LINE BELOW TO YOUR ACTUAL FILE PATH
+      loadScript('/path/to/comment-widget.js'); 
+    }
+  })();
+</script>
 </article>

@@ -30,6 +30,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "gimmick": "gimmick" });
   eleventyConfig.addPassthroughCopy({ "static-pages/index.html": "index.html" });
   eleventyConfig.addPassthroughCopy({ "content/rss-style.xsl": "rss-style.xsl" });
+  eleventyConfig.addPassthroughCopy({ "comment": "comment" });
 
   // Custom permalink structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
