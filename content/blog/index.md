@@ -7,8 +7,8 @@ noComments: true
 ## Blog Posts
 
 <p>
-  <a href="/feed.xml">Subscribe to all posts RSS</a> | 
-  <a href="/feed-ttrpg.xml">Subscribe to TTRPG RSS</a>
+  <a href="/rss.xml">Subscribe to all posts RSS</a> | 
+  <a href="/rss-ttrpg.xml">Subscribe to TTRPG RSS</a>
 </p>
 
 <ul class="post-list">
