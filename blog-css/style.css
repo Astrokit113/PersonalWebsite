@@ -111,13 +111,12 @@ details > summary,
   max-width:1200px;
   margin:auto;
 }
-
 main {
   /*here is the post width*/
   width: auto;
   /*this part means it ignores all other elements when figuring out where to sit on the page*/
   margin-left: 300px;
-  margin-right: 400px;
+  margin-right: 150px;
 }
 
 #sidebar {
