@@ -114,10 +114,10 @@ details > summary,
 
 main {
   /*here is the post width*/
-  max-width: 600px;
+  width: auto;
   /*this part means it ignores all other elements when figuring out where to sit on the page*/
   margin-left: 300px;
-  margin-right: auto;
+  margin-right: 400px;
 }
 
 #sidebar {
