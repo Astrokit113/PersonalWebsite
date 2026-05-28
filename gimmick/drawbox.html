@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob:; img-src * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline';" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob:; img-src * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline';"
+    />
     <title>Drawbox Mini</title>
     <style>
       :root {
@@ -45,6 +48,7 @@
         border-radius: 10px;
         background-color: white;
         display: block;
+        margin: 0 auto;
       }
 
       #gallery {
@@ -98,6 +102,7 @@
       .controls {
         margin-top: 10px;
         margin-bottom: 10px;
+        text-align: center;
       }
 
       button {
@@ -231,13 +236,13 @@
 
         if (isDark) {
           document.documentElement.setAttribute("data-theme", "dark");
-          document.documentElement.classList.remove('theme-light');
-          document.documentElement.classList.add('theme-dark');
+          document.documentElement.classList.remove("theme-light");
+          document.documentElement.classList.add("theme-dark");
           document.documentElement.style.colorScheme = "dark";
         } else {
           document.documentElement.setAttribute("data-theme", "light");
-          document.documentElement.classList.remove('theme-dark');
-          document.documentElement.classList.add('theme-light');
+          document.documentElement.classList.remove("theme-dark");
+          document.documentElement.classList.add("theme-light");
           document.documentElement.style.colorScheme = "light";
         }
       }
