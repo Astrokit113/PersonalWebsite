@@ -58,7 +58,6 @@
     height: 100%;
     padding: 15px;
     overflow: auto;
-    background-image: var(--site-bg);
     background-attachment: fixed;
     font-family: 'Trebuchet MS';
     font-size: 14px;
