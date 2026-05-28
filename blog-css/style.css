@@ -116,8 +116,6 @@ main {
   /*here is the post width*/
   max-width: 600px;
   /*this part means it ignores all other elements when figuring out where to sit on the page*/
-  position: absolute;
-  /*because of that, we gotta tell it how much room to leave for the sidebar*/
   margin-left: 300px;
   margin-right: auto;
 }
