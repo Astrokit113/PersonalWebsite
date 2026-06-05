@@ -11,14 +11,20 @@
       content="{{ description | default('The blog section of my personal web where I write things in more in-depth. Feel free to read about my rambles, I promise they&#39;re fun!') }}"
     />
 
-    <meta property="og:title" content="{{ title }}" />
-    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="{{ title | default('Roseline’s Blog') }}"
+    />
+    <meta property="og:type" content="article" />
     <meta
       property="og:description"
       content="{{ description | default('The blog section of my personal web where I write things in more in-depth. Feel free to read about my rambles, I promise they&#39;re fun!') }}"
     />
 
-    <meta property="og:image" content="https://files.catbox.moe/6rl2jm.png" />
+    {% if preview_image %}
+    <meta property="og:image" content="{{ preview_image }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {% endif %}
 
     <link
       href="/blog-css/style.css"
