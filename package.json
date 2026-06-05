@@ -20,6 +20,9 @@
     "webamp": "^2.2.0"
   },
   "version": "1.0.0",
+  "engines": {
+    "node": "24.x"
+  },
   "description": "My personal website.\r # Deployment: Thu Mar 26 05:46:22 SEAST 2026\r # Test deployment: Thu Mar 26 05:56:26 SEAST 2026",
   "main": ".eleventy.js",
   "repository": {
