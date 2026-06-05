@@ -5,7 +5,7 @@ date: 2026-06-04T07:40:38+07:00
 tags:
   - post
   - ttrpg
-permalink: /blog/TTRPGBlog03html
+permalink: /blog/TTRPGBlog03.html
 description: I explore how someone can learn how to roleplay flirting better.
 ---
 # You Need to Learn How to Flirt in Roleplay, Bro!
