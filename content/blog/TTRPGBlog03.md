@@ -11,6 +11,7 @@ preview_image: https://i.ibb.co/HLYmRdJf/h51udgr6ptbg1.png
 ---
 # You Need to Learn How to Flirt in Roleplay, Bro!
 
+
 ![](https://i.ibb.co/HLYmRdJf/h51udgr6ptbg1.png)
 
 
@@ -20,9 +21,9 @@ I think when trad games just hit you with "roll persuasion!", it removes this op
 
 ## Pre-Flirting
 
-I think that a lot of people (especially newcomers) assume that the alluring dynamic of the table is naturally formed after the characters create their group dynamic slowly and surely. It's like you're doing this unknown chemistry experiment and you're eager to see what the resulting compound is. And for some groups, that's totally fine! But, I think it would be better for us to actually establish a dynamic between our character and others.
+I think that a lot of people (especially newcomers) assume that the alluring dynamic of the table is naturally formed after the characters create their group dynamic slowly and surely. It's like you're doing this unknown chemistry experiment and you're eager to see what the resulting compound is. And for some groups, that's totally fine! But, I think it would be better for us to actually **establish** a dynamic between our character and others.
 
-I understand that you might be tempted to hide information regarding your character for the sake of future surprises and whatnot. But the thing is, this is not an actual life simulation. It's first and foremost a game, and we, the players, have a separate consciousness from our characters. I'd like to recommend players to initiate a conversation with your friends about what dynamic your characters have. If it isn't interesting, then do me a favor and tweak your character a bit until there's chemistry between y'all's characters. I've seen it happening many times, when characters in a party start feeling more like coworkers rather than  a close, intimate squad of hooligans. You need to put extra care into crafting your character to make it feel fun not only to yourself, but for others. TTRPGs are fun because at the end of the day, it's a collaborative experience. You're not playing in a Character.AI chatbox and just expecting others to bend to your will. Inquire with your friends and discuss how to make your dynamic feel entertaining and fresh!
+I understand that you might be tempted to hide information regarding your character for the sake of future surprises and whatnot. But the thing is, this is not an actual life simulation. It's first and foremost a game, and we, the players, have a separate consciousness from our characters. I'd like to recommend players to initiate a conversation with your friends about what dynamic your characters have. If it isn't interesting, then do me a favour and tweak your character a bit until there's chemistry between y'all's characters. I've seen it happening many times, when characters in a party start feeling more like co-workers rather than  a close, intimate squad of hooligans. You need to put extra care into crafting your character to make it feel fun not only to yourself, but for others. TTRPGs are fun because at the end of the day, it's a collaborative experience. You're not playing in a Character.AI chatbot and just expecting others to bend to your will. Inquire with your friends and discuss how to make your dynamic feel entertaining and fresh!
 
 ### Table Etiquette
 
@@ -48,6 +49,20 @@ For example, I could be a high school star student, and my friend is my rival. W
 
 In a flirting context, think of it as enabling god mode or always having nat 20s in persuasion rolls if you don't introduce conflict. It's boring if you can simply pass any check and everybody else will immediately fall in love with you. The introduction of conflict makes it so that because of the innate challenge presented in the dynamic, we can clearly see the progress of said relationship afterwards after quite some time. We see them slowly open up emotionally to each other, see how our characters slowly adapt or get influenced by other characters. This kind of thing doesn't happen in a day, but it's very rewarding! You can apply this similar concept in flirting interaction directly. At first, you have to start small and slow. You can't just go to a bar, see your first target, and say "I love you." Just like any other greetings, you start small, and slowly work your way up until you successfully captured their heart. That's the payoff.
 
+### Taking things up to another notch
+
+I actually consulted my friend for this, and they provided a very unique perspective on my method. It runs similary, which goes something like this:
+
+**What I Want and Why I Can't Get It From You.**
+
+Every character interacts with another for a reason. Could be that you work at the same organization, so getting along well will be better for future cooperation and for your reputation. Maybe your character is an ancient relic and you kinda want to use them for an eldritch ritual. There's a lot of reasons, but two characters doesn't *just* exist closely for no reason. But, there's a lot of ways to understand what why our characters, often times, can't get that thing that we desire from your character, even if it's our reason to be. Maybe our character want's closure but your friend's character suck at it. 
+
+This is cool, but what makes it even better if we introduce levels to this fundamental formula. We can evolve it to something like:
+
+**What I really want, What I think I want, What you think I want, Why you won't give me what you think I want, Why you won't give me what I really want**
+
+Levels. I know. Might be daunting at first. But this is a very helpful framework for characters who are really likeminded. These small details that each character have can hugely differentiate between them both. Friction comes in a relationship because of the difference of perception and expectations, and for a low-stakes conflict, this framework definitely helps differentiate between both of the characters. Hell, these friction can ultimately gives colour to a relationship in the first place. 
+
 ## In-Flirting
 
 The real bread and butter. My best tip for managing a flirt is to treat it like a ping pong game. You toss up tension, from your character, to your friend's character, and you prepare to receive said tension back and forth. The ball is your tension and you need to make sure you don't swing too hard, your friend's character can't catch it, or swing it too slow that your ball can't even pass the net.
@@ -66,16 +81,16 @@ A second tip is you can compliment their skills or personality rather than appea
 - "Most people miss that about you. I don't."
 - "Here. You dropped this." *(Said with a lingering gaze)*
 
-Some other misc. tips are to insert a bit of banter here and there to create (friendly) friction. You *have* to be specific with banter though. Like flirting itself, banter can thread the line between acceptable and harassment. Discuss with your friends on how far can you take a banter. Some specific phrases of banter can include:
+Another tip from me is to insert a bit of banter here and there to create (friendly) friction. You *have* to be specific with banter though. Like flirting itself, banter can thread the line between acceptable and harassment. Discuss with your friends on how far can you take a banter. Some specific phrases of banter can include:
 
 -  "Are you going to keep talking, or are you going to actually help me?"
 - "You're a distraction I really can't afford right now."
 - "I hate that you're right."
 - "Don't look at me like that.
 
-Banter are light-hearted at nature. Don't *actually* say full-on insults to their faces. It's like trying to poke someone at the cheek lightly. Too strong of a banter, and people will think your character is just spouting insults, and too many banters in a row just make you seem like a bully. Moderate it.
+Banters are light-hearted at nature. Don't *actually* say full-on insults to their faces. It's like trying to poke someone at the cheek lightly. Too strong of a banter, and people will think your character is just spouting insults, and too many banters in a row just make you seem like a bully. Moderate it.
 
-If you're not the type of person to say banter regularly, It would be hard to come up with lines on the spot. Practice writing banter lines that fits your character and the character that you want to banter with. It takes alot of time. It's the same thing as comedians writing their jokes. They refine it over and over for years, until they can get it right. Don't be afraid don't test out which one works and which one needs revision
+If you're not the type of person to say banter regularly, It would be hard to come up with lines on the spot. Practice writing banter lines that fits your character and the character that you want to banter with. It takes alot of time. It's the same thing as comedians writing their jokes. They refine it over and over for years, until they can get it right. Don't be afraid don't test out which one works and which one needs revision!
 
 Finally, when conversing back and forth, tease a little! Play up with their words, intentionally twist the meaning of their sentences. All these efforts to *piss* their character (in a fun way) is pretty damn fun rather than just a straightforward, conversation meant to just tick the checkboxes of necessity.
 
@@ -92,7 +107,7 @@ Another exclusive thing you can do is to use the game mechanics to support your 
 
 I wanted to discuss high tension, but that needs a separate guide/blog for that. This section feels very exclusive, and if you're at this point, I'm sure you already know how to balance things around your character's relationship. My take for this, is that there's a limit to the tension. At some point, the egg needs to break of it's shell and the banter has to stop, atleast momentarily. Flirting, bantering, is a tool for your characters to bond with. When you're sufficient enough, you don't need the tool anymore. Be genuine. Be straightforward about your character's feelings, and let the moment carry you both. 
 
-## Misc Flirting Tips
+## Misc. Flirting Tips
 
 Here are some tips that I don't think fit the categorization above, applicable whenever, wherever!
 
@@ -104,4 +119,8 @@ I think we are encouraged that flirting is a combination of talking and other no
 
 Repeat like a loop. I'd like to focus specifically on how to end the loop itself. Building tension can be something that rises slowly and surely, but at the peak of the climax, you can try to immediately cut it so that it feels unresolved, making you want more of these loops. In fact, don't resolve the tension, especially early on, because by actually leaving the tension unresolved, creates much more opportunities for your characters to interact again under the guise of “wanting to solve the tension”.
 
-`mklink /J "H:\Second Brain\1 Project\💻 Personal Web\blog" "H:\Dev\PersonalWebsite\content\blog"`
+## Closing Thoughts
+
+Personally, I think flirting is very fun, even if you know that the end result won't get anywhere. You can flirt with a specific goal in mind, by all means, but when I do it, I just do it because it's a fun thing to do that happens within my character's dynamic. It's fun when you have this *gap moe* that essentially happens when you *think* the dynamic of your characters are **A**, but turns out it's **B** on a deeper level. It's fun to switch from A to B, depending on the situation. It's fun to be dominant at flirting initially, but after a while, the dynamic is flipped! 
+
+Being flirty is just being witty, and it definitely helped me in my daily life actually. I get to think of comebacks faster, and I get to roast my friends more creatively. Thank you, roleplaying, for aiding me this. But again, for those who struggle with this, I had time to achieve this. Mostly just writing fanfiction if I'm being honest, which I take full pride to. But, at the end of the day, we're nerds anyways. I love it when we're awkward, when we *want* to flirt but ends up failing immediately and I get to laugh at myself for stuttering and messing up a flirting attempt. Take it easy lads, and just have fun at the table. 

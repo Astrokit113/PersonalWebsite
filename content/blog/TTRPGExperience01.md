@@ -5,7 +5,7 @@ date: 2026-05-04T19:36:52+07:00
 tags:
   - post
   - ttrpg
-permalink: /blog/TTRPGEsperience01.html
+permalink: /blog/{{title}}.html
 description: I ramble about the local TTRPG scene and the hurdles of newcomers to this hobby, and how we can potentially bridge that gap altogether.
 ---
 # TTRPG Scene is thriving locally, it's not like how I *imagined* ?
@@ -14,7 +14,7 @@ TTRPGS remain a somewhat niche hobby even at this age of post-pandemic, locally 
 
 Before we discuss further (and why we're talking about it in the first place), let's ask ourselves a simple question. What are the barriers of entry when you want to try TTRPGs? These are complex, don't get me wrong, and I'm sure other blogs have discussed this extensively, but here are my answers that are relevant to my next points:
 
-![Pexel](https://i.ibb.co/yB7PbbVL/pexels-will-wright-1832742-3857508.jpg)
+![Pexel|641](https://i.ibb.co/yB7PbbVL/pexels-will-wright-1832742-3857508.jpg)
 
 ## Let's break it down
 
