@@ -10,6 +10,9 @@ description: I explore how someone can learn how to roleplay flirting better.
 ---
 # You Need to Learn How to Flirt in Roleplay, Bro!
 
+![](https://i.ibb.co/HLYmRdJf/h51udgr6ptbg1.png)
+
+
 I think it's a recurring stereotype when a bard is a womanizer who dreams of flirting with every woman in the tavern. And that's cool and all, and for the longest time I thought when I had to play this kind of character, it would be natural for me. Others constantly praise me for essentially roleplaying a character that can flirt successfully, and I was confused at first. Mind you, I was also a nerd just like my friends, which means I don't really go out socially to drink, thus flirt or whatever. I've always had this formulaic approach (seeing that I'm autistic), but my friends keep asking me how to be a good flirt.
 
 I think when trad games just hit you with "roll persuasion!", it removes this opportunity to exert your PCs to flirt with their own style. So, in this blog, I'll be writing my approach on how to roleplay flirting better! I'm hoping most of the tips can also work on roleplay in general. So you too can roleplay just like those angsty live TTRPG play sessions you see on TikTok or Instagram reels!
