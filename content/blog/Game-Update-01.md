@@ -2,7 +2,9 @@
 layout: article_1.njk
 title: What Is Rose Playing?! 01
 date: 2026-04-06T12:23:00+07:00
-tags: post
+tags:
+  - post
+  - games
 permalink: /blog/Game-Update-01.html
 description: A short update on Rose's gaming experience for this week. It's pretty fun!
 ---

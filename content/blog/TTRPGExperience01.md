@@ -5,7 +5,7 @@ date: 2026-05-04T19:36:52+07:00
 tags:
   - post
   - ttrpg
-permalink: /blog/{{title}}.html
+permalink: /blog/TTRPGExperience01.html
 description: I ramble about the local TTRPG scene and the hurdles of newcomers to this hobby, and how we can potentially bridge that gap altogether.
 ---
 # TTRPG Scene is thriving locally, it's not like how I *imagined* ?
