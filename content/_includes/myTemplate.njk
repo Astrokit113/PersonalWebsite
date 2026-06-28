@@ -59,7 +59,7 @@
             </p>
 
             <div id="bio">
-              <p>Pronouns: She/him</p>
+              <p>Pronouns: She/Him</p>
               <p>Age: 21+</p>
               <p>
                 Site: <a href="/">https://redforroseline.nekoweb.org/</a> or
@@ -122,10 +122,10 @@
         </section>
 
         <section id="tag-filters" class="pinned">
-          <details open>
+          <details>
             <summary>tag filters</summary>
 
-            <details open>
+            <details class="tag-group tag-group--all">
               <summary>all posts</summary>
               <ul>
                 {% for post in collections.postsReversed %}
@@ -135,7 +135,7 @@
             </details>
 
             {% for group in collections.postsByTag %}
-            <details open>
+            <details class="tag-group">
               <summary>#{{ group.tag }}</summary>
               <ul>
                 {% for post in group.posts %}
@@ -156,5 +156,23 @@
 
       <footer>© 2026 [Roseline]</footer>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const groups = Array.from(document.querySelectorAll("#tag-filters .tag-group"));
+
+        groups.forEach(function (group) {
+          group.addEventListener("toggle", function () {
+            if (group.open) {
+              groups.forEach(function (other) {
+                if (other !== group) {
+                  other.open = false;
+                }
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
