@@ -12,6 +12,7 @@ preview_image: https://i.ibb.co/0VfXyQgc/image-psd-7.png
 
 ![](https://i.ibb.co/0VfXyQgc/image-psd-7.png)
 
+(might need to update this because I just found out the person that coined the term transhumanist is a eugenist. Jeez...)
 
 Have you ever seen in your campaign, that a villain in a cult that wants to transcend humanity, or seeing a cyborg changing their am for a robotic laser? I wouldn't say that transhumanist NPCs are the most common one, but moreoften it's common in media to just write a transhumanist character. You'll see mad scientists experimenting with subjects or himself, hating his own mortal flesh. You'll see in cyberpunk settings that people chrome themselves here and there. It's undeniable that transhumanist themes are often viewed as something cool, or philosophical, or even just the standard of a worldbuilding. it's like if you're making a villain, it's in one of the random tables of "hmm what should my BBEG's evil motivation?" This is adopted to every author out there, but when it comes to transgender NPCs (hell even villains), it's often rare. Why is it when you write a character replacing it's flesh arm with a metallic prosthesis or transferring soul to a better vessel is normalized, but changing your gender in a fantasy/scifi setting is seen as intimidating?
 
