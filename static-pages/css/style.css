@@ -410,7 +410,6 @@ blockquote {
     background: var(--blockquote);
     padding: var(--padding);
     margin: 1em 0.5em;
-    margin-bottom: 100px;
     border-left: 3px solid var(--borders);
     border-right: 3px solid var(--borders);
     text-align: center;
