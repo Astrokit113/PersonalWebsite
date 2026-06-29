@@ -238,6 +238,8 @@ main {
 main > section {
     position: relative;
     width: 100%;
+    max-height: 600px;
+    overflow-y: scroll;
     background-color: var(--body-bg);
     padding: var(--padding);
     border-radius: var(--border-radius);
@@ -408,6 +410,7 @@ blockquote {
     background: var(--blockquote);
     padding: var(--padding);
     margin: 1em 0.5em;
+    margin-bottom: 100px;
     border-left: 3px solid var(--borders);
     border-right: 3px solid var(--borders);
     text-align: center;
