@@ -1,5 +1,27 @@
 const htmlmin = require("html-minifier-terser");
 
+function buildPostsByTag(collectionApi) {
+  const posts = collectionApi.getFilteredByTag("post");
+  const grouped = new Map();
+
+  posts.forEach((post) => {
+    const tags = Array.isArray(post.data.tags) ? post.data.tags : [];
+
+    tags.forEach((tag) => {
+      if (tag === "post") return;
+      if (!grouped.has(tag)) grouped.set(tag, []);
+      grouped.get(tag).push(post);
+    });
+  });
+
+  return [...grouped.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([tag, postsForTag]) => ({
+      tag,
+      posts: [...postsForTag].reverse(),
+    }));
+}
+
 // 1. Make the export an async function so we can use 'await' inside it
 module.exports = async function (eleventyConfig) {
   const isProduction = process.env.ELEVENTY_ENV === 'production';
@@ -61,6 +83,11 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addCollection("postsReversed", function(collectionApi) {
     // The [...] creates a clone of the array so we don't mutate the original!
     return [...collectionApi.getFilteredByTag("post")].reverse();
+  });
+
+  // Group posts by their real front matter tags so the UI can render them dynamically
+  eleventyConfig.addCollection("postsByTag", function(collectionApi) {
+    return buildPostsByTag(collectionApi);
   });
 
   // Create a safe, pre-reversed copy of your TTRPG posts

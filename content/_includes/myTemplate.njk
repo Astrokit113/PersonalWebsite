@@ -59,7 +59,7 @@
             </p>
 
             <div id="bio">
-              <p>Pronouns: She/him</p>
+              <p>Pronouns: She/Him</p>
               <p>Age: 21+</p>
               <p>
                 Site: <a href="/">https://redforroseline.nekoweb.org/</a> or
@@ -184,40 +184,51 @@
       <main class="tagged">
         <section id="status" class="pinned">
           <details open>
-            <summary>status <time>6/10/2025</time></summary>
+            <summary>status <time>28/06/2026</time></summary>
             <ul>
               <li>reading:</li>
               <li>
-                Rereading Sherlock Holmes again. Why is this book lowkey
-                hard....
+                My Broken Mariko! I am fucked!
               </li>
 
               <li>listening to:</li>
               <li>
                 <a
-                  >Been listening to Marathon OSTs lately, especially Assert.</a
+                  >I have recently rediscovered Birimbao! Such a lovely piece of music! https://open.spotify.com/track/29FJTVFWwdcwHy56qNteYg?si=492872dcbfe2468f</a
                 >
               </li>
 
               <li>playing:</li>
               <li>
-                Been grinding Zenless Zone Zero to prepare for the lovely season
-                3. I cannot wait to pull for Promeia!
+                Finally returne to ZZZ. I'm not sure who to pull, but it's nice to be in the game. Also have been playing mahjong soul so I can beat my oomfs in mahjong...grrr....
               </li>
             </ul>
           </details>
         </section>
 
         <section id="tag-filters" class="pinned">
-          <details open>
+          <details>
             <summary>tag filters</summary>
-            <label><input type="radio" id="all" name="tag" checked />all</label>
-            <label><input type="radio" id="intro" name="tag" />#intro</label>
-            <label
-              ><input type="radio" id="personal" name="tag" />#personal</label
-            >
-            <label><input type="radio" id="art" name="tag" />#art</label>
-            <label><input type="radio" id="ttrpg" name="tag" />#ttrpg</label>
+
+            <details class="tag-group tag-group--all">
+              <summary>all posts</summary>
+              <ul>
+                {% for post in collections.postsReversed %}
+                <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </details>
+
+            {% for group in collections.postsByTag %}
+            <details class="tag-group">
+              <summary>#{{ group.tag }}</summary>
+              <ul>
+                {% for post in group.posts %}
+                <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </details>
+            {% endfor %}
           </details>
         </section>
 
@@ -230,5 +241,23 @@
 
       <footer>© 2026 [Roseline]</footer>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const groups = Array.from(document.querySelectorAll("#tag-filters .tag-group"));
+
+        groups.forEach(function (group) {
+          group.addEventListener("toggle", function () {
+            if (group.open) {
+              groups.forEach(function (other) {
+                if (other !== group) {
+                  other.open = false;
+                }
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

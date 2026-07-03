@@ -438,6 +438,43 @@ main {
 /*hide the radio button for tags*/
 #tag-filters input {appearance: none;}
 
+#tag-filters .tag-group {
+  margin: .6em 0 .3em;
+  padding: .5em .7em;
+  background: var(--post-bg);
+  border: 2px solid var(--border-color);
+  border-radius: .8em;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+}
+
+#tag-filters .tag-group > summary {
+  color: var(--sidebar-text);
+  font-size: 1.05em;
+  font-weight: bold;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: .25em;
+  cursor: pointer;
+}
+
+#tag-filters .tag-group ul {
+  margin: .5em 0 0;
+  padding-left: 1.1em;
+}
+
+#tag-filters .tag-group li {
+  margin: .25em 0;
+  list-style: disc;
+}
+
+#tag-filters .tag-group a {
+  color: var(--post-text);
+  text-decoration: none;
+}
+
+#tag-filters .tag-group a:hover {
+  text-decoration: underline;
+}
+
 /*for the "back to top" link at the bottom of the page*/
 #page-nav a {color:var(--sidebar-text);}
 #page-nav a:hover {text-decoration: none;}
