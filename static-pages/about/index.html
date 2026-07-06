@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+    <!-- Site Version: 2026-05-03 Enhanced Theme Script with Inline Styles -->
     <!-- Setting character encoding and viewport size. Do not remove. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob:; img-src * data: blob:; font-src * data: blob:; media-src * data: blob:; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline';" />
 
     <!-- Site Title -->
     <title>Rose's Atelier</title>
@@ -22,8 +24,8 @@
     <link rel="icon" type="image/webp" href="https://files.catbox.moe/ebwjng.png" />
 
     <!-- CSS: -->
-    <link rel="stylesheet" href="/static-pages/css/normalize.css" />
-    <link rel="stylesheet" href="/static-pages/css/style.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/aboutstyle.css" />
 </head>
 
 <body>
@@ -36,10 +38,12 @@
             <div class="about">
                 <div class="quote">
                     <div class="quotemark">“</div>
+                    <p></p>
+                    <p></p>
                     <p>ESCAPE WILL MAKE ME GOD.</p>
                 </div>
                 <div class="icon">
-                    <img src="https://files.catbox.moe/u6fgg7.png" loading="lazy" alt="" />
+                    <img src="https://files.catbox.moe/ehvho7.png" loading="lazy" alt="My OCSona! Roseline!" />
                 </div>
                 <div class="description">
                     <p>
@@ -49,28 +53,47 @@
                         Autistic ADHD Enthusiast that loves Art too much. Being curious is my speciality. Hope you enjoy
                         your momentary stay here, friends ( •̀ ω •́ )✧
                     </p>
+                    <button id="themeToggle" style="width: 100%; margin-top: 10px; padding: 8px;">Change Web Mode!</button>
                 </div>
             </div>
             <nav>
-                <a href="">Twitter (WIP)</a>
-                <a href="">IG (wip)</a>
-                <a href="">Anilist</a>
-                <a href="">Backloggd</a>
-                <a href="">Letterboxd</a>
-                <a href="https://redforroseline.neocities.org/blog/">Blog</a>
+                <a href="/blog/">Blog!!!</a>
+                <a href="https://discord.com/users/364738627051323394">Discord</a>
+                <a href="https://x.com/redforroseline">Twitter</a>
+                <a href="https://www.instagram.com/redforroseline">IG</a>
+                <a href="https://bsky.app/profile/redforroseline.bsky.social">Bluesky</a>
+                <a href="https://anilist.co/user/Astrokitty113/">Anilist</a>
+                <a href="https://backloggd.com/u/RoxyRoseline/">Backloggd</a>
+                <a href="https://letterboxd.com/f_lux/">Letterboxd</a>
+                <a href="/">Back!</a>
                 <!-- most likely will drop this, doesn't work well on mobile -->
                 <!--<details>
                         <summary>dropdown</summary>
                         <a href="">wow another link!</a>
                         <a href="">wow another link!</a>
                     </details>-->
-                <a href="">awesome link</a>
             </nav>
             <section class="hide-mobile" style="text-align: center">
-                <div class="center-item"><img src="https://placehold.co/88x31" alt="" /></div>
-                <p>
-                    <textarea id="site-button" name="site-button" style="width: 100%; height: 40px; font-size: 0.8em">
-                        Textarea</textarea><label for="site-button">Website button!</label>
+                <!-- Visual display of the animated GIF -->
+                <div class="center-item" style="margin-bottom: 5px;">
+                    <img src="/images/Rose'sAtelierButtonNew.gif" alt="Red For Roseline GIF" />
+                </div>
+
+                <p style="margin-top: 0;">
+                    <!-- Code box for the GIF -->
+                    <textarea id="site-button-new" name="site-button-new" style="width: 100%; height: 40px; font-size: 0.8em; margin-bottom: 20px;"><a href="https://redforroseline.nekoweb.org" target="_blank"><img src="/images/Rose'sAtelierButtonNew.gif" alt="Red For Roseline GIF"></a></textarea>
+                </p>
+
+                <!-- Visual display of the original PNG -->
+                <div class="center-item" style="margin-bottom: 5px;">
+                    <img src="/images/Rose'sAtelierButton.png" alt="Red For Roseline PNG" />
+                </div>
+
+                <p style="margin-top: 0;">
+                    <!-- Code box for the PNG -->
+                    <textarea id="site-button-original" name="site-button-original" style="width: 100%; height: 40px; font-size: 0.8em; margin-bottom: 8px;"><a href="https://redforroseline.nekoweb.org" target="_blank"><img src="https://redforroseline.nekoweb.org/images/Rose'sAtelierButton.png" alt="Red For Roseline PNG"></a></textarea>
+
+                    <label for="site-button-original" style="display: block; font-size: 0.9em;">Website button!</label>
                 </p>
             </section>
         </div>
@@ -85,8 +108,10 @@
                     talking to like minded people. Good day to you, dear lovely stranger.
                 </p>
                 <p>
-                    If it isn't clear...website is still in progress!!! Will take another 3 days? It's going to be a
-                    busy week since near here we are in a week of festivities, so slowed down work for me sadly :< .
+                    Note: Blog is hosted both in neocities and nekoweb. Strongly recommend the nekoweb due to the less strict content restrictions, resulting in a better experiences on some of the gimmick. Both websites have the same name, just swap between neocities and nekoweb in the URL!
+                </p>
+                <p>
+                    If it isn't clear...website is still in progress!!! There are some things in progress, but at the very least, the blog is always being updated periodically. Check out my writings there, hehe. I have a lot to read there mwehehehehe.
                         </p>
                         <hr />
                         <details>
@@ -118,7 +143,7 @@
                         <h4>Do Not Interact:</h4>
                         <ol>
                             <li>Basic DNI Criteria</li>
-                            <li>Minor</li>
+                            <li>Very young minors</li>
                             <li>Transphobic</li>
                             <li>Homophobic</li>
                         </ol>
@@ -139,28 +164,35 @@
             <section>
                 <div class="marquee">
                     <div>
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
-                        <img src="https://placehold.co/88x31" alt="" />
+                        <img src="https://files.catbox.moe/7ue238.gif" alt="I love Yuka!!! Trans" />
+                        <img src="https://files.catbox.moe/2a23rk.gif" alt="" />
+                        <img src="https://files.catbox.moe/o5x9hd.gif" alt="" />
+                        <img src="https://files.catbox.moe/xjn2d1.gif" alt="" />
+                        <img src="https://files.catbox.moe/ab4a0w.gif" alt="" />
+                        <img src="https://files.catbox.moe/45utqy.gif" alt="" />
+                        <img src="https://files.catbox.moe/01j4ok.gif" alt="" />
+                        <img src="https://files.catbox.moe/6djq9e.gif" alt="" />
+                        <img src="https://files.catbox.moe/mi43di.gif" alt="" />
+                        <img src="https://files.catbox.moe/tav8z1.gif" alt="" />
+                        <img src="https://files.catbox.moe/rakfnu.gif" alt="" />
+                        <img src="https://files.catbox.moe/pzlg8m.gif" alt="" />
+                        <img src="https://files.catbox.moe/tw0m9l.gif" alt="" />
+                        <img src="https://files.catbox.moe/ljipp5.gif" alt="" />
+                        <img src="https://files.catbox.moe/jz5luz.gif" alt="" />
+                        <img src="https://files.catbox.moe/vglg0o.gif" alt="" />
+                        <img src="https://files.catbox.moe/xcyenx.gif" alt="" />
+                        <img src="https://files.catbox.moe/7tj491.gif" alt="" />
+                        <img src="https://files.catbox.moe/846ctg.gif" alt="" />
+                        <img src="https://files.catbox.moe/rypnhe.gif" alt="" />
+                        <img src="https://files.catbox.moe/54zmty.gif" alt="" />
                     </div>
                 </div>
             </section>
-            <section class="hide-desktop">
+            <!-- section class="hide-desktop">
                 <h2>Surprise Box!</h2>
                 Hi! I'm a box you can only see on mobile, you <i>will not</i> see me on the desktop! Have a cookie.
                 🍪
-            </section>
+            </section--->
             <section> <!-- Anime Section -->
                 <h2>Anime</h2>
                 <p> <b>Too long didn't read?</b> Check out my <a href="https://anilist.co/user/Astrokitty113/"
@@ -178,7 +210,6 @@
                     <div><img alt="" src="https://files.catbox.moe/l1kchq.jpg" loading="lazy" /></div>
                     <div><img alt="" src="https://files.catbox.moe/32tk2h.png" loading="lazy" /></div>
                 </div>
-                <hr />
                 <p>
                     Below are, still my lovely animes, not as high as my lovechilds, but still I regard them in a
                     special place. I've broken them into genres and demographic just for ease of access.
@@ -372,8 +403,7 @@
                                 loading="lazy" /></div>
                         <div><img alt="" title="Welcome to Japan, Ms. Elf!" src="https://files.catbox.moe/fiewvo.png"
                                 loading="lazy" /></div>
-                        <div><img alt="" title="" he Helpful Fox Senko-san src="https://files.catbox.moe/oo79kf.png"
-                                loading="lazy" /></div>
+                        <div><img alt="The Helpful Fox Senko-san" title="The Helpful Fox Senko-san" src="https://files.catbox.moe/oo79kf.png" loading="lazy" /></div>
                         <div><img alt="" title="" src="" loading="lazy" /></div>
                 </details>
                 <details>
@@ -511,7 +541,8 @@
                     games. About a year ago I was lucky my friend sold me their PC for a cheap price, so I have a
                     functional gaming rig if I want to play something heavy. But aside my family forbading me to play, I
                     found myself less obssesed with video games and focusing more on other art medium these days.</p>
-                <p>I should've linked my backloggd, <a href="https://backloggd.com/u/Meredyth/" target="_blank">here</a>
+                <hr />
+                <p>I should've linked my backloggd, <a href="https://backloggd.com/u/RoxyRoseline/" target="_blank">here</a>
                     , if you...yeah you get it, but I've only recently made it. It's gonna be slow, because for every
                     game I log I intend to write a review, or atleast what was my experience with it! Or you can see my
                     steam, but you'll see it's mostly empty due to me basically pirating 80% of my games all the time.
@@ -597,12 +628,49 @@
                     Ever since, I've longed for a TTRPG...until in college where I discovered people had the same
                     interests! Yay! I've been playing regularly ever since, and it's my fascination to just try out new
                     systems. One of the my most treasured hobbies.</p>
-                <div class="image-gallery-9-16-small">
+                <details>
+                    <summary> Trad </summary>
+                    <p>These are your usual ones. Side note, I don't play 5e that much. Or ever. It sucks. Don't support WOTC. If you want to feel 5e, just play Pathfinder at this point man...it's so, so much better!!</p>
+                    <div class="image-gallery-9-16">
                     <div><img alt="" title="Pathfinder 2e" src="https://files.catbox.moe/phdv52.avif" loading="lazy" />
                     </div>
                     <div><img alt="" title="Dungeons and Dragons 5e" src="https://files.catbox.moe/3yzp4b.jpg"
                             loading="lazy" /></div>
-                </div>
+                    <div><img alt="" title="Cyberpunk Red" src="https://files.catbox.moe/l9a5yp.jpg" loading="lazy" />
+                    </div>
+                    </div>
+                </details>
+                <details>
+                    <summary> OSR </summary>
+                    <p>These are the one's I've recently been to. If you don't know what an OSR is...here's a quick read. But! In essence! Player agency!!! And my god, I love being rewarded for being creative. These are the ones that I've played and want play even more in the future!</p>
+                    <div class="image-gallery-9-16">
+                    <div><img alt="" title="Electric Bastionland" src="https://files.catbox.moe/u51slt.png" loading="lazy" />
+                    </div>
+                    <div><img alt="" title="Mythic Bastionland" src="https://files.catbox.moe/sarbkq.webp"
+                            loading="lazy" /></div>
+                    </div>
+                </details>
+                <details>
+                    <summary>Story</summary>
+                    <p>I am SO addicted to Dialect it's actually insane. I play this game with my table atleast once a week. It's recomended for the game to go for around 4 hours. Guess how long we played? 9 hours. It's such a good game man...</p>
+                    <div class="image-gallery-9-16">
+                    <div><img alt="" title="Disaster/Peace" src="https://files.catbox.moe/vw1p8z.jpg" loading="lazy" />
+                    </div>
+                    <div class="image-gallery-9-16">
+                    <div><img alt="" title="Dialect" src="https://files.catbox.moe/7lv08q.png" loading="lazy" />
+                    </div>
+                    </div>
+                </details>
+                <details>
+                    <summary> Games I want to try so badly </summary>
+                    <p>WIP!!!!!!!!!!!!!!! gonna add alot of stuff in here hehe.</p>
+                    <div class="image-gallery-9-16">
+                    <div><img alt="" title="Pathfinder 2e" src="https://files.catbox.moe/phdv52.avif" loading="lazy" />
+                    </div>
+                    <div><img alt="" title="Dungeons and Dragons 5e" src="https://files.catbox.moe/3yzp4b.jpg"
+                            loading="lazy" /></div>
+                    </div>
+                </details>
             </section>
             <section> <!-- TV Series/Cartoon Section -->
                 <h2>TV Series/Cartoons</h2>
@@ -611,9 +679,6 @@
                 <p>Need to organize but here are all the shows I've watched and I enjoyed~</p>
                 <img src="https://files.catbox.moe/8jslig.jpg" class="float-img-left-small  image-deco hide-mobile"
                     title="BLUE EYE SAMURAI" />
-                <p>Josei is a surpringly more niche than Shojou, in terms of anime. And I thought Shoujou had it bad.
-                    Josei sells more on manga, so it makes sense. Regardless, it's still a very fun genre. Definitely
-                    more mature though, more heavy topics and whatnot. I'd still recommend it!</p>
                 <div class="image-gallery-9-16">
                     <div><img alt="" title="Alien Stage" src="https://files.catbox.moe/vblqj3.jpg" loading="lazy" />
                     </div>
@@ -693,14 +758,14 @@
             <section> <!-- Music Section -->
                 <h2>Music</h2>
                 <p>I haven't cleaned it up, but check out my <a
-                        href="https://open.spotify.com/user/astrokitty911?si=542a0d82a8e846cb"
+                        href="https://open.spotify.com/user/astrokitty911"
                         target="_blank">Spotify</a>! I'm not that special though :></p>
                 <p>WIP!!!!!!!!!!!!!!!!!!</p>
             </section>
             <section> <!-- Miscellaneous Hobbies Section-->
                 <div class="two-columns">
                     <div>
-                        <h2>Miscellaneous Hobbies</h2>
+                        <h2>Misc. Hobbies</h2>
                         <p>Hobbies that I used to pick up that I eventually abandoned, either temporarily or lost
                             interests. But some I stil do it in rotation!</p>
                         <ul>
@@ -751,9 +816,9 @@
             <section>
                 <h2>Drawbox!!</h2>
 
-                <p>Trying to implement a drawbox, this should be easy? Let's see.</p>
+                <p>Drawabox should work! Give it a try, below!.</p>
 
-                <iframe src="/gimmick/drawbox.html" width="100%" height="600px" style="border:none; overflow:auto;""></iframe>
+                <iframe src="/gimmick/drawbox.html" width="100%" height="600px" style="border:none; overflow:auto;"></iframe>
 
 
             </section>    
@@ -763,7 +828,11 @@
     <footer>2025. bloggy template by <a href="https://vgen.co/asuraid">asuraid</a>.</footer>
 
     <!-- Scroll to Top -->
-    <script src="../js/scroll-to-top.js"></script>
+    <script src="/js/scroll-to-top.js"></script>
+    <!-- Preload Images -->
+    <script src="/js/preload-images.js"></script>
+    <!-- Theme Toggle -->
+    <script src="/js/theme-toggle.js"></script>
 </body>
 
 </html>

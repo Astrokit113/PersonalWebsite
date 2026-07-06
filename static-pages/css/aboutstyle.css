@@ -579,13 +579,17 @@ li::marker {
 /* LEFT SIDEBAR + NAV */
 /* -------------------------------------------------------- */
 #left-sidebar {
-    height: fit-content; /* Full-height */
+    height: fit-content;
+    max-height: calc(100vh - (2 * var(--left-sidebar-top-distance)));
+    overflow-y: auto;
+    overflow-x: hidden;
     position: sticky;
     top: var(--left-sidebar-top-distance);
     display: flex;
     flex-direction: column;
     grid-area: left-sidebar;
     gap: var(--content-gap);
+    align-self: start;
 }
 
 #left-sidebar .about,
@@ -1190,6 +1194,8 @@ footer a {
         position: unset;
         margin-right: 0;
         width: 100%;
+        max-height: none;
+        overflow: visible;
         flex-direction: column;
     }
 

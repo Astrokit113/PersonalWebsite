@@ -42,17 +42,19 @@ module.exports = async function (eleventyConfig) {
   });
 
   // Tell 11ty to copy your CSS and Images to the public folder
-  eleventyConfig.addPassthroughCopy({ "static-pages/css/style.css": "static-pages/css/style.css" });
-  eleventyConfig.addPassthroughCopy({ "static-pages/normalize.css": "static-pages/normalize.css" });
-  eleventyConfig.addPassthroughCopy({ "blog-css/style.css": "blog-css/style.css" });
-  eleventyConfig.addPassthroughCopy({ "blog-css/simplified-style.css": "blog-css/simplified-style.css" });
-  eleventyConfig.addPassthroughCopy({ "images": "images" });
-  eleventyConfig.addPassthroughCopy({ "fonts": "fonts" });
-  eleventyConfig.addPassthroughCopy({ "js": "js" });
-  eleventyConfig.addPassthroughCopy({ "gimmick": "gimmick" });
-  eleventyConfig.addPassthroughCopy({ "static-pages/index.html": "index.html" });
+  // 1. Pass entire asset folders as-is
+  eleventyConfig.addPassthroughCopy("blog-css");
+  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("gimmick");
+  eleventyConfig.addPassthroughCopy("comment");
+
+  // 2. Dump EVERYTHING inside static-pages directly into the root of the site
+  eleventyConfig.addPassthroughCopy({ "static-pages": "/" });
+
+  // 3. Move your RSS style to the root
   eleventyConfig.addPassthroughCopy({ "content/rss-style.xsl": "rss-style.xsl" });
-  eleventyConfig.addPassthroughCopy({ "comment": "comment" });
 
   // Custom permalink structure
   eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");

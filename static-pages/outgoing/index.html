@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turn.js Flipbook</title>
+
+    <link rel="stylesheet" href="/css/turn.css?v=2" />
+  </head>
+  <body>
+    <div class="left-half"></div>
+
+    <div class="right-half">
+      <div id="flipbook">
+        <div class="page-container hard">
+          <img
+            src="../../images/Cover1.png"
+            class="page-background"
+            alt="Front Cover"
+          />
+        </div>
+
+        <div class="page-container">
+          <img
+            src="../../images/Page1.png"
+            class="page-background"
+            alt="Page 1"
+          />
+          <a
+            href="https://elmc.at/"
+            target="_blank"
+            class="clique-link pos-1"
+            alt="AMONG CATS AND BOOKS"
+            onclick="event.stopPropagation()"
+          >
+            <img src="../../images/acab_88x31.gif" />
+          </a>
+          <a
+            href="https://afraidofencounters.bearblog.dev/"
+            target="_blank"
+            class="clique-link pos-2"
+            alt="Afraid of Encounters"
+            onclick="event.stopPropagation()"
+          >
+            <img src="../../images/AfraidOfEncounters.gif" />
+          </a>
+          <a
+            href="https://www.prismaticwasteland.com//"
+            target="_blank"
+            class="clique-link pos-3"
+            alt="Prismatic Wonderland"
+            onclick="event.stopPropagation()"
+          >
+            <img src="../../images/PrismaticWasteland.gif" />
+          </a>
+        </div>
+
+        <div class="page-container">
+          <img
+            src="../../images/Page2.png"
+            class="page-background"
+            alt="Page 2"
+          />
+        </div>
+
+        <div class="page-container hard">
+          <img
+            src="../../images/Cover2.png"
+            class="page-background"
+            alt="Back Cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../../js/turn.real.js"></script>
+    <script src="../../js/turn.js"></script>
+  </body>
+</html>

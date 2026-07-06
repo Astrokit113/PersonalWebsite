@@ -1,0 +1,634 @@
+/* -------------------------------------------------------- */
+/* VARIABLES                                                */
+/* -------------------------------------------------------- */
+:root {
+    --bg-dark-red: #470a0a;
+    --bg-black: #101010;
+    --box-bg: #1a1818;
+    --text-color: #ecdddd;
+    --accent: #b21c0e;
+    --accent-hover: #cb0e40;
+    --body-font: "IMFell", sans-serif;
+    --header-font: "Jacquard24", serif;
+}
+
+/* -------------------------------------------------------- */
+/* FONTS                                                    */
+/* -------------------------------------------------------- */
+@font-face {
+    font-family: "Jacquard24";
+    src: url("/fonts/Jacquard24.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "IMFell";
+    src: url("/fonts/IMFellEnglishSC.ttf") format("truetype");
+    font-display: swap;
+}
+
+/* -------------------------------------------------------- */
+/* BASE & BACKGROUND                                        */
+/* -------------------------------------------------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling from absolute elements */
+
+    /* Checkered Background */
+    background-color: var(--bg-black);
+    background-image: conic-gradient(var(--bg-dark-red) 90deg,
+            transparent 90deg 180deg,
+            var(--bg-dark-red) 180deg 270deg,
+            transparent 270deg);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+}
+
+/* -------------------------------------------------------- */
+/* MAIN LAYOUT WRAPPERS                                     */
+/* -------------------------------------------------------- */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+
+.wireframe-container {
+    display: grid;
+    /* 180px for the left column, the rest for the main area */
+    grid-template-columns: 180px 1fr;
+    grid-gap: 20px;
+    position: relative;
+}
+
+/* -------------------------------------------------------- */
+/* SHARED BOX STYLES (The Gold Frame)                       */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* SHARED BOX STYLES (The Gold Frame)                       */
+/* -------------------------------------------------------- */
+.upperleft-box,
+.nav,
+.minibox,
+.main-top-large,
+.main-top-small,
+.main-center,
+.main-bottom,
+.main-blog {
+    background-color: var(--box-bg);
+    border: 15px solid var(--accent);
+    border-image-source: url('/images/GoldFrame.svg');
+    border-image-slice: 50;
+    border-image-repeat: round;
+    background-clip: padding-box;
+
+    /* THE NEW SHADOW: Perfectly traces your SVG frame */
+    filter: drop-shadow(0px 25px 20px rgba(0, 0, 0, 0.9));
+}
+/* -------------------------------------------------------- */
+/* LEFT COLUMN                                              */
+/* -------------------------------------------------------- */
+.left-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+/* 1. PFP Frame Container */
+.upperleft-box {
+    height: 180px;
+    width: 180px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pfp {
+    display: block;
+    margin: 0;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background-color: var(--box-bg);
+}
+
+/* 2. Navigation Box */
+.nav {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 8px;
+    /* Creates clean spacing between the buttons */
+    width: 100%;
+    /* Fills the 180px column */
+}
+
+/* -------------------------------------------------------- */
+/* BASE BUTTON STRUCTURE (Applies to all buttons)           */
+/* -------------------------------------------------------- */
+.nav a.button {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* Prevents padding from breaking the width */
+}
+
+/* Removes the margin from the very last button in the list */
+.nav a.button:last-child {
+    margin-bottom: 0;
+}
+
+
+/* -------------------------------------------------------- */
+/* STYLE 1: ROYAL VELVET (.btn-velvet)                      */
+/* -------------------------------------------------------- */
+.btn-velvet {
+    padding: 12px 10px;
+    background: linear-gradient(135deg, var(--bg-dark-red) 0%, #2a0505 100%);
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    border: 1px solid var(--accent);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8), 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+.btn-velvet:hover {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--bg-dark-red) 100%);
+    border-color: #ffb8c6;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+
+/* -------------------------------------------------------- */
+/* STYLE 2: VICTORIAN LETTERPRESS (.btn-victorian)          */
+/* -------------------------------------------------------- */
+.btn-victorian {
+    padding: 10px 10px;
+    background-color: transparent;
+    color: var(--text-color);
+    font-family: "IMFell", serif;
+    font-size: 18px;
+    text-align: left;
+
+    border-top: 1px solid #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+    border-left: 3px solid transparent;
+    border-right: none;
+    transition: all 0.4s ease;
+}
+
+.btn-victorian:hover {
+    background-color: var(--box-bg);
+    border-left: 3px solid var(--accent);
+    color: var(--accent);
+    padding-left: 18px;
+    font-style: italic;
+}
+
+
+/* -------------------------------------------------------- */
+/* STYLE 3: MIDNIGHT BARRICADE (.btn-midnight)              */
+/* -------------------------------------------------------- */
+.btn-midnight {
+    padding: 12px;
+    background-color: var(--bg-black);
+    color: var(--text-color);
+    font-family: var(--header-font);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+    border: 1px solid var(--bg-dark-red);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.btn-midnight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--accent);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+
+.btn-midnight:hover::before {
+    width: 100%;
+}
+
+.btn-midnight:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* 3. Bottom Widgets (Counter, Mail, Mascot) */
+.left-widgets-container {
+    position: relative;
+    width: 100%;
+
+    /* THE MAGIC FIX: This forces the box to stretch all the way to the bottom! */
+    flex-grow: 1;
+
+    /* Keeps a safe minimum size for smaller screens */
+    min-height: 160px;
+}
+
+.minibox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Stretches the frame to match the 160px container */
+    margin: 0;
+    /* Pushes the "Visits: ..." text safely away from the top/left borders */
+    padding: 20px 15px;
+
+    color: white;
+    font-size: 14px;
+    text-align: left;
+
+    /* Keeps the retro text outline */
+    text-shadow:
+        -1px -1px 0 black, 0px -1px 0 black, 1px -1px 0 black,
+        -1px 0px 0 black, 1px 0px 0 black,
+        -1px 1px 0 black, 0px 1px 0 black, 1px 1px 0 black;
+}
+
+/* Overlapping Mascot & Mail Icons */
+.jelly {
+    position: absolute;
+    /* The border is 15px thick, so 45px places it safely inside the box */
+    bottom: 45px;
+    left: 90px;
+    z-index: 10;
+    transition: transform 0.2s;
+}
+
+.jelly:hover {
+    transform: scale(1.1);
+}
+
+.mail {
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    z-index: 5;
+}
+
+.email {
+    position: absolute;
+    /* Sits just 5px above the inner bottom border */
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    z-index: 15;
+}
+
+.email a {
+    color: white;
+    font-size: 14px;
+    font-family: var(--header-font);
+    text-decoration: underline dotted #cacaca;
+
+    text-shadow:
+        -1px -1px 0 #000, 0px -1px 0 #000, 1px -1px 0 #000,
+        -1px 0px 0 #000, 1px 0px 0 #000,
+        -1px 1px 0 #000, 0px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.email a:hover {
+    color: var(--accent);
+}
+
+/* -------------------------------------------------------- */
+/* MAIN AREA GRID                                           */
+/* -------------------------------------------------------- */
+.main-area {
+    display: grid;
+    /* Top row is auto height, middle expands, bottom row is auto height */
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+.top-row {
+    display: grid;
+    /* Banner takes remaining space, small corner box takes 150px */
+    grid-template-columns: 1fr 150px;
+    gap: 20px;
+}
+
+.main-top-large {
+    width: 100%;
+    aspect-ratio: 3200 / 1200;
+    background-image: url('/images/RoselineBanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 120px;
+}
+
+.main-top-small {
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-center {
+    min-height: 300px;
+    padding: 25px;
+    position: relative;
+}
+
+.main-bottom-row {
+    display: flex;
+    gap: 20px;
+}
+
+.main-bottom,
+.main-blog {
+    flex: 1;
+    min-height: 80px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Centers the header text and the RSS icon side-by-side */
+.blog-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Vertically aligns the icon with the text */
+    justify-content: center;
+    /* Keeps them centered in the box */
+    gap: 8px;
+    /* This adds that tiny bit of margin/space! */
+    margin-bottom: 5px;
+    /* Adds a little space before the loading text */
+}
+
+/* Fixes the boxtitle so it doesn't push the icon away */
+.blog-header .boxtitle {
+    margin: 0;
+    /* Removes the default spacing so it sits flush */
+}
+
+.rss-icon {
+    image-rendering: pixelated;
+    display: block;
+
+    /* Forces the background to be completely see-through */
+    background-color: transparent !important;
+}
+
+/* -------------------------------------------------------- */
+/* TYPOGRAPHY & LINKS                                       */
+/* -------------------------------------------------------- */
+h1,
+h2,
+.boxtitle {
+    color: var(--accent);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-family: var(--header-font);
+}
+
+/* -------------------------------------------------------- */
+/* BOXTITLE LINKS                                           */
+/* -------------------------------------------------------- */
+.boxtitle a {
+    color: inherit;
+    /* Steals the crimson color from the parent .boxtitle */
+    text-decoration: none;
+    /* Prevents the browser from adding a second, ugly underline */
+
+    /* Adds a smooth fade for the hover effect */
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* Optional but recommended: A hover effect so users know it's clickable! */
+.boxtitle a:hover {
+    color: var(--accent-hover);
+    /* Adds a faint crimson glow when the mouse sweeps over it */
+    text-shadow: 0 0 8px rgba(203, 14, 64, 0.6);
+}
+
+.header {
+    font-size: 1.5rem;
+    color: var(--accent);
+    font-family: var(--header-font);
+    margin-bottom: 10px;
+}
+
+.text {
+    line-height: 1.6;
+    /* NEW: Forces the text to wrap to the next line before it hits the right side */
+    max-width: 53%;
+}
+
+.fancy-text {
+    font-family: "Jacquard24", serif;
+    font-size: 1.2rem;
+}
+
+.fancy-text2 {
+    font-family: "IMFell", serif;
+}
+
+/* -------------------------------------------------------- */
+/* SPEECH BUBBLE                                            */
+/* -------------------------------------------------------- */
+.speech-box {
+    /* 1. Positioning (Floats it just to the left of your mascot) */
+    position: absolute;
+    right: 130px;
+    bottom: 180px;
+    z-index: 11;
+
+    /* 2. Colors & Typography */
+    background-color: var(--bg-dark-red);
+    color: var(--text-color);
+    border: 2px solid var(--accent);
+
+    /* 3. Sizing & Shape */
+    padding: 12px 15px;
+    max-width: 200px;
+    font-size: 0.9rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* The OUTER triangle (creates the border for the tail) */
+.speech-box::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -15px;
+    /* Pushes it outside the right edge */
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 13px solid var(--accent);
+}
+
+/* The INNER triangle (creates the red fill for the tail) */
+.speech-box::after {
+    content: '';
+    position: absolute;
+    top: 22px;
+    right: -12px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 11px solid var(--bg-dark-red);
+}
+
+/* -------------------------------------------------------- */
+/* TOOLTIP (Appears on hover)                               */
+/* -------------------------------------------------------- */
+.tooltip {
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--box-bg);
+    color: var(--text-color);
+    padding: 6px 10px;
+    white-space: nowrap;
+    border: 1px solid var(--accent);
+
+    /* Hidden by default */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 12;
+}
+
+/* Shows the tooltip when you hover over the speech box */
+.speech-box:hover .tooltip {
+    opacity: 1;
+}
+
+/* -------------------------------------------------------- */
+/* DECORATIVE ELEMENTS                                      */
+/* -------------------------------------------------------- */
+.chain,
+.chain2,
+.roses,
+.jelly,
+.mail {
+    position: absolute;
+    z-index: 10;
+}
+
+.roseline {
+    position: absolute;
+    right: -25px;
+    bottom: 1px;
+    height: 270px;
+    width: auto;
+    z-index: 10;
+    filter: drop-shadow(1px 1px 0px rgba(50, 0, 5, 1));
+}
+
+#latest-post-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Change this to 1, 2, or 3 depending on how many lines you want */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* Optional: Ensure the text wraps nicely */
+    white-space: normal;
+    word-break: break-word;
+}
+
+/* -------------------------------------------------------- */
+/* TOP SMALL BOX IMAGE (.moon-glow)                         */
+/* -------------------------------------------------------- */
+.moon-glow {
+    /* 1. Stop the image from breaking the box */
+    max-width: 100%;
+    max-height: 205px;
+    /* Keeps it safely inside the 120px box height */
+
+    /* 2. Preserve the aspect ratio perfectly */
+    width: auto;
+    object-fit: contain;
+
+    /* 3. Display rules for centering */
+    display: block;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------- */
+/* MOBILE RESPONSIVENESS                                    */
+/* -------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+
+    .top-row {
+        grid-template-columns: 1fr;
+    }
+
+    .main-bottom-row {
+        flex-direction: column;
+    }
+
+    .upperleft-box {
+        margin: 0 auto;
+    }
+
+    .roseline,
+    .chain,
+    .chain2,
+    .roses {
+        display: none !important;
+    }
+}
