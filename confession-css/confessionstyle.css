@@ -31,9 +31,9 @@ body {
 
 
 #message {
-    width: 480px;
+    width: 420px;
     /* Doubled to fill the larger letter */
-    height: 360px;
+    height: 200px;
     /* Doubled for a massive writing space */
     background-color: transparent;
     border: none;
@@ -66,7 +66,7 @@ body {
     cursor: pointer;
 
     position: absolute;
-    bottom: 30px;
+    bottom: 120px;
     /* Pushed back down to hang lower off the edge */
     left: 50%;
     transform: translateX(-50%);
@@ -90,18 +90,21 @@ body {
 }
 
 /* ========================================
-   THE LONG PAPER SCROLL (Past Answers)
+   THE LONG PAPER SCROLL (Past Answers) - SCALED 170%
    ======================================== */
 .confession-scroll {
-    width: 315px;
-    margin: 40px auto;
+    width: 536px;
+    /* Scaled 170% from 315px */
+    margin: 60px auto;
+    /* Slightly increased to give it breathing room */
     display: flex;
     flex-direction: column;
 }
 
 .scroll-top {
     width: 100%;
-    height: 65px;
+    height: 111px;
+    /* Scaled 170% from 65px */
     background-image: url('/images/AnswerPaper_01.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,36 +115,82 @@ body {
     background-image: url('/images/AnswerPaper_02.png');
     background-repeat: repeat-y;
     background-size: 100% auto;
-    padding: 0 30px;
+    padding: 0 50px;
+    /* Scaled 170% from 30px to maintain the side margins */
     box-sizing: border-box;
 }
 
 .scroll-bottom {
     width: 100%;
-    height: 65px;
+    height: 111px;
+    /* Scaled 170% from 65px */
     background-image: url('/images/AnswerPaper_03.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* ========================================
-   TEXT STYLING ON THE PAPER
+   TEXT STYLING ON THE PAPER (SCALED)
    ======================================== */
 .letter-text {
-    margin-bottom: 25px;
+    margin-bottom: 42px;
+    /* Scaled 170% from 25px */
     color: #1a0000;
+    font-size: 1.3rem;
+    /* Scaled up for readability on the larger paper */
+    line-height: 1.6;
 }
 
 .the-question {
     font-style: italic;
     font-weight: bold;
     color: #5a0000;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
+    /* Scaled 170% from 8px */
+    font-size: 1.5rem;
+    /* Noticeably larger to establish visual hierarchy */
 }
 
 .ink-divider {
     border: 0;
     border-bottom: 1px dashed #5a0000;
-    margin: 20px 0;
+    margin: 34px 0;
+    /* Scaled 170% from 20px */
     opacity: 0.5;
+}
+
+.gothic-nav {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav-typewriter {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #111;
+    color: #e0e0e0;
+    border: 2px solid #333;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* Creates the 3D pop of a physical key */
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), inset -1px -1px 3px rgba(255, 255, 255, 0.05);
+    transition: all 0.15s ease;
+}
+
+.nav-typewriter:hover {
+    background-color: #1a1a1a;
+    border-color: #5a0000;
+    color: #8b0000;
+}
+
+.nav-typewriter:active {
+    /* Flattens the shadow and pushes it down to simulate a keystroke */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9), inset 2px 2px 5px rgba(0, 0, 0, 0.8);
+    transform: translateY(3px);
 }
