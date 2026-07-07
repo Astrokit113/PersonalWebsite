@@ -44,6 +44,7 @@ module.exports = async function (eleventyConfig) {
   // Tell 11ty to copy your CSS and Images to the public folder
   // 1. Pass entire asset folders as-is
   eleventyConfig.addPassthroughCopy("blog-css");
+  eleventyConfig.addPassthroughCopy("confession-css");
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("fonts");
   eleventyConfig.addPassthroughCopy("js");
@@ -95,6 +96,10 @@ module.exports = async function (eleventyConfig) {
   // Create a safe, pre-reversed copy of your TTRPG posts
   eleventyConfig.addCollection("ttrpgPostsReversed", function(collectionApi) {
     return [...collectionApi.getFilteredByTag("ttrpg")].reverse();
+  });
+
+  eleventyConfig.addCollection("confessionsReversed", function(collectionApi) {
+    return [...collectionApi.getFilteredByTag("confessions")].reverse();
   });
 
   // Minify HTML 

@@ -1,0 +1,147 @@
+/* ========================================
+   GLOBAL
+   ======================================== */
+body {
+    background-color: #000000;
+    color: #e0e0e0;
+}
+
+/* ========================================
+   THE CONFESSION LETTER (Submission Form)
+   ======================================== */
+.letter-container {
+    width: 604px;
+    /* Doubled from 302px */
+    height: 684px;
+    /* Doubled from 342px */
+    margin: 50px auto 100px auto;
+    /* Slightly reduced bottom margin since the stamp is smaller */
+    background-image: url('/images/Letter_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    /* Increased to push the text box down to the middle of the large letter */
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+}
+
+#message {
+    width: 480px;
+    /* Doubled to fill the larger letter */
+    height: 360px;
+    /* Doubled for a massive writing space */
+    background-color: transparent;
+    border: none;
+    color: #1a0000;
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    resize: none;
+}
+
+#message:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.3);
+}
+
+/* ========================================
+   THE STAMP BUTTON
+   ======================================== */
+#submit-btn {
+    width: 208px;
+    /* Reverted to original larger size */
+    height: 233px;
+    /* Reverted to original larger size */
+    background-image: url('/images/Stamp_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 30px;
+    /* Pushed back down to hang lower off the edge */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#submit-btn:hover {
+    transform: translateX(-50%) scale(0.95);
+    filter: brightness(0.9);
+}
+
+#status-message {
+    position: absolute;
+    bottom: -130px;
+    /* Pushed further down to clear the larger stamp */
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    color: #a30000;
+    display: none;
+}
+
+/* ========================================
+   THE LONG PAPER SCROLL (Past Answers)
+   ======================================== */
+.confession-scroll {
+    width: 315px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-top {
+    width: 100%;
+    height: 65px;
+    background-image: url('/images/AnswerPaper_01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.scroll-middle {
+    width: 100%;
+    background-image: url('/images/AnswerPaper_02.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.scroll-bottom {
+    width: 100%;
+    height: 65px;
+    background-image: url('/images/AnswerPaper_03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ========================================
+   TEXT STYLING ON THE PAPER
+   ======================================== */
+.letter-text {
+    margin-bottom: 25px;
+    color: #1a0000;
+}
+
+.the-question {
+    font-style: italic;
+    font-weight: bold;
+    color: #5a0000;
+    margin-bottom: 8px;
+}
+
+.ink-divider {
+    border: 0;
+    border-bottom: 1px dashed #5a0000;
+    margin: 20px 0;
+    opacity: 0.5;
+}

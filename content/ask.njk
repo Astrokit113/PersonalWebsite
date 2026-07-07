@@ -1,0 +1,42 @@
+---
+layout: base_form.njk
+title: The Confessional
+---
+
+<!-- 1. THE SUBMISSION LETTER -->
+<div class="letter-container">
+  <form id="gothic-askbox" action="https://formkeep.com/f/YOUR_ID" method="POST">
+    <textarea id="message" name="message" required placeholder="Leave a confession..."></textarea>
+    
+    <!-- The button is now entirely an image (Stamp_1.png) -->
+    <button type="submit" id="submit-btn" aria-label="Seal and Send"></button>
+  </form>
+  
+  <p id="status-message"></p>
+</div>
+
+
+<!-- 2. THE LONG PAPER SCROLL (Past Answers) -->
+<div class="confession-scroll">
+  
+  <div class="scroll-top"></div>
+  
+  <div class="scroll-middle">
+    {% for item in collections.confessionsReversed %}
+      <div class="letter-text">
+        <div class="the-question">"{{ item.data.question }}"</div>
+        <div class="the-answer">
+          {{ item.content | safe }}
+        </div>
+      </div>
+      
+      <hr class="ink-divider">
+    {% endfor %}
+  </div>
+
+  <div class="scroll-bottom"></div>
+
+</div>
+
+<!-- 3. THE SCRIPT (Loaded at the end) -->
+<script src="/js/askbox.js" defer></script>
