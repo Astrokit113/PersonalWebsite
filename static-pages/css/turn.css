@@ -204,3 +204,44 @@ body {
     width: 17.1% !important;
     height: 3.87% !important;
 }
+
+/* =========================================
+   MOBILE RESPONSIVENESS & ROTATION LOCK
+   ========================================= */
+
+/* By default, hide the rotation overlay on desktop/landscape */
+#rotate-device-overlay {
+    display: none;
+}
+
+/* If the screen is a phone AND held vertically... */
+@media screen and (max-width: 800px) and (orientation: portrait) {
+
+    /* 1. Show the warning screen */
+    #rotate-device-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #101010;
+        /* Match your dark background */
+        color: #b21c0e;
+        /* Match your crimson accent */
+        font-family: "IMFell", serif;
+        /* Or Jacquard24 */
+        font-size: 1.5rem;
+        text-align: center;
+        z-index: 99999;
+        /* Forces it above everything else */
+    }
+
+    /* 2. Completely hide the book so Turn.js doesn't try to calculate weird math */
+    .right-half {
+        display: none !important;
+    }
+}

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  // Initialize turn.js using the Cover1 image natural size.
   var coverPath = '../../images/Cover1.png';
   var img = new Image();
   img.src = coverPath;
@@ -11,27 +10,29 @@ $(document).ready(function() {
     try {
       var bookW = (w === 514) ? 1028 : w*2; 
       var pageW = Math.floor(bookW / 2);
-      
       var $flipbook = $("#flipbook");
-      
+
       $flipbook.turn({
         width: bookW,
         height: h,
         display: 'double',
-        autoCenter: false,
+        autoCenter: false, // Keeps the book perfectly stationary on open/close!
         gradients: true,
-        duration: 600,
-        elevation: 50
+        elevation: 50,
+        duration: 600
       });
 
-      // Tell the pages and images to fluidly fill the book, no matter what size it shrinks to!
-      $flipbook.find('.page-container, .page-background').css({
-          width: '100%', 
-          height: '100%',
+      $flipbook.find('.page-container').css({
+          'width': '100%', 
+          'height': '100%', 
+          'background-color': '#ffffff' 
+      });
+      $flipbook.find('.page-background').css({
+          'width': '100%', 
+          'height': '100%', 
           'object-fit': 'contain'
       });
 
-      // Tag wrappers for transform-origin (spine)
       setTimeout(function(){
         $flipbook.find('.page-wrapper').each(function(){
           var $wr = $(this);
@@ -39,76 +40,70 @@ $(document).ready(function() {
           if (left <= 1) { $wr.addClass('left').removeClass('right'); }
           else { $wr.addClass('right').removeClass('left'); }
         });
-        $('.page-wrapper.left').css('transform-origin','left center');
-        $('.page-wrapper.right').css('transform-origin','right center');
       }, 120);
 
       /* =======================================================
-         NEW RESPONSIVE & SINGLE-PAGE LOGIC
+         NEW FIX: THE LINK SHIELD
+         ======================================================= */
+      // Stops Turn.js from stealing the initial touch/click on your GIFs
+      $flipbook.on('mousedown touchstart pointerdown', 'a', function(e) {
+          e.stopPropagation();
+      });
+
+      /* =======================================================
+         UPGRADED CLICK ZONES
+         ======================================================= */
+      $flipbook.on("click", function(e) {
+        if ($(e.target).closest('a').length > 0) return; // Ignores the click if it was on a GIF
+
+        var rect = $flipbook[0].getBoundingClientRect();
+        var clickX = e.clientX - rect.left;
+        var currentWidth = rect.width;
+
+        if (clickX < currentWidth * 0.25) {
+            if ($flipbook.turn("page") > 1) $flipbook.turn("previous");
+        } else if (clickX > currentWidth * 0.75) {
+            if ($flipbook.turn("page") < $flipbook.turn("pages")) $flipbook.turn("next");
+        }
+      });
+
+      /* =======================================================
+         THE DYNAMIC ZOOM SCALER
          ======================================================= */
       function resizeFlipbook() {
+        if ($('#rotate-device-overlay').is(':visible')) return;
+
         var screenWidth = $(window).width();
         var screenHeight = $(window).height();
+        var margin = 40; 
 
-        if (screenWidth <= 800) {
-          // 1. Switch to single page mode
-          $flipbook.turn("display", "single");
+        var scaleW = (screenWidth - margin) / bookW;
+        var scaleH = (screenHeight - margin) / h;
+        
+        var scale = Math.min(scaleW, scaleH);
 
-          // 2. Calculate a responsive size that fits the phone screen
-          var margin = 40; // Leaves 20px padding on left and right
-          var boundWidth = screenWidth - margin;
-          var boundHeight = screenHeight - (margin * 2);
+        if (scale > 1) scale = 1;
 
-          // Aspect ratio of a SINGLE page
-          var ratio = pageW / h;
-
-          var newW = boundWidth;
-          var newH = newW / ratio;
-
-          // If scaling by width makes it too tall, scale by height instead
-          if (newH > boundHeight) {
-            newH = boundHeight;
-            newW = newH * ratio;
-          }
-
-          // 3. Apply the perfectly calculated size natively
-          $flipbook.turn("size", Math.floor(newW), Math.floor(newH));
-
-        } else {
-          // 1. Switch back to double page mode on desktop
-          $flipbook.turn("display", "double");
-
-          // 2. Reset to the original full size
-          $flipbook.turn("size", bookW, h);
-        }
+        $flipbook.turn("size", bookW, h);
+        $flipbook.turn("zoom", scale);
       }
 
-      // Re-calculate the math every time the user rotates their phone or drags the window
-      $(window).on('resize', function() {
-          resizeFlipbook();
+      $(window).on('resize', function() { 
+          setTimeout(resizeFlipbook, 200); 
       });
       
-      // Run it immediately on load
       resizeFlipbook();
-      /* ======================================================= */
 
     } catch (e) {
-      // Fallback
       var $flip = $("#flipbook");
       var bookW = (w === 514) ? 1028 : w*2;
       var pageW = Math.floor(bookW/2);
       $flip.css({width: bookW + 'px', height: h + 'px'});
-      $flip.find('.page-container').css({width: pageW + 'px', height: h + 'px'});
+      $flip.find('.page-container').css({width: '100%', height: '100%'});
     }
   };
   
   img.onerror = function(){
-    $('#flipbook').turn({
-      width: 514,
-      height: 800,
-      display: 'single',
-      autoCenter: false,
-      elevation: 50
-    });
+    $('#flipbook').turn({width:1028, height:800, display:'double', autoCenter:false});
   };
 });
