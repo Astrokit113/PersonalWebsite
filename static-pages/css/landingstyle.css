@@ -55,6 +55,10 @@ body {
     background-attachment: fixed;
 }
 
+p {
+    font-family: "IMFell", serif;
+}
+
 /* -------------------------------------------------------- */
 /* MAIN LAYOUT WRAPPERS                                     */
 /* -------------------------------------------------------- */
