@@ -3,43 +3,97 @@ $(document).ready(function() {
   var coverPath = '../../images/Cover1.png';
   var img = new Image();
   img.src = coverPath;
+  
   img.onload = function() {
     var w = img.naturalWidth || 514;
     var h = img.naturalHeight || 800;
 
-    // Initialize book as double-page so each page equals 514x800 (book width 1028)
     try {
-      var bookW = (w === 514) ? 1028 : w*2; // if cover width is single page 514, book is 1028
+      var bookW = (w === 514) ? 1028 : w*2; 
       var pageW = Math.floor(bookW / 2);
-      $("#flipbook").turn({
+      
+      var $flipbook = $("#flipbook");
+      
+      $flipbook.turn({
         width: bookW,
         height: h,
         display: 'double',
         autoCenter: false,
         gradients: true,
-        duration: 600
+        duration: 600,
+        elevation: 50
       });
 
-      // Ensure page containers match the page size (each page = half book width)
-      $("#flipbook").find('.page-container').css({width: pageW + 'px', height: h + 'px'});
+      // Tell the pages and images to fluidly fill the book, no matter what size it shrinks to!
+      $flipbook.find('.page-container, .page-background').css({
+          width: '100%', 
+          height: '100%',
+          'object-fit': 'contain'
+      });
 
-      // Ensure images inside pages don't stretch: set to exact page size
-      $("#flipbook").find('.page-background').css({width: pageW + 'px', height: h + 'px', 'object-fit':'contain'});
-
-      // Tag wrappers for transform-origin (spine) after a short delay
+      // Tag wrappers for transform-origin (spine)
       setTimeout(function(){
-        $('#flipbook').find('.turn-page-wrapper').each(function(){
+        $flipbook.find('.page-wrapper').each(function(){
           var $wr = $(this);
           var left = $wr.position().left;
           if (left <= 1) { $wr.addClass('left').removeClass('right'); }
           else { $wr.addClass('right').removeClass('left'); }
         });
-        // set transform-origin CSS for spine flipping
-        $('.turn-page-wrapper.left').css('transform-origin','left center');
-        $('.turn-page-wrapper.right').css('transform-origin','right center');
+        $('.page-wrapper.left').css('transform-origin','left center');
+        $('.page-wrapper.right').css('transform-origin','right center');
       }, 120);
+
+      /* =======================================================
+         NEW RESPONSIVE & SINGLE-PAGE LOGIC
+         ======================================================= */
+      function resizeFlipbook() {
+        var screenWidth = $(window).width();
+        var screenHeight = $(window).height();
+
+        if (screenWidth <= 800) {
+          // 1. Switch to single page mode
+          $flipbook.turn("display", "single");
+
+          // 2. Calculate a responsive size that fits the phone screen
+          var margin = 40; // Leaves 20px padding on left and right
+          var boundWidth = screenWidth - margin;
+          var boundHeight = screenHeight - (margin * 2);
+
+          // Aspect ratio of a SINGLE page
+          var ratio = pageW / h;
+
+          var newW = boundWidth;
+          var newH = newW / ratio;
+
+          // If scaling by width makes it too tall, scale by height instead
+          if (newH > boundHeight) {
+            newH = boundHeight;
+            newW = newH * ratio;
+          }
+
+          // 3. Apply the perfectly calculated size natively
+          $flipbook.turn("size", Math.floor(newW), Math.floor(newH));
+
+        } else {
+          // 1. Switch back to double page mode on desktop
+          $flipbook.turn("display", "double");
+
+          // 2. Reset to the original full size
+          $flipbook.turn("size", bookW, h);
+        }
+      }
+
+      // Re-calculate the math every time the user rotates their phone or drags the window
+      $(window).on('resize', function() {
+          resizeFlipbook();
+      });
+      
+      // Run it immediately on load
+      resizeFlipbook();
+      /* ======================================================= */
+
     } catch (e) {
-      // Fallback: set sizes via CSS if turn.js initialization fails
+      // Fallback
       var $flip = $("#flipbook");
       var bookW = (w === 514) ? 1028 : w*2;
       var pageW = Math.floor(bookW/2);
@@ -47,8 +101,14 @@ $(document).ready(function() {
       $flip.find('.page-container').css({width: pageW + 'px', height: h + 'px'});
     }
   };
-  // If image fails to load, initialize with default single page size
+  
   img.onerror = function(){
-    $('#flipbook').turn({width:514, height:800, display:'single', autoCenter:false});
+    $('#flipbook').turn({
+      width: 514,
+      height: 800,
+      display: 'single',
+      autoCenter: false,
+      elevation: 50
+    });
   };
 });

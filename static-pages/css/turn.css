@@ -132,74 +132,75 @@ body {
 
 /* Left side group */
 .pos-1 {
-    left: 94.5px !important;
-    top: 445.5px !important;
-    width: 142px !important;
-    height: 50px !important;
+    left: 18.38% !important;
+    top: 55.68% !important;
+    width: 27.62% !important;
+    height: 6.25% !important;
 }
 
 /* 1. AfraidOfEncounters */
 .pos-2 {
-    left: 292.5px !important;
-    top: 360px !important;
-    width: 142px !important;
-    height: 50px !important;
+    left: 56.9% !important;
+    top: 45% !important;
+    width: 27.62% !important;
+    height: 6.25% !important;
 }
 
 /* 2. PrismaticWasteland */
 .pos-3 {
-    left: 99.5px !important;
-    top: 360px !important;
-    width: 142px !important;
-    height: 50px !important;
+    left: 19.35% !important;
+    top: 45% !important;
+    width: 27.62% !important;
+    height: 6.25% !important;
 }
 
+/* Base 88x31 Button Sizes (17.1% width, 3.87% height) */
 .pos-4 {
-    top: 35%;
-    left: 5%;
-    width: 88px;
-    height: 31px;
+    top: 35% !important;
+    left: 5% !important;
+    width: 17.1% !important;
+    height: 3.87% !important;
 }
 
 .pos-5 {
-    top: 45%;
-    left: 5%;
-    width: 88px;
-    height: 31px;
+    top: 45% !important;
+    left: 5% !important;
+    width: 17.1% !important;
+    height: 3.87% !important;
 }
 
 /* Right side group */
 .pos-6 {
-    top: 5%;
-    right: 5%;
-    width: 88px;
-    height: 31px;
+    top: 5% !important;
+    right: 5% !important;
+    width: 17.1% !important;
+    height: 3.87% !important;
 }
 
 .pos-7 {
-    top: 15%;
-    right: 5%;
-    width: 88px;
-    height: 31px;
+    top: 15% !important;
+    right: 5% !important;
+    width: 17.1% !important;
+    height: 3.87% !important;
 }
 
 .pos-8 {
-    top: 25%;
-    right: 5%;
-    width: 88px;
-    height: 31px;
+    top: 25% !important;
+    right: 5% !important;
+    width: 17.1% !important;
+    height: 3.87% !important;
 }
 
 .pos-9 {
-    top: 35%;
-    right: 5%;
-    width: 88px;
-    height: 31px;
+    top: 35% !important;
+    right: 5% !important;
+    width: 17.1% !important;
+    height: 3.87% !important;
 }
 
 .pos-10 {
-    bottom: 5%;
-    right: 5%;
-    width: 88px;
-    height: 31px;
+    bottom: 5% !important;
+    right: 5% !important;
+    width: 17.1% !important;
+    height: 3.87% !important;
 }

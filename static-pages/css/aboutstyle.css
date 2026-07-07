@@ -1181,7 +1181,7 @@ footer a {
 /* -------------------------------------------------------- */
 /* MOBILE RESPONSIVENESS */
 /* -------------------------------------------------------- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .container {
         width: 100%;
         margin: 0;

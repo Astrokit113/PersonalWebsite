@@ -374,7 +374,10 @@ body {
 
 .main-center {
     min-height: 300px;
-    padding: 25px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
     position: relative;
 }
 
@@ -617,6 +620,14 @@ h2,
         grid-template-columns: 1fr;
     }
 
+    /* THE FIX: Stops the small box from stretching across the grid */
+    .main-top-small {
+        justify-self: center;
+        width: max-content;
+        padding: 10px;
+        /* Gives the gold frame a little breathing room around the image */
+    }
+
     .main-bottom-row {
         flex-direction: column;
     }
@@ -625,7 +636,65 @@ h2,
         margin: 0 auto;
     }
 
-    .roseline,
+    /* -------------------------------------------------------- */
+    /* MOBILE OVERRIDES FOR MAIN CENTER & MASCOT                */
+    /* -------------------------------------------------------- */
+
+    /* 1. Turns the center box into a neat vertical stack */
+    .main-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    /* 2. Forces text to take up full width on phones */
+    .text {
+        max-width: 100%;
+    }
+
+    /* 3. Pulls the speech bubble into the flow, under the text */
+    .speech-box {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        max-width: 90%;
+    }
+
+    /* Rotates the speech bubble outer tail to point DOWN */
+    .speech-box::before {
+        top: auto;
+        bottom: -13px;
+        right: 30px;
+        border-top: 13px solid var(--accent);
+        border-bottom: none;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+    }
+
+    /* Rotates the speech bubble inner tail to point DOWN */
+    .speech-box::after {
+        top: auto;
+        bottom: -10px;
+        right: 31px;
+        border-top: 11px solid var(--bg-dark-red);
+        border-bottom: none;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+    }
+
+    /* 4. Pulls Roseline into the flow, under the speech bubble */
+    .roseline {
+        display: block !important;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        height: 220px;
+        margin-top: 10px;
+    }
+
     .chain,
     .chain2,
     .roses {
