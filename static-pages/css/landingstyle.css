@@ -231,6 +231,15 @@ p {
     align-items: center;
 }
 
+.upper-right {
+    max-width: 100%;
+    max-height: 205px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
 .main-center {
     min-height: 300px;
     padding-top: 20px;
