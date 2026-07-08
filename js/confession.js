@@ -1,7 +1,4 @@
-// askbox.js
-console.log("The void is listening...");
-
-document.getElementById("gothic-askbox").addEventListener("submit", async function (event) {
+document.getElementById("gothic-askbox").addEventListener("submit", async function(event) {
   event.preventDefault(); 
   
   const form = event.target;
@@ -15,32 +12,33 @@ document.getElementById("gothic-askbox").addEventListener("submit", async functi
 
   try {
     const response = await fetch(form.action, {
-      method: form.method,
+      method: 'POST',
       body: formData,
       headers: {
         'Accept': 'application/json' 
       }
     });
 
-    if (response.ok) {
+    // Web3Forms sends back a JSON object with a 'success' boolean
+    const json = await response.json();
+
+    if (response.status === 200 && json.success) {
       status.style.display = "block";
       status.style.color = "#a30000";
       status.innerHTML = "Your confession has been sealed.";
       form.reset(); 
-      btn.style.filter = "none";
     } else {
-      const data = await response.json();
-      if (Object.hasOwn(data, 'errors')) {
-        status.innerHTML = data.errors.map(error => error.message).join(", ");
-      } else {
-        status.innerHTML = "The void rejected your message. Try again.";
-      }
       status.style.display = "block";
-      btn.textContent = "Seal & Send";
+      status.style.color = "#ff4444";
+      // Displays the specific error Web3Forms provides, or a fallback
+      status.innerHTML = json.message || "The void rejected your message. Try again.";
     }
   } catch (error) {
     status.style.display = "block";
-    status.innerHTML = "A network error occurred.";
-    btn.textContent = "Seal & Send";
+    status.style.color = "#ff4444";
+    status.innerHTML = "A network error occurred. The seal is broken.";
+  } finally {
+    // Resets the stamp appearance
+    btn.style.filter = "none";
   }
 });
