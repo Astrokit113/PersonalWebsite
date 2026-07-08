@@ -102,6 +102,11 @@ module.exports = async function (eleventyConfig) {
     return [...collectionApi.getFilteredByTag("confessions")].reverse();
   });
 
+  // Generates a unique timestamp on every build for cache busting
+  eleventyConfig.addShortcode("version", function () {
+    return String(Date.now());
+  });
+
   // Minify HTML 
   eleventyConfig.addTransform("htmlmin", function (content) {
     if ((this.page.outputPath || "").endsWith(".html")) {
