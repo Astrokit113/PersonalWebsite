@@ -12,6 +12,17 @@ $(document).ready(function() {
       var pageW = Math.floor(bookW / 2);
       var $flipbook = $("#flipbook");
 
+      /* =======================================================
+         RESTORED: MOBILE HARD-PAGE STRIPPER
+         ======================================================= */
+      // Checks if the user is on a phone BEFORE building the book
+      var isMobileInit = $(window).width() <= 800;
+      
+      if (isMobileInit) {
+        // Strips the rigid cardboard math on mobile, leaves it on desktop
+        $flipbook.find('.page-container').removeClass('hard');
+      }
+
       $flipbook.turn({
         width: bookW,
         height: h,
@@ -19,7 +30,20 @@ $(document).ready(function() {
         autoCenter: false, // Keeps the book perfectly stationary on open/close!
         gradients: true,
         elevation: 50,
-        duration: 600
+        duration: 600,
+
+        /* =======================================================
+           RESTORED: VOID BLOCKER FOR THE BACK COVER
+           ======================================================= */
+        when: {
+            start: function(event, pageObject, corner) {
+                var totalPages = $(this).turn("pages");
+                // Stops the engine from revealing a blank backside on the final page
+                if (pageObject.page === totalPages && (corner === "tr" || corner === "br" || corner === "r")) {
+                    event.preventDefault(); 
+                }
+            }
+        }
       });
 
       $flipbook.find('.page-container').css({
@@ -43,9 +67,8 @@ $(document).ready(function() {
       }, 120);
 
       /* =======================================================
-         NEW FIX: THE LINK SHIELD
+         THE LINK SHIELD
          ======================================================= */
-      // Stops Turn.js from stealing the initial touch/click on your GIFs
       $flipbook.on('mousedown touchstart pointerdown', 'a', function(e) {
           e.stopPropagation();
       });
@@ -54,7 +77,7 @@ $(document).ready(function() {
          UPGRADED CLICK ZONES
          ======================================================= */
       $flipbook.on("click", function(e) {
-        if ($(e.target).closest('a').length > 0) return; // Ignores the click if it was on a GIF
+        if ($(e.target).closest('a').length > 0) return; 
 
         var rect = $flipbook[0].getBoundingClientRect();
         var clickX = e.clientX - rect.left;

@@ -80,7 +80,7 @@ body {
 
 #status-message {
     position: absolute;
-    bottom: 10px;
+    bottom: -20px;
     /* Pulls it up onto the actual letter, just above the bottom edge */
     left: 0;
     text-align: center;
