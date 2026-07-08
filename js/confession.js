@@ -7,6 +7,7 @@ document.getElementById("gothic-askbox").addEventListener("submit", async functi
 
   // Dims the stamp while waiting
   btn.style.filter = "brightness(0.5)";
+  status.style.display = "none"; // Hide any previous messages
   
   const formData = new FormData(form);
 
@@ -19,23 +20,24 @@ document.getElementById("gothic-askbox").addEventListener("submit", async functi
       }
     });
 
-    // Web3Forms sends back a JSON object with a 'success' boolean
     const json = await response.json();
+    console.log("Web3Forms Response:", json); // This helps us debug if needed
 
-    if (response.status === 200 && json.success) {
+    // response.ok is a foolproof way to check if the server is happy (Status 200-299)
+    if (response.ok) {
       status.style.display = "block";
-      status.style.color = "#a30000";
+      status.style.color = "#8b0000";
       status.innerHTML = "Your confession has been sealed.";
       form.reset(); 
     } else {
       status.style.display = "block";
-      status.style.color = "#ff4444";
-      // Displays the specific error Web3Forms provides, or a fallback
+      status.style.color = "#ff0000";
       status.innerHTML = json.message || "The void rejected your message. Try again.";
     }
   } catch (error) {
+    console.error("Askbox Error:", error);
     status.style.display = "block";
-    status.style.color = "#ff4444";
+    status.style.color = "#ff0000";
     status.innerHTML = "A network error occurred. The seal is broken.";
   } finally {
     // Resets the stamp appearance

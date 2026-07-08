@@ -80,13 +80,18 @@ body {
 
 #status-message {
     position: absolute;
-    bottom: -130px;
-    /* Pushed further down to clear the larger stamp */
+    bottom: 20px;
+    /* Pulls it up onto the actual letter, just above the bottom edge */
+    left: 0;
     text-align: center;
     width: 100%;
     font-style: italic;
-    color: #a30000;
+    font-weight: bold;
+    color: #8b0000;
+    /* Dark crimson to look like ink on the paper */
     display: none;
+    z-index: 10;
+    /* Forces it to stay on top of everything else */
 }
 
 /* ========================================
