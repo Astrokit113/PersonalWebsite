@@ -1,21 +1,12 @@
-/* ========================================
-   GLOBAL
-   ======================================== */
 body {
     background-color: #000000;
     color: #e0e0e0;
 }
 
-/* ========================================
-   THE CONFESSION LETTER (Submission Form)
-   ======================================== */
 .letter-container {
     width: 604px;
-    /* Doubled from 302px */
     height: 684px;
-    /* Doubled from 342px */
     margin: 50px auto 100px auto;
-    /* Slightly reduced bottom margin since the stamp is smaller */
     background-image: url('/images/Letter_2.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,17 +15,13 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 120px;
-    /* Increased to push the text box down to the middle of the large letter */
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
 
-
 #message {
     width: 420px;
-    /* Doubled to fill the larger letter */
     height: 200px;
-    /* Doubled for a massive writing space */
     background-color: transparent;
     border: none;
     color: #1a0000;
@@ -49,14 +36,9 @@ body {
     border-bottom: 1px solid rgba(139, 0, 0, 0.3);
 }
 
-/* ========================================
-   THE STAMP BUTTON
-   ======================================== */
 #submit-btn {
     width: 208px;
-    /* Reverted to original larger size */
     height: 233px;
-    /* Reverted to original larger size */
     background-image: url('/images/Stamp_1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -64,10 +46,8 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
-
     position: absolute;
     bottom: 120px;
-    /* Pushed back down to hang lower off the edge */
     left: 50%;
     transform: translateX(-50%);
     transition: transform 0.2s ease, filter 0.2s ease;
@@ -81,27 +61,19 @@ body {
 #status-message {
     position: absolute;
     bottom: -20px;
-    /* Pulls it up onto the actual letter, just above the bottom edge */
     left: 0;
     text-align: center;
     width: 100%;
     font-style: italic;
     font-weight: bold;
     color: #8b0000;
-    /* Dark crimson to look like ink on the paper */
     display: none;
     z-index: 10;
-    /* Forces it to stay on top of everything else */
 }
 
-/* ========================================
-   THE LONG PAPER SCROLL (Past Answers) - SCALED 170%
-   ======================================== */
 .confession-scroll {
     width: 536px;
-    /* Scaled 170% from 315px */
     margin: 60px auto;
-    /* Slightly increased to give it breathing room */
     display: flex;
     flex-direction: column;
 }
@@ -109,7 +81,6 @@ body {
 .scroll-top {
     width: 100%;
     height: 111px;
-    /* Scaled 170% from 65px */
     background-image: url('/images/AnswerPaper_01.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,28 +92,21 @@ body {
     background-repeat: repeat-y;
     background-size: 100% auto;
     padding: 0 50px;
-    /* Scaled 170% from 30px to maintain the side margins */
     box-sizing: border-box;
 }
 
 .scroll-bottom {
     width: 100%;
     height: 111px;
-    /* Scaled 170% from 65px */
     background-image: url('/images/AnswerPaper_03.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/* ========================================
-   TEXT STYLING ON THE PAPER (SCALED)
-   ======================================== */
 .letter-text {
     margin-bottom: 42px;
-    /* Scaled 170% from 25px */
     color: #1a0000;
     font-size: 1.3rem;
-    /* Scaled up for readability on the larger paper */
     line-height: 1.6;
 }
 
@@ -151,16 +115,13 @@ body {
     font-weight: bold;
     color: #5a0000;
     margin-bottom: 14px;
-    /* Scaled 170% from 8px */
     font-size: 1.5rem;
-    /* Noticeably larger to establish visual hierarchy */
 }
 
 .ink-divider {
     border: 0;
     border-bottom: 1px dashed #5a0000;
     margin: 34px 0;
-    /* Scaled 170% from 20px */
     opacity: 0.5;
 }
 
@@ -183,7 +144,6 @@ body {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    /* Creates the 3D pop of a physical key */
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9), inset -1px -1px 3px rgba(255, 255, 255, 0.05);
     transition: all 0.15s ease;
 }
@@ -195,7 +155,10 @@ body {
 }
 
 .nav-typewriter:active {
-    /* Flattens the shadow and pushes it down to simulate a keystroke */
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9), inset 2px 2px 5px rgba(0, 0, 0, 0.8);
     transform: translateY(3px);
+}
+
+p {
+    font-family: "IMFell", serif;
 }
