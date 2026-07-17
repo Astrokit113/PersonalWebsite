@@ -35,12 +35,11 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     background-color: var(--bg-black);
-    background-image: conic-gradient(var(--bg-dark-red) 90deg,
-            transparent 90deg 180deg,
-            var(--bg-dark-red) 180deg 270deg,
-            transparent 270deg);
-    background-size: 20px 20px;
+    background-image: url('/images/Wallpaper_1.jpg');
+    background-position: bottom left;
+    background-repeat: repeat-x;
     background-attachment: fixed;
+    background-size: auto 100vh;
 }
 
 p {
