@@ -17,48 +17,45 @@
       <div class="content">
         <div class="wireframe-container">
           <div class="left-col">
-            <div class="upperleft-box">
-              <img
-                src="/images/Curtain_1.png"
-                class="curtain-deco pos-top-box-left"
-                alt="Corner curtain"
-              />
-              <img
-                src="/images/Curtain_2.png"
-                class="curtain-deco pos-top-box-right"
-                alt="Corner curtain"
-              />
-              <img class="pfp" draggable="false" src="/images/Michiru1.jpg" />
-            </div>
+            <img src="/images/Sun_3.png" class="sun-deco" draggable="false" />
 
             <div class="nav">
               <a href="/about" class="button btn-velvet">About</a>
               <a href="/confessions" class="button btn-velvet">Confessions</a>
-              <a href="#" class="button btn-velvet">Closed</a>
-              <a href="#" class="button btn-velvet">Closed</a>
+              <a href="/outgoing" class="button btn-velvet">Externals</a>
+              <a href="/blog" class="button btn-velvet">Blog</a>
               <a href="#" class="button btn-velvet">Closed</a>
             </div>
 
-            <div class="left-widgets-container">
-              <p class="minibox">Visits: <span id="visit-counter">...</span></p>
-              <p class="email">
-                <a href="#"> <i>Visit Guestbook</i> </a>
+            <div class="blog-widget">
+              <p class="blog-widget-title">
+                <i><u>Latest Post</u></i>
+                <a href="rss.xml">
+                  <img class="rss-icon" src="/images/rss.png" alt="RSS Feed" />
+                </a>
               </p>
+              <a href="#" id="latest-post-link">
+                <span id="latest-post-title">"Loading latest post..."</span>
+              </a>
             </div>
           </div>
 
           <div class="main-area">
             <div class="top-row">
               <div class="main-top-large"></div>
-              <div class="main-top-small">
-                <a href="#">
-                  <img
-                    class="upper-right"
-                    src="/images/UpperImageRight.png"
-                    draggable="false"
-                  />
-                </a>
-                <p id="quote-container"></p>
+
+              <div class="upperright-box">
+                <img
+                  src="/images/Curtain_1.png"
+                  class="curtain-deco pos-top-box-left"
+                  alt="Corner curtain"
+                />
+                <img
+                  src="/images/Curtain_2.png"
+                  class="curtain-deco pos-top-box-right"
+                  alt="Corner curtain"
+                />
+                <img class="pfp" draggable="false" src="/images/Michiru1.jpg" />
               </div>
             </div>
 
@@ -108,50 +105,10 @@
                 draggable="false"
               />
             </div>
-
-            <div class="main-bottom-row">
-              <div class="main-bottom">
-                <p class="boxtitle">
-                  <i><u>Box 1</u></i>
-                </p>
-              </div>
-
-              <div class="main-blog">
-                <div class="blog-header">
-                  <p class="boxtitle">
-                    <i><u>Latest Post</u></i>
-                  </p>
-                  <a href="rss.xml" class="rss-link">
-                    <img
-                      class="rss-icon"
-                      src="/images/rss.png"
-                      alt="RSS Feed"
-                    />
-                  </a>
-                </div>
-
-                <a
-                  href="#"
-                  id="latest-post-link"
-                  style="color: var(--text-color)"
-                >
-                  <span id="latest-post-title">"Loading latest post..."</span>
-                </a>
-              </div>
-
-              <div class="main-bottom">
-                <p class="boxtitle">
-                  <a href="/outgoing">
-                    <i><u>Externalizing (links)</u></i>
-                  </a>
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <script src="/js/latest-post.js"></script>
-    <script src="/js/counter.js"></script>
   </body>
 </html>
