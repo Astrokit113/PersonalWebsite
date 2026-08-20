@@ -6,7 +6,7 @@ tags:
   - post
   - ttrpg
   - Indonesian
-permalink: /blog/IndoBlog01html
+permalink: /blog/IndoBlog01.html
 description: I talk about the Indonesian language, why it's surprisingly easy for English speakers to pick up, and how we use it to seamlessly codswitch during our TTRPG sessions.
 preview_image: https://i.ibb.co.com/qMZt4czP/images.jpg
 ---
