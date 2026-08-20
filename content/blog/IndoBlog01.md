@@ -10,7 +10,7 @@ permalink: /blog/IndoBlog01.html
 description: I talk about the Indonesian language, why it's surprisingly easy for English speakers to pick up, and how we use it to seamlessly codswitch during our TTRPG sessions.
 preview_image: https://i.ibb.co.com/qMZt4czP/images.jpg
 ---
-This post part of the [Indonesian Blogwagon](https://afraidofencounters.bearblog.dev/indonesian-ttrpg-blogwagon/)!!!!  
+This post is a lovely part of the [Indonesian Blogwagon](https://afraidofencounters.bearblog.dev/indonesian-ttrpg-blogwagon/)!!!!  
 # Overview
 
 Let's talk about Indonesian language, because it is so much impressive than it seems. This language has to account for 17,000 islands, hundreds of ethnic groups, and 700 living local languages (Javanese, Sundanese, Balinese, etc.) Without a thoughtful construction for a lingua franca, people can't communicate with each other. Indonesian was created so that we could talk with our neighbours with ease.
