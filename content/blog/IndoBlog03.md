@@ -7,7 +7,7 @@ tags:
   - Indonesian
   - personal
 permalink: /blog/IndoBlog03.html
-description: A slightly angry, deeply hopeful rant about Indonesian politics, the burden of fighting for change, and why we play TTRPGs to imagine a better world
+description: A slightly angry, deeply hopeful rant about Indonesian politics, the burden of fighting for change, and why we play TTRPGs to imagine a better world.
 preview_image: https://i.ibb.co.com/hFrStfQm/G6-ODJESXg-AIp8wj1.png
 ---
 I talk about diversity of voices in my last blog. However, there are times where we want our voice to matter most, to be able to change the world that we desperately need to repair from all the evildoers, from all the damage our past inhibitors lived. We must keep fighting, again and again until there's a massive change. But the thing is, that change won't happen in our lifetime. 
