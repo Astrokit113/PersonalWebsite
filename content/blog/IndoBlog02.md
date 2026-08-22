@@ -44,7 +44,7 @@ When we center minority voices in our games, the Bleed becomes a radical empathy
 
 Centering the voices of marginalized players isn't about taking the spotlight away from the majority; it is about plugging in new lightbulbs so we can finally see the whole room. When we listen to the voices of those who experience the world differently than we do, we don't just become better storytellers. We build better worlds, both in the game and out of it.
 
-https://i.ibb.co.com/84TdZ90v/backup.jpg
+![https://i.ibb.co.com/84TdZ90v/backup.jpg](https://i.ibb.co.com/84TdZ90v/backup.jpg)
 
 # Gameable Content
 

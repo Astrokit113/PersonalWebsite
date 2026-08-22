@@ -46,8 +46,7 @@ In D&D or Pathfinder, when a kingdom rots from the inside out, a band of heroes 
 
 I'm not asking you to put down your swords. I'm asking you keep fighting. Keep being the band of heroes that the future needs, and although the future won't erect statues of glory for your sacrifice, or tell the glorious tale of the heroes that fought the government in the past, know that everytime you decide to preach to your friends, or you donate to the ones in need, you too are making an impact. You are *saving* the world. The future owes your existence to your blood and tears. 
 
-[https://ibb.co.com/prGRFdxV](https://ibb.co.com/prGRFdxV "https://ibb.co.com/prGRFdxV")
-
+![](https://i.ibb.co.com/hFrStfQm/G6-ODJESXg-AIp8wj1.png)
 # Gameable Content 
 
 I’ve made a little motivation table. It’s for a very simple reason. I’ve made the motivation table specifically so that your character can continue to resist, even when whoever tried before can't anymore, so you took their mantle. Resistance cannot be singular, it must be generational.
