@@ -7,7 +7,7 @@ tags:
   - Indonesian
   - ttrpg
 permalink: /blog/IndoBlog02.html
-description: BlogDescription
+description: How marginalized voices, Indonesian cultural concepts like Gotong Royong, and the psychological magic of 'Bleed' can rescue your tabletop campaigns from repetitive storytelling.
 preview_image: https://i.ibb.co.com/84TdZ90v/backup.jpg
 ---
 
