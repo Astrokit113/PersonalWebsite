@@ -14,7 +14,7 @@ preview_image: https://i.ibb.co.com/KphPsYSL/Logo-Anjaykarta.jpg
 
 # Soft-Launching My Own TTRPG System: Anjaykarta!
 
-My last entry to the [Indonesian Blogwgon!](https://afraidofencounters.bearblog.dev/indonesian-ttrpg-blogwagon/)
+My last entry to the [Indonesian Blogwagon!](https://afraidofencounters.bearblog.dev/indonesian-ttrpg-blogwagon/)
 
 **What is Anjaykarta?** I like to define Anjaykarta as a hack of _Electric Bastionland_ combined with _Blades in the Dark_'s clock-driven faction system. It's a fast-paced, low-prep urban roleplaying game designed to capture the gritty, chaotic, and hyper-capitalist survival experience of a fictionalized Jakarta.
 
