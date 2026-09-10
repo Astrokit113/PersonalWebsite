@@ -43,3 +43,5 @@ I grew up here, but I haven't really gotten the chance to explore the depths of 
 ## What's next?
 
 The system is *far* from done. Currently, I'm writing both the English and Indonesian version, so doing double the work is very tiring. Moreover, I myself am also still refining the Faction and misc system in Jaykarta. We plan to fully release somewhere in 2027, so until then, we'll be posting updates and WIPs in our itch and social media. Thank you for reading!
+
+[Anjaykarta Itch Page!](https://redforroseline.itch.io/anjaykarta)
