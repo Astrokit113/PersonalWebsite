@@ -36,11 +36,11 @@ I really love inviting my friends into my hobbies, but TTRPGs can have a tough b
 
 **2. Introducing Foreigners to the Real Jakarta**
 
-Let's be honest: Indonesia's cultural export is usually either incredibly weird (like the Tung Tung Sahur memes) or completely obscure. There is a massive gap in how the rest of the world sees us. I want this TTRPG to act as a pavement for foreigners to truly experience what it's like to navigate this city. Instead of generic fantasy taverns, they get to experience the sheer chaos, the sprawling traffic, and the vibrant street-food culture of a hyper-capitalist concrete circus.
+Let's be honest: Indonesia's cultural export is usually either incredibly weird (like the Tung Tung Sahur memes) or completely obscure.  There is a massive gap in how the rest of the world sees us. Hell, some people know Bali more than Indonesia itself. Furthermore, all we're famous for is for bad rep these days, such as the infamous MBG poisoning. This isn't always the case. I want this TTRPG to act as a pavement for foreigners to truly experience what it's like to navigate this city. Instead of your eurocentric taverns, they get to experience the sheer chaos, the sprawling traffic, and the vibrant street-food culture of this hyper-capitalist concrete circus.
 
 **3. Discovering the City for Myself** 
 
-I grew up here, but I haven't really gotten the chance to explore the depths of Jakarta when I was little. Now that I have the freedom, building this game is my excuse to dive deep into the city's veins. From researching the elite hangouts in Jakarta Selatan to the heavy container truck traffic of Jakarta Utara, writing this system is my way of learning more about Jakarta and, ultimately, learning to love it for all its flaws.
+Anjaykarta is ultimately is a personal project. I grew up here in this city, but I haven't really gotten the chance to explore the depths of Jakarta when I was little. I was just doing my commute and didn't really realize the depths of the city. Now that I have the freedom, building this game is my excuse to dive deep into the city's veins. From researching the elite hangouts in Jakarta Selatan to the heavy container truck traffic of Jakarta Utara, discovering weird organizations, down to the sweet, little mundane details about my neighbourhood, writing this system is my way of learning more about Jakarta and, ultimately, learning to love it for all its flaws.
 
 ## What are the design philosophy?
 
