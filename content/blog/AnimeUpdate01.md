@@ -8,6 +8,8 @@ tags:
 permalink: /blog/AnimeUpdate01.html
 description: Some of my most hyped anime this season that I will see religiously. These series I've loved before and I'm very hyped to see the future.
 ---
+https://i.ibb.co.com/KphPsYSL/Logo-Anjaykarta.jpg
+
 # It's time
 
 I'll admit, I used to be the those fans that says that the ongoing anime are usually pretty meh. And for some of the anime, such as dogshit isekais, I still detest them. But we have been in so much good shit lately, and this summer we are being fed on one of the best lineups I've seen ever. Some of the anime I mentioned are from the manga that I read and they are proven to be really good, so I really hope the adaptations are on par as well. If you don't read these mangas, that's totally okay! I encourage you to watch these titles. Watching weekly anime is one of the best pleasures in the world, because not only you can watch it at your own pace, but also you can enjoy the discussions with other people as well. You get to have new friends to enjoy. Uber nice!
