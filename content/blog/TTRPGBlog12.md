@@ -7,7 +7,7 @@ tags:
   - ttrpg
 permalink: /blog/TTRPGBlog12.html
 description: I am too literal when describing things at Horror. Below are my findings to make sure your players will be traumatized by your descriptions. Maybe not traumatized, but so that they feel actually scared.
-preview_image: https://ibb.co.com/RkJtM1b6
+preview_image: https://i.ibb.co.com/TxNJnZ20/pexels-lauren-church-981665-7435130.jpg
 ---
 # Prologue
 
