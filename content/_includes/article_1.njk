@@ -14,12 +14,14 @@ layout: myTemplate.njk
 
   {% if not noComments %}
   <div class="center" style="margin-bottom: 40px;">
-  <div class="pagelike-container" data-pl-custom="true" data-pl-level="path">
-    <button class="cute-like-btn">
-      <span class="pl-like-icon">♥</span> 
-      <span class="pl-count">0</span> Likes
-    </button>
-  </div>
+  <div 
+    data-lyket-type="like" 
+    data-lyket-id="{{ page.fileSlug | default('home') }}" 
+    data-lyket-namespace="blog"
+    data-lyket-color-background="var(--button-bg)"
+    data-lyket-color-text="var(--button-text)"
+    data-lyket-color-primary="var(--post-header-text)"
+></div>
 </div>
   <section id="comments-section" style="margin-top: 40px; padding-top: 30px; border-top: 3px solid #b21c0e;">
     <h3 style="color: #ffffff; font-family: 'Nunito', sans-serif; margin-bottom: 20px;">Comments</h3>
