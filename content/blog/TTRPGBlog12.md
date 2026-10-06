@@ -17,13 +17,13 @@ My takeaways from reading a whole lotta blogs is boiled down to these points:
 
 ## Don't directly inject the feeling of emotions using adjectives
 
-Something among the lines of "a terrifying monster steps out of the shadow." Even if you can describe the scary physique of the monster, you're telling the player to be scared instead of actually letting them feel scared. Using adjectives like these also makes them try to logically picture the monster, when in horror, accuracy isn't that much important, it's the emotions that are much more important. So ban using these adjectives. H
+Something among the lines of "a terrifying monster steps out of the shadow." Even if you can describe the scary physique of the monster, you're telling the player to be scared instead of actually letting them feel scared. Using adjectives like these also makes them try to logically picture the monster, when in horror, accuracy isn't that much important, it's the emotions that are much more important. So ban using these adjectives.
 
 One thing that helps me to describe things different in horror is to describe as if I'm the "cameraman" only. If a camera or a microphone cannot record it, don't describe it. You can't describe if a character feels scared, but you can describe how the hairs on their skin suddenly tenses up, how their breathing slowly becomes erratic and uncontrollable.
 
 ## Sensory cropping 
 
-We can use the senses of the human body to try evoke the feeling of horror. But using too many senses can make your players struggle too much conceptualizing it. So instead, focus on 2-3 senses and describe what the monster smells/sounds like.Sight is the most safest sense/sense that gives us comfort, so ising other sense can be even more scarier. 
+We can use the senses of the human body to try evoke the feeling of horror. But using too many senses can make your players struggle too much conceptualizing it. So instead, focus on 2-3 senses and describe what the monster smells/sounds like. Sight is the most safest sense/sense that gives us comfort, so ising other sense can be even more scarier. 
 
 Additionally, we can also describe how the environment reacts to the horror itself. Humanize/Personify the environment so that they too *feel* as the horror enters the environment that the PCs are in. Describe how the ambient stops suddenly, how the torch on your PCs hands violently leeches away as if the air itself is being sucked out into the next room.
 
