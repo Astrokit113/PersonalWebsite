@@ -6,8 +6,8 @@ tags:
   - post
   - ttrpg
 permalink: /blog/TTRPGBlog15.html
-description: Why do some people only play and are only good at DnD but they suck at RP? There's no scoring in TTRPG, but they have an Interface. Here's my approach measure friction, define "skill," and align your table before Session Zero even starts.
-preview_image: https://ibb.co.com/5NBYVTC
+description: Why do some people only play and are only good at DnD but they suck at RP? There's no scoring in TTRPG to accurately determine this, but they do have an Interface. Here's my approach to measure friction, define "skill," and align your table before Session Zero even starts.
+preview_image: https://i.ibb.co.com/2Dg8BqR/WHATISGOINGON.jpg
 ---
 
 # Decoding skills in TTRPGs with the 5 Node Interface Model
@@ -22,11 +22,11 @@ This subjective goal creates a fascinating design problem: How the hell do we ac
 
 At its core, every tabletop roleplaying game consists of five distinct elements interacting with one another. We can define them as:
 
-- Player: The central piece of the puzzle; the actual human being sitting at the table making decisions.
-- Table : The other human players participating in the same session, including the social dynamics they share.
-- System : The rulebook, mechanics, and dice that govern how the game operates.
-- PC : The fictionalized avatar the player uses to navigate the imagined space.
-- World: The agreed-upon fantasy setting, complete with its own logic, NPCs, and environments.
+- **Player**: The central piece of the puzzle; the actual human being sitting at the table making decisions.
+- **Table** : The other human players participating in the same session, including the social dynamics they share.
+- **System** : The rulebook, mechanics, and dice that govern how the game operates.
+- **PC** : The fictionalized avatar the player uses to navigate the imagined space.
+- **World**: The agreed-upon fantasy setting, complete with its own logic, NPCs, and environments.
 
 The model's true awesomeness is when you connect these elements, forming a node. When we see the relationships between nodes, we can finally understand how a player expresses their intent. In other words, the skill itself.
 
@@ -36,19 +36,19 @@ The model's true awesomeness is when you connect these elements, forming a node.
 
 For starters, we'll consider everything stems from the player. Let's examine the relationship between players and other elements:
 
-### **Player $\rightarrow$ Table:  Spotlight Management**
+### **Player → Table:  Spotlight Management**
 
 I like to define this section as the ability for the players to socially traverse the interdynamics of other people in the table and the ability to know when to take the spotlight and when to give it. Spotlight is important, because in a collaborative game like TTRPG, there can only be one person speaking at a time, and as much as *you* want to roleplay your character, you *have* to "wait" for your turn. This skill requires you to know how you can operate socially with others, understand each player's social preferences and the ability to support the current dynamic by knowing when to step forward to drive the scene and knows exactly when to fade back and tee up another player for their moment to shine.
 
-### **Player $\rightarrow$ System: Mechanical Fluency**
+### **Player → System: Mechanical Fluency**
 
 This node represents how knowledgeable you are in a specific rule system and your ability to leverage it to your advantage. In systems that demand high mechanical understanding, this is often called "System Mastery." It requires internalizing game mechanics, action economies, and probability to make informed, highly efficient tactical decisions for yourself and your party.
 
-**### Player $\rightarrow$ PC: Character Embodiment**
+### **Player → PC: Character Embodiment**
 
 This node measures your ability to slip into your avatar's skin. It is the core of traditional roleplaying. Embodiment is how you use specific phrasing, accents, or nonverbal communication to deliver your character's eccentricities. A player who masters this node internalizes their character's drives, flaws, and personality, allowing them to make authentic, in-fiction decisions, even if those decisions are mechanically sub-optimal.
 
-**### Player $\rightarrow$ World: Lateral Thinking**
+### **Player → World: Lateral Thinking**
 
 This is the ability for the player to directly interpret the fictional world and deliver creative problem-solving without relying on a character sheet. It involves interacting directly with environmental lore and physical logic, like realizing that instead of rolling to attack a goblin, you can just cut the rope holding the chandelier above its head. It's the sum of your IRL intelligence applied to TTRPGs.
 
@@ -56,15 +56,15 @@ This is the ability for the player to directly interpret the fictional world and
 
 Before we look at complex interactions, it's worth noting that some elements interact directly with themselves. These reflexive nodes create unique, vital skills, such as:
 
-### **Player $\rightarrow$ Player: Stamina & Self-Regulation**
+### **Player → Player: Stamina & Self-Regulation**
 
 SSR is the skill of managing your own mental bandwidth. It covers doing your own bookkeeping (tracking HP and spell slots without being reminded, taking notes of the session for yourself), pacing your energy so you don't burn out by the end of the session, and successfully separating your out-of-game mood from your in-game decisions.
 
-### **PC $\rightarrow$ PC: Internal Conflict & Consistency:**
+### **PC → PC: Internal Conflict & Consistency:**
 
 ICC is the narrative skill of playing a character with internal contradictions. It is the ability to portray a Paladin who is slowly losing their faith, managing the tension entirely within the character's own psychology rather than just reacting to external threats. This complexity varies on the PC itself. Sometimes when we play a simple character, we don't need to think much about their pyschology. But playing a PC for a long campaign? Being consistent is very important, such as knowing when to change gradually, radically, and refusing to change at all.
 
-### **Table $\rightarrow$ Table: Meta Culture:**
+### **Table → Table: Meta Culture:**
 
 This is the logistical and cultural glue of the hobby. It covers the essential out-of-game labor: scheduling, bringing snacks, establishing safety tools during Session Zero, and cultivating the shared history of inside jokes that make a specific group unique.
 
@@ -74,19 +74,19 @@ The genius of this matrix is that you can connect with more than 2 elements at o
 
 Let's start with using players as our starting point as always and discover more:
 
-### **Player $\rightarrow$ PC $\rightarrow$ Table: Theatrical Improv**
+### **Player → PC → Table: Theatrical Improv**
 
 This is roleplaying for an audience. It dictates how well you understand the other characters at the table and dynamically adjust your PC's attitude toward them. It is the ability to generate in-character banter, emotional friction, or perfectly timed comedic quips that directly engage the other people in the room. Someone with good theatrical improv can generate character dynamics to everyone in the room, even if their characters are not close in lore. They also know what conversations to talk about and what actions is the most likely option to take. Being good at theatrical improv doesn't mean that the PC itself should be someone charming automatically (although it helps), but atleast if you are the other players/PCs, there's this feeling that you know exactly the dynamic between your PC and theirs.
 
-### **Player $\rightarrow$ PC $\rightarrow$ World: Fictional Positioning**
+### **Player → PC → World: Fictional Positioning**
 
 This is the ability to ground/justify your character's abstract mechanics into the physical reality of the setting. In many ways, this node connection is the bridge that separates a tabletop roleplaying game from a traditional board game. You aren't just looking at your character sheet and pressing a button that says "Intimidate (+5)" to solve a problem. Instead, you are actively leveraging the environment and the fiction to justify that mathematical bonus. You are physically describing how your character leans over a tavern table, using their massive height and a specific piece of local political lore, perhaps name-dropping the guard's corrupt captain, to back them into a corner. When a player masters fictional positioning, the game's mechanics become nearly invisible; the resulting dice roll simply serves as the dramatic resolution to a highly specific, physical action they have already painted into the world.
 
-### **Player $\rightarrow$  System $\rightarrow$ Table: Collaborative Tactics**
+### **Player → System → Table: Collaborative Tactics**
 
 Think of system mastery but for multiplayer. It is knowing your *allies'* character sheets well enough to set up combos. You cast a spell that doesn't deal damage, but intentionally moves the enemy exactly 5 feet so the Rogue at the table can trigger their Sneak Attack, or intentionally setting up buffs/debuffs to boost the party's overall damage. It's the tactical awareness of the whole board, being a collaborative commander.
 
-### **Player $\rightarrow$ System $\rightarrow$ World: Ludonarrative Integration**
+### **Player → System → World: Ludonarrative Integration**
 
 This involves translating raw, mathematical mechanics into tangible, physical consequences within the shared fictional space. In general game design, "ludonarrative dissonance" occurs when the gameplay contradicts the story. In tabletop RPGs, ludonarrative *integration* is the highly sought-after skill of making the rigid rules and the fluid reality sing in perfect harmony.
 
@@ -102,7 +102,7 @@ To illustrate this, let's imagine driving. Playing TTRPG as driving.
 
 The player is the driver, the world is the road outside, the system is the control panel, wheels and gears. Table as the passengers. In this metaphor, friction/skill floor is represented by how complex driving is. Fluency, or mastery reeaching the skill ceiling, is described by how instinctively you can drive with ease. To give an example, let's use the dashboard as an element to compare with.
 
-Let's use a hard system/dashboard for example, such as trad games. Playing trad feels like riding a commercial jet  cockpit. To make the plane turn left (your intent in the World), you can't just turn a wheel. You have to adjust the flaps, monitor thrust, and punch a specific sequence of keywords and modifiers into the flight computer(`Player -> System -> World`). It's pretty damn hard.
+Let's use a hard system/dashboard for example, such as trad games. Playing trad feels like riding a commercial jet  cockpit. To make the plane turn left (your intent in the World), you can't just turn a wheel. You have to adjust the flaps, monitor thrust, and punch a specific sequence of keywords and modifiers into the flight computer (`Player -> System -> World`). It's pretty damn hard.
 
 With novices/low fluency people,  the friction is insane. You have to stop looking at the narrative road to stare at the rulebook manual or ask your co-pilots for help. Translating the simple human intent of "I want to hit the goblin" into the complex language of the dashboard takes a considerable amount of cognitive energy and time. However, for veterans with high fluency, the ceiling is incredibly easy and rewarding. You already memorized the dashboard anyways. You don't even see the buttons anymore; the translation from intent to mechanical execution is instantaneous and devastatingly effective.
 
@@ -114,7 +114,7 @@ Additionally, the ceiling in TTRPGs is the **frictionless routing** across these
 
 ## Translating classic theories to 5 Node Interface Model
 
-Prior to this ideation of idea, of course I had to check if my basis were right or not. In order to prove that my model can hold merit, I've decided to translate some of the famous taxonomy models in TTRPG :>>
+Prior to this ideation of idea, of course I had to check if my basis were right or not. In order to prove that my model can hold merit, I've decided to translate some of the famous taxonomy models in TTRPG onto my model :>>
 
 ### GNS Theory & The Big Model
 
@@ -164,7 +164,7 @@ It defines the system aspect more beautifully and more dynamically. The System i
 
 ## The weapon to surpass Pallete Grid/CATS...The Interface Radar
 
-You probably have used the pallete grid for your session 0. You haven't? Use it RIGHT now. Or... maybe use the CATS framework. They're the goated tools and the effectiveness proves why their popular. But both of these tools have a hidden flaw, especially for beginners: they are functionally vague.
+You probably have used the [pallete grid](possumcreek.medium.com/the-palette-grid-a-safety-tool-e66520c6971c) for your session 0. You haven't? Use it RIGHT now. Or... maybe use the [CATS](https://proleary.com/games/the-cats-method/) framework. They're the goated tools and the effectiveness proves why their popular. But both of these tools have a hidden flaw, especially for beginners: they are functionally vague.
 
 CATS asks a table to agree on an "Aim" or "Tone," but a new player rarely knows what those abstract concepts actually look like in practice. The Palette Grid assumes players already have the vocabulary and experience to know what to put on the blank page. A newbie might confidently write "Yes to dragons" and "No to spiders," but they have no idea if they prefer a low cognitive load narrative game or a high rigidity tactical simulator. Even if you describe it, they still haven't experienced it themselves. They simply don't know what they don't know.
 
@@ -182,63 +182,63 @@ Let's take a look at the 8 spectrum to consider in the Interface Radar:
 
 This spectrum measures the thickness of the connection between the Player and the rulebook. How much of the Player's cognitive bandwidth must be spent operating the mechanical dashboard?
 
-On the *lowest* score, the connection is whisper-thin. Players want to describe what they do in plain language and roll a single die when prompted without calculating complex modifiers or tracking resource economies.
-On the *highest* score, The connection is dense and demanding. Players enjoy dedicating heavy cognitive load to the dashboard, spending hours outside the session optimizing build synergies, tracking granular resources, and executing intricate tactical maneuvers.
+- On the *lowest* score, the connection is whisper-thin. Players want to describe what they do in plain language and roll a single die when prompted without calculating complex modifiers or tracking resource economies.
+- On the *highest* score, The connection is dense and demanding. Players enjoy dedicating heavy cognitive load to the dashboard, spending hours outside the session optimizing build synergies, tracking granular resources, and executing intricate tactical maneuvers.
 
 ### 2. **System Rigidity** / `System -> World`
 
 This axis measures how strictly the rules govern the physical reality of the imagined setting. Does the System inform the World, or does it restrict it?
 
-On the *lowest* score, The `Player -> World` narrative connection overrides the System. If an action is cinematic or dramatically satisfying, the System yields and bends the rules to allow it. The Rule of Cool, so to speak.
-On the *highest* score, The System acts as an uncompromising physics engine. The `System -> World` connection is absolute. If a spell says it moves a target exactly ten feet, it moves them exactly ten feet, no exceptions for flavor or drama.
+- On the *lowest* score, The `Player -> World` narrative connection overrides the System. If an action is cinematic or dramatically satisfying, the System yields and bends the rules to allow it. The Rule of Cool, so to speak.
+- On the *highest* score, The System acts as an uncompromising physics engine. The `System -> World` connection is absolute. If a spell says it moves a target exactly ten feet, it moves them exactly ten feet, no exceptions for flavor or drama.
 
 ### 3. **Character Embodiment**  /`Player -> PC`
 
 This spectrum evaluates Stance Theory: how deeply does the player filter their decisions through the character's distinct mindset, versus bypassing the PC to use their own meta knowledge?
 
-On the *lowest* score, players bypass the PC node entirely to route intent directly into the System or World. They interact in the third-person ("My fighter checks the door") and prioritize tactical efficiency over character psychology. Essentially, the pawn stance.
-On the *highest* score, pure `Player -> PC` routing. Players intentionally throttle their own meta knowledge. They adopt voices, speak strictly in the first person, and willingly make mechanically disastrous decisions if it authentically aligns with their character's internal flaws. Very much actor stance.
+- On the *lowest* score, players bypass the PC node entirely to route intent directly into the System or World. They interact in the third-person ("My fighter checks the door") and prioritize tactical efficiency over character psychology. Essentially, the pawn stance.
+- On the *highest* score, pure `Player -> PC` routing. Players intentionally throttle their own meta knowledge. They adopt voices, speak strictly in the first person, and willingly make mechanically disastrous decisions if it authentically aligns with their character's internal flaws. Very much actor stance.
 
 ### 4. **Character Lethality** / `PC -> World`
 
 This axis measures the permeability of the boundary between the avatar and the dangers of the fictional setting. How vulnerable is the PC to permanent consequences?
 
-On the *lowest* score, The PC is insulated from the World. Death or permanent trauma only occurs during mutually agreed-upon, climactic story moments, allowing players to safely invest in long-term, novelistic character arcs.
-On the *highest* score, The boundary is highly permeable. The dice fall where they may, and the World is lethal. Characters are fragile, life is cheap, and a single bad choice or unlucky roll can instantly sever the player's connection to that avatar.
+- On the *lowest* score, The PC is insulated from the World. Death or permanent trauma only occurs during mutually agreed-upon, climactic story moments, allowing players to safely invest in long-term, novelistic character arcs.
+- On the *highest* score, The boundary is highly permeable. The dice fall where they may, and the World is lethal. Characters are fragile, life is cheap, and a single bad choice or unlucky roll can instantly sever the player's connection to that avatar.
 
 ### 5. **World Lore** / `Player -> World`
 
 This spectrum measures the depth of the direct connection between the player's curiosity and the setting's history, and also the dependency on it.
 
-On the *lowest* score, the World node is a shallow, functional backdrop. Players want a tavern, a local dungeon, and a straightforward goal without needing to memorize ancient lineage charts or complex political alliances.
-On the *highest* score, the World is an intricate, bidirectional web. Players want to read background documents, uncover hidden historical secrets, and permanently alter the setting by engaging with the deep motives of competing factions.
+- On the *lowest* score, the World node is a shallow, functional backdrop. Players want a tavern, a local dungeon, and a straightforward goal without needing to memorize ancient lineage charts or complex political alliances.
+- On the *highest* score, the World is an intricate, bidirectional web. Players want to read background documents, uncover hidden historical secrets, and permanently alter the setting by engaging with the deep motives of competing factions.
 
 ### 6. **World Structure** / `World -> Player`
 
 This axis measures who drives the narrative forward. Does the World pull the Player, or must the Player push the World?
 
-On the *lowest* score, the World generates the momentum. The GM presents a clear, guided storyline with obvious objectives. the players' job is to experience, react, and follow the momentum provided.
-On the *highest* score, the Player must generate all the momentum. The GM creates a reactive environment with no predetermined plotline. The players must generate their own goals, choose where to go, and accept total responsibility for the World's resulting state.
+- On the *lowest* score, the World generates the momentum. The GM presents a clear, guided storyline with obvious objectives. the players' job is to experience, react, and follow the momentum provided.
+- On the *highest* score, the Player must generate all the momentum. The GM creates a reactive environment with no predetermined plotline. The players must generate their own goals, choose where to go, and accept total responsibility for the World's resulting state.
 
 ### 7. **Table Tone** / `Table -> Table`
 
 This spectrum evaluates the reflexive social contract between the actual humans sitting in the room. What is the baseline social expectation?
 
-On the *lowest* score, the game is a backdrop for hanging out. The social connection is loose and casual. Side conversations, out-of-character jokes, memes, and snack breaks are actively welcomed.
-On the *highest* score, the social contract demands intense focus. Phones are put away, side chatter is strictly minimized, and the group treats the session with the reverence of a theatrical rehearsal or a high-stakes board game match.
+- On the *lowest* score, the game is a backdrop for hanging out. The social connection is loose and casual. Side conversations, out-of-character jokes, memes, and snack breaks are actively welcomed.
+- On the *highest* score, the social contract demands intense focus. Phones are put away, side chatter is strictly minimized, and the group treats the session with the reverence of a theatrical rehearsal or a high-stakes board game match.
 
 ### 8. **Table Bleed** / `PC -> Player`
 
 This axis measures the safety boundary separating the fictional trauma of the character from the real-world psychology of the player, navigating and exploring moreoften dangerous or experimentalist themes generally not played
 
-On the *lowest* score, the boundary is locked tight. The game remains a comfortable, PG-13 adventure. Content stays lighthearted, actively avoiding real-world trauma, intense moral ambiguity, or genuine psychological pressure.
-On the *highest* score, the boundary is intentionally porous. Players actively seek out tragic, disturbing, or morally grey situations designed to make them feel genuine tension, grief, or discomfort in real life, using the game as an engine for emotional catharsis.
+- On the *lowest* score, the boundary is locked tight. The game remains a comfortable, PG-13 adventure. Content stays lighthearted, actively avoiding real-world trauma, intense moral ambiguity, or genuine psychological pressure.
+- On the *highest* score, the boundary is intentionally porous. Players actively seek out tragic, disturbing, or morally grey situations designed to make them feel genuine tension, grief, or discomfort in real life, using the game as an engine for emotional catharsis.
 
 ## Applying Interface Radar to Taxonomizing cultures of play
 
 Cultures of play is lowkey nonexistent, it's because it's just not specific enough. A mere 2 axis grid can't capture a game's worth. I'm not here to replace any axis whatsover. But, let's find out if using the Interface Radar can help us exactly the difference between some cultures of play. For this instance, I'll be defining 3 genres: Trad, OSRs, and Storygame.
 
-Note: You can't generalize a whole genre by it's own, the games below will always have a variety or some axis that aren't represented in those specific values. I recognize it, I'm simply trying to paint a big picture and that use that as a starting point. If anything, your table usage for systems should have different values of the Interface Radar compared to what I analyzed below.
+Note: You can't generalize a whole genre by it's own, the games under the genre below *will* always have a variety or some spectrum that aren't represented in those specific values I potrayed for the examples. I recognize it, I'm simply trying to paint a big picture and that use that as a starting point. If anything, your table usage for systems *should* have different values of the Interface Radar compared to what I analyzed below.
 
 ### Trad (and/or Neo-Trad)
 
@@ -270,7 +270,7 @@ The OSR is a reaction against modern superheroic fantasy. It treats the game as 
 - **Table Tone (1-2):** Beer and Pretzels. Because death is frequent and sudden, the table laughs it off. It is a game of high-stakes gambling among friends.
 - **Table Bleed (1):** Zero bleed. Characters die too fast for players to form deep, traumatizing psychological attachments to them.
 
-### Narrative
+### Narrative Storygame
 
 *ex: Apocalypse World, Blades in the Dark*
 
@@ -287,7 +287,7 @@ Story Engines treat the game as a collaborative writer's room. The mechanics exi
 
 ![Example of Taxonomy using the Interface Radar](/images/Taxonomy_using_Interface_Radar.png)
 
-## Stress-Testing the Theory
+## Is this model bulletproof? Hell no.
 
 No theoretical framework is perfect, I recognize that, and any model worth using must be able to withstand rigorous stress-testing. By addressing these blind spots, we don't just patch the theory, we actually uncover some of the most complex dynamics of tabletop gaming.
 
