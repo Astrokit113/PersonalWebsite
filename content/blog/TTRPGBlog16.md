@@ -1,6 +1,6 @@
 ---
 layout: article_1.njk
-title: "# Stop decorating your game and start playing it"
+title: Stop decorating your game and start playing it
 date: 2026-10-28T11:06:31+07:00
 tags:
   - post
