@@ -84,3 +84,5 @@ Spending that exact same amount on a TTRPG zine gives you a fundamentally differ
 So here is my challenge to you. The next time you find yourself at Comifuro, or scrolling through Shopee looking for another decorative dice tray you absolutely do not need, stop. Take that damn money and invest it in a shared experience. Go find a local creator's booth at a zine fest, or browse the Indonesian tabletop scene on itch.io. Buy their game, read it, and actually play it with your friends.
 
 Our scene needs players, not just decorators.
+
+![Comifuro 22, the previous one.](/images/CFPicture.png)
