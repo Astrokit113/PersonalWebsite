@@ -85,4 +85,4 @@ So here is my challenge to you. The next time you find yourself at Comifuro, or 
 
 Our scene needs players, not just decorators.
 
-![Comifuro 22, the previous one.](/images/CFPicture.png)
+![Comifuro 22, the previous one. The next CF is a week away!](/images/CFPicture.png)
