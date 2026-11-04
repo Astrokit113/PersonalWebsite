@@ -3,9 +3,9 @@ permalink: /rss.xml
 templateEngineOverride: liquid
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>@redforroseline Blog</title>
+    <title>Rose's Atelier Blog</title>
     <link>{{ metadata.url }}</link>
     <description>Personal blog covering anime, games, and more</description>
     <language>en-us</language>
@@ -16,6 +16,7 @@ templateEngineOverride: liquid
         <title>{{ post.data.title }}</title>
         <link>{{ metadata.url }}{{ post.url }}</link>
         <description>{{ post.data.description }}</description>
+        <content:encoded><![CDATA[{{ post.templateContent }}]]></content:encoded>
         <pubDate>{{ post.date | rssDate }}</pubDate>
         <guid>{{ metadata.url }}{{ post.url }}</guid>
       </item>
