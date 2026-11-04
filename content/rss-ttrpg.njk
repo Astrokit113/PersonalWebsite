@@ -1,6 +1,5 @@
 ---
 permalink: /rss-ttrpg.xml
-templateEngineOverride: liquid
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
@@ -10,14 +9,14 @@ templateEngineOverride: liquid
     <description>TTRPG blog posts</description>
     <language>en-us</language>
     <atom:link href="{{ metadata.url }}/rss-ttrpg.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>{{ build.timestamp | rssDate }}</lastBuildDate>
+    <lastBuildDate>{{ build.timestamp | dateToRfc822 }}</lastBuildDate>
     {% for post in collections.ttrpgPostsReversed %}
       <item>
         <title>{{ post.data.title }}</title>
         <link>{{ metadata.url }}{{ post.url }}</link>
         <description>{{ post.data.description }}</description>
-        <content:encoded><![CDATA[{{ post.templateContent }}]]></content:encoded>
-        <pubDate>{{ post.date | rssDate }}</pubDate>
+        <content:encoded><![CDATA[{{ post.templateContent | safe }}]]></content:encoded>
+        <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
         <guid>{{ metadata.url }}{{ post.url }}</guid>
       </item>
     {% endfor %}
