@@ -15,7 +15,7 @@ permalink: /rss-ttrpg.xml
         <title>{{ post.data.title }}</title>
         <link>{{ metadata.url }}{{ post.url }}</link>
         <description>{{ post.data.description }}</description>
-        <content:encoded><![CDATA[{{ post.templateContent | safe }}]]></content:encoded>
+        <content:encoded><![CDATA[{{ post.templateContent | htmlToAbsoluteUrls(metadata.url) | safe }}]]></content:encoded>
         <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
         <guid>{{ metadata.url }}{{ post.url }}</guid>
       </item>
