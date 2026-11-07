@@ -19,10 +19,9 @@ I'm not gonna tell you to learn improv, or take theatre lessons. It's a good com
 
 Let's...stop thinking about the table. About you at the table. Let's step back. Way back. Mentally imagine yourself out of the room. There you go. You're back in your home, your laptop ready to research. In accordance with my advice, let's go through the first one.
 
-https://i.ibb.co.com/0jCWFWpz/can-anyone-provide-the-ltg-memes-lightning-png-v0-xk2rvd689wob1.webp
 ![A picture of LTG with a lightning behind him. He captures the energy I want to shout.](/images/LTGNOW.webp)
 
-## Stop playing.
+# Stop playing.
 
 I meant this not as a "Stop playing around", which is absurd because you're supposed to be fucking around anyways in TTRPG. I don't mean to literally stop in the middle of the session and do what I'll tell you. Whenever you have free time and you have the desire to improve yourself in your sessions, heed this advice.
 
@@ -38,7 +37,7 @@ A lot of TTRPG blogs use cooking as an analogy so I'm gonna use that too. You ca
 
 It's...technically not the best title. Let me add one tiny word to give it more context.
 
-## Stop being (just) a player
+# Stop being (just) a player
 
 It might be tempting to sit back and play your PC when it's your turn. Spotlight management is important yes, but, that doesn't mean that's your sole function there. Both In Character and Out of Character talk, there is one simple strategy you must remember.
 
