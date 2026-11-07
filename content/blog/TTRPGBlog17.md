@@ -25,10 +25,10 @@ Let's...stop thinking about the table. About you at the table. Let's step back. 
 
 I meant this not as a "Stop playing around", which is absurd because you're supposed to be fucking around anyways in TTRPG. I don't mean to literally stop in the middle of the session and do what I'll tell you. Whenever you have free time and you have the desire to improve yourself in your sessions, heed this advice.
 
-Stop playing and start engaging with media. Read more novels, watch more medias. Don't know where to start? Ask your GM what touchstone does your campaign use and watch the media. Already familiar with it? Watch another genre. Tackle media that you fear or you hate and slowly watch it.
+Stop playing and start **engaging** with more media; read more novels, watch more movies. Don't know where to start? Ask your GM what touchstone does your campaign use and watch the media. Already familiar with it? Watch another genre; tackle media that you fear or you hate and slowly watch it.
 
-Stop playing and start talking to more people. Meet more people. Be friends with more people from entirely different backgrounds or cultures. Ask about their life experience. Exchange stories, take notes of them. Be genuinely curious. Form a bond with em.
-
+Stop playing and start **talking** to more people. Meet outside your usual circle; connect with more people from entirely different backgrounds or cultures. Ask about their life experience; exchange stories, and take notes; Be genuinely curious, form a bond with em.
+git a
 You can naturally be good at roleplaying by playing many many sessions, but if your frame of reference is next to nothing, how can you be able to give life to various PCs you have? How can you appreciate the intricacies of the world your GM has brought to you? 
 
 A lot of TTRPG blogs use cooking as an analogy so I'm gonna use that too. You can eventually cook and cook and cook until you get the recipe right. But, what if you actually watch tutorials on how to cook? Taking a bit further, what if you watch… movies just so you know what emotion to put to your cooking? The more experiences you have, the richer your roleplay will be.
