@@ -50,7 +50,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("gimmick");
   eleventyConfig.addPassthroughCopy("comment");
-  eleventyConfig.addPassthroughCopy(".well-known");
+  eleventyConfig.addPassthroughCopy({ ".well-known": ".well-known" });
 
   // 2. Dump EVERYTHING inside static-pages directly into the root of the site
   eleventyConfig.addPassthroughCopy({ "static-pages": "/" });
