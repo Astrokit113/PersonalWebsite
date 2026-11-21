@@ -21,9 +21,16 @@
       content="{{ description | default('The blog section of my personal web where I write things in more in-depth. Feel free to read about my rambles, I promise they&#39;re fun!') }}"
     />
 
-    {% if preview_image %}
-    <meta property="og:image" content="{{ preview_image }}" />
-    <meta name="twitter:card" content="summary" />
+
+    {% if preview_image_big %}
+      <meta property="og:image" content="{{ preview_image_big }}" />
+      <meta name="twitter:image" content="{{ preview_image_big }}" />
+      <meta name="twitter:card" content="summary_large_image" />
+
+    {% elif preview_image %}
+      <meta property="og:image" content="{{ preview_image }}" />
+      <meta name="twitter:image" content="{{ preview_image }}" />
+      <meta name="twitter:card" content="summary" />
     {% endif %}
 
     <link

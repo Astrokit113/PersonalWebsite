@@ -1,0 +1,170 @@
+---
+layout: article_1.njk
+title: I'm a newgen in a hobby full of uncs and that's okay
+date: 2026-11-21T10:11:20+07:00
+tags:
+  - post
+  - ttrpg
+permalink: /blog/TTRPGBlog18.html
+description: sometimes I feel left out because like 90% of bloggers aren't my age and I'm afraid my lingo won't connect, I don't understand the topics they talk in prismatic since I haven't played those systems and 99 other stupid worries. But after thinking quite some time, I think I'm okay with it actually. There's alot to merit to being a newgen just after GTA VI is released.
+preview_image_big: https://i.ibb.co.com/Z1wFKyph/very-happy-man-on-the-beach-with-dolphins-behind-him.png
+---
+# I'm a newgen in a hobby full of uncs and that's okay
+
+Whenever you enter a new community anywhere, there's gonna be some kind of culture shock. Sometimes it's minimal and the differences are super tiny, and other times it hits you right in the face. This happens for a bunch of reasons, but it's mostly because of whatever weird thing's pulling everyone together in the first place. A community's defined by its main attractor, the thing that gives people a reason to stay and actually invest in each other. Basically...in any given community, there's gonna be a lot of similarities between the people in it, whether they realize it or not.
+
+(Quick note: I'm talking about the international TTRPG scene here. The Indonesian/LFG scenes are totally worth their own post, but that's for another day.)
+
+If someone asked me, "What are the people in the TTRPG space actually like?" it's...honestly kinda hard to define. Most people's first impression is just _Dungeons & Dragons_, where younger players have been flooding in over the last few years thanks to actual plays. But then you dig a little deeper into old internet forums or the OSR and indie corners of Bluesky, and you suddenly realize it feels way closer to an 80s high school reunion. Everyone's casually referencing out of print TSR modules from 1981 and arguing about polearm discourse that's been going on since before I was even born (literally two decades of beef over a pointy stick).
+
+And even if I don't look at those extremes, I just look around at my own peers and realize that TTRPGs, whether I like it or not, _are_ still a super niche hobby. So...am I right then? Is this hobby actually not young people friendly?
+
+## are ttrpgs really full of unc? truth nuke or false alarm?!
+
+(this could've been its own blog but like. who gaf)
+
+Let's split the hobby into mainstream D&D, older legacy systems, and the indie DIY scene (both OSR and storygames) because lumping everyone together gets messy fast. Honestly...analyzing TTRPG demographics is kinda painful because there's zero industry wide census out there. Indie publishers don't publish demographic reports (for very good reasons, they're like two guys and a printer), and even bigger private companies like Paizo or Chaosium don't release audited revenue percentages. So D&D has way more complete data than everyone else.
+
+According to Wizards of the Coast (WotC) media briefings and their 50th anniversary disclosures from 2023 to 2024, D&D's sitting at over 50 million active fans (and more than 85 million lifetime players). And that crowd's super young. **81% of D&D players are Millennials (48%) or Gen Z (33%)**, leaving Gen X at just 19%. The gender split's flipped hard too. Women now make up **39%** of the D&D player base (with **60% male** and **1% other or nonbinary**). Compare that to WotC's landmark 1999 US household survey of monthly tabletop players aged 12 to 35 (they didn't even survey people over 35 back then), where women were only **19%** and guys were **81%**. That share literally more than doubled.
+
+And this youth wave's pretty recent. Back in 2004, an attendee survey at GenCon SoCal showed that only **8%** of people there were under age 25, while 81% were packed into the 25 to 44 bracket. Like...an actual ghost town for young people. Twenty years ago, industry folks were genuinely panicking that tabletop RPGs were gonna age out and die. Fast forward to now, and Gen Z alone makes up a third of D&D's global audience.
+
+Okay, so what about the _other_ big TTRPG giants like Paizo or Chaosium? Since private companies don't publish exact global sales percentages, we've gotta look at retail rankings and virtual tabletop (VTT) usage instead. In North American hobby stores (per ICv2's Fall 2025 retail rankings), D&D still sits at #1, while Paizo's _Pathfinder_ and _Starfinder_ stay right near the top alongside _Cosmere RPG_ (which casually cleared $14.7 million on Kickstarter) and _Daggerheart_ breaking into #5. Over on Roll20's Orr Group Reports (2019 to 2021), D&D 5e held **45.0% to 54.8%** of all campaigns, while Paizo's _Pathfinder 1e_ sat around **4.09% to 5.72%** and _Pathfinder 2e_ sat at **1.13% to 1.53%** (though forum comparisons noted Fantasy Grounds hosted nearly double Roll20's share of _Pathfinder_ games). Chaosium's _Call of Cthulhu_ bounced between **8.5% and 18.3%** of Roll20 campaigns, mostly because people run tons of short, deadly one shots.
+
+And when you look at _who_ actually plays those older legacy systems that never got a big pop culture reboot, they still look almost identical to the 1990s hobby. A peer reviewed study in the _Journal of Analog Role-Playing Studies_ (JARPS) surveyed 116 _Call of Cthulhu_ players and found the crowd was **83.6% male** and **12.1% female**. Even wilder, **43.9%** had been playing for 11 or more years, including **37.9%** who'd been rolling percentile dice for over two decades (literally longer than some 5e players have been alive). Same vibe over in classic sci fi...an informal 9 player convention snapshot of _Traveller_ at Dragonmeet showed tables skewing **88.9% male** (8 out of 9) with two thirds looking 45 or older. Actual unc convention. Meanwhile, Roll20's Q4 2020 report caught a nearly 6% quarterly bump in D&D 3.5e campaigns, which analysts linked to long lapsed veterans crawling back out of retirement to play their favorite edition.
+
+Hmm. So...old people just prefer nicher legacy games? Why though? Is it because those games are hard as hell and full of math? You'd think so, right? In reality...no, not really! 
+
+![it;'s nuanced...](https://i.ibb.co.com/3y02LQLL/6b0c5190e8ca09155539ee1b85111cbf.jpg)
+
+Think about how young people even find D&D in the first place. Most of us walked in through actual plays like _Critical Role_ (which blew past 220 million views by early 2021) and _Dimension 20_ (casually selling out Madison Square Garden in under a day). Throw in _Stranger Things_ or slick digital tools like D&D Beyond, and the whole hobby gets framed as collaborative improv theater. Classic systems like _GURPS_ or _Traveller_ never got a pop culture funnel like that. They spread back in the 1970s and 80s through wargaming clubs and local hobby shops.
+
+Wait, what about the older crowd though? Surely they stick with those older games because they love crunchy, brain melting mechanics...right? Not really. A self selected community survey over on `r/rpg` actually found an **inverse relationship between age and rule complexity**. Older players frequently wanted _lighter_ rules because having full time jobs and families leaves zero energy to study a 600 page manual. On the flip side, lower income players (who are usually younger) often leaned _into_ crunchier systems because dense tactical rules give you way more replay value per dollar. Veterans sticking to _GURPS_ or _D&D 3.5e_ aren't out here hunting for _new_ crunch...they just already memorized those rules 30 years ago and don't feel like learning a whole new textbook.
+
+Money plays a huge role here too. WotC's 1999 market research showed that monthly D&D spending peaks in Years 1 to 5 (averaging $22 a month in 1999 money) and drops off after that ($16 a month) once your shelf's already full. If you spent thousands of dollars building an _AD&D_ or _3.5e_ hardcover library back in the day, why on earth would you switch? Meanwhile, modern mainstream D&D prints money through recurring digital stuff. **D&D Beyond now drives more than half of D&D's profit** and crossed 30 million registered users by July 2026. Compare that to Foundry VTT's 2026 telemetry, where the _median_ user installs one game system and owns **zero** paid premium modules (just vibing on free rules and homebrew).
+
+So...where do OSR and indie storygames sit in all of this?
+
+Both scenes are weirdly split across generations. Academic research on the OSR traces it back as a movement refining pre 2000 TSR playstyles. On one side, you've got nostalgic preservationists in their 40s and 50s who want 1981 _Basic/Expert_ D&D back. On the other side, you've got punk DIY tinkerers and younger 5e dropouts who are sick of bloated combat and heavy prep. Stripped down games like _Mörk Borg_ or _Cairn_ give you fast character creation and rules you can read on a lunch break. Look at _Shadowdark_ too...built by an openly lesbian designer with an explicitly queer friendly Discord, it casually pulled in around **$3 million** on Kickstarter. Storygames have a similar split: plenty of the older designers from 2000s forums like The Forge are in their 40s and 50s now, while qualitative university research (_Masculinity at the Table_, surveying US college students aged 18 to 22) shows young women and queer players flocking straight to indie storygames for creative control and explicit safety tools.
+
+| **What's Different?**  | **Mainstream Modern (D&D 5e / 2024)**            | **Legacy Traditional (Call of Cthulhu, Traveller, 3.5e)** | **Indie DIY Scene (OSR / NSR & Storygames)**                                                    |
+| ---------------------- | ------------------------------------------------ | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Typical Age**        | Heavily Gen Z & Millennial (81% of D&D)          | Anchored by Gen X & Boomers (45+)                         | **Split:** 40s and 50s veterans + 20s and 30s 5e dropouts                                       |
+| **Gender & Diversity** | 60% male, 39% female, 1% nonbinary               | 83.6% to 88.9% male, 11% to 12% female                    | Mixed: old retroclone forums skew male, while indie zine & storygame spaces draw queer creators |
+| **How They Found It**  | _Critical Role_, _Stranger Things_, school clubs | 1970s to 1990s wargaming and hobby shops                  | Burnout on bloated 5e rules and itch.io zine jams                                               |
+| **How They Spend**     | Digital subscriptions (D&D Beyond) and dice      | Low ongoing spend (they already own the books)            | Free PDFs, cheap itch.io zines, collector Kickstarters (_Shadowdark_ $3M)                       |
+
+Okay, wait...if younger people are actively making and playing OSR and storygames, why does the scene still _look_ so old from the outside?
+
+Because **nobody's counting the underground.** Outside of WotC, basically zero tabletop publishers track player age or gender (even Mongoose Publishing admitted on their own forums that they lack systematic demographic data for _Traveller_). Industry trackers like Roll20 only count campaigns launched (where the "Uncategorized" indie and homebrew bucket quietly climbed from **13.9% to 19.8%** between 2019 and 2021). Foundry VTT and ICv2 only measure software installs or brick and mortar store sales. None of them are counting who's running a 12 page stapled zine over Discord at midnight.
+
+Plus, that _Masculinity at the Table_ study and feminist oral histories of women gamers from the 1970s and 80s point out the same pattern over and over. Younger players (especially women and queer folks) tend to hang out in tight knit private friend groups or curated indie Discords instead of loud, argumentative public forums. When you scroll through some dusty message board and feel like the youngest person in the room by 25 years...you're mostly just looking at the guys who've been posting on forums since 2002.
+
+## fear of missed out
+
+Matthew Colville in his [video](https://www.youtube.com/watch?v=jVIWSuMgVT8&list=LL&index=10&pp=iAQBsAgC) casually drops this bomb that nobody really invents brand new tabletop playstyles anymore. And yeah, honestly...that's pretty much true. It feels like all the major eras have already been mapped out, so everything we're doing right now is just refining stuff from preexisting roots. Personally, I'm mostly okay with that? Like, cool, the foundation's solid. Still...can you imagine what it felt like years ago?
+
+Okay, look, I don't necessarily need to have been alive in 1974 when OG D&D dropped (I enjoy having WiFi and modern prohipper thank you). But what about when the OSR first exploded? When everyone was hanging out on Google+ of all places, trading weird dungeon ideas before Google took it out back and shot it? Or when _Apocalypse World_ came out of nowhere in 2010 and basically rewrote how people thought about storygames? There's an actual word for this (anemoia, basically being nostalgic for an era you literally weren't even there for), and it hits like a truck in this hobby. It's undeniable that I missed a lot of these movements at their prime. Trying out those systems while they were still hot, arguing with strangers on crusty old forums for six hours straight...yeah, I get a little jelly of that.
+
+And at this point, why not be jealous of my residence too. Living in Indonesia makes this hobby feel like playing on Nightmare difficulty (and it was probably ten times worse back then). The currency conversion's straight up awful. International shipping usually costs twice as much as the actual book, and then customs looks at your tiny stapled dungeon zine like it's contraband. On top of that, living in a conservative, religious majority country makes finding open, queer friendly tables feel like a whole side quest on its own (thankfully there's LFG). Seeing some $10 indie zine on Kickstarter and doing the mental math that it's gonna cost me a week's worth of *warteg* food just to hold it in my hands? Like, fuck. It makes you feel miles away from where the "real" scene's happening.
+
+Let's stop dooming for one second and begin hopecoring all over again....
+
+Once I actually stop spiraling about what I missed though, arriving "late" to the party has a massive upside that nobody really talks about. Yeah, maybe we're in the "refinement era" of TTRPGs. You know what that actually means for us? Fifty years of other people's messy trial and error are sitting right in our laps, mostly for free. Back in the 1970s and 80s, if you wanted to read someone's house rules, you had to physically mail a typewritten page to an amateur fanzine and wait six weeks just to see if some guy in Ohio disagreed with your goblin stats. Today, I can rot in bed at 2 AM on my phone and read decades of legendary blog posts, browsing physical games on itch, and insanely polished free SRDs that took entire generations of uncs to figure out. We literally get to skip the awkward beta test phase and jump straight into the good stuff.
+
+Being a newgen also turns the internet itself into a dungeon crawl. Half of those legendary 2009 OSR Blogspot pages and crusty old storygame forums are crumbling from link rot, so you're out here fighting for your life on the Wayback Machine just to track down a dead URL. It feels like actual digital archaeology. You're basically looting a ruined tomb in real life, except the ancient treasure's a cursed d100 mutation table some guy wrote when you were five years old.
+
+Plus, arriving late means you've got zero emotional baggage from the old forum wars. Older players carry like 30 years of psychic scars from those fights (some guys still turn feral on sight if you mention D&D 4e, and don't even get people started on old Forge storygame drama). As a newgen? You couldn't care less. You get to treat the entire 50 year history of TTRPGs like an all you can eat buffet. Want to steal a brutal dungeon procedure from 1981 _B/X_ and mash it into a messy 2024 storygame? Go wild. Zero guilt, zero weird tribalism bullshit.
+
+And that whole Indonesia thing? Once you look at it through a DIY lens, it flips completely on its head. Sure, it sucks being priced out of fancy, foil stamped hardcover Kickstarters, but the entire OSR and indie DIY tradition was literally built by broke nerds printing stapled booklets on cheap paper because they couldn't afford corporate boxed sets. Downloading a free _Cairn_ PDF, walking down to the nearest _fotokopian_ right next to some stressed college kid printing their thesis, and getting a whole playable rulebook printed and stapled for like Rp15.000? That's genuinely as old school punk as it gets. Supporting the local TTRPG scene with a cost literal fractions of GTA VI. You can't get more DIY than making a whole campaign happen with cheap photocopies and whatever friends you can drag to a Discord call.
+
+We also always romanticize the eras we missed because history only saves the highlight reel. Nobody remembers the terrible forum drama or the years of playtesting...they only remember the cool games that survived. Ten years from now, some teenager's gonna scroll through old itch.io game jams and weird 2020s art punk zines, feeling the exact same FOMO that they missed _our_ era. They're gonna look at the tiny indie Discords we're hanging out in right now and wish they were there. We're standing inside somebody else's future golden age, even if it just feels like a regular Tuesday to us.
+
+## actually wait...the difference isn't that much though
+
+If you put a 55 year old grognard arguing about dungeon encumbrance in the same room as a 20 year old chronically online fandom kid writing a 200k word slow burn fic, you'd probably assume they're from completely different planets. Different slang, totally different vibes.
+
+Except...wait a second. Once you actually peel back the aesthetics, we're basically running on the exact same operating system.
+
+A lot of young DIY creators feel like we're invading a hobby invented exclusively by 1970s wargaming dads. In reality, early TTRPGs and modern fandom were literally born in the exact same basement. Back in the 1970s, early D&D amateur zines like Lee Gold's _Alarums & Excursions_ (where players mailed in typewritten house rules to argue about monsters) and early _Star Trek_ fanfiction zines were printed on the exact same noisy mimeograph machines. They got traded through the same mail clubs and sold at the exact same regional sci fi conventions. Early tabletop gaming _was_ just a weird branch of sci fi fandom before corporate D&D put a suit on it in the 80s.
+
+And even after the two scenes drifted apart, they kept the exact same anti corporate DNA. Look at Archive of Our Own (AO3), then look at the OSR blogosphere and the indie storygame corner of itch.io. AO3's a strictly non commercial gift economy where millions of words of wild, hyper specific fiction get posted completely free out of pure love for the game. Meanwhile, both OSR and indie storygames run on thousands of free blog posts and pay what you want zines. All of us have a deep, spiritual allergy to giant corporations telling us what's "official." Young fandom kids yell "Death of the Author" and rewrite canon into their own fanon. Old school uncs yell "rulings not rules" and rip official rulebooks to shreds for their homebrew campaigns (and storygame players are right there with them yelling "play to find out" while building the whole setting on the fly). Literally the same energy.
+
+Even our nerdiness uses the exact same brain cell. A 19 year old maintaining a color coded spreadsheet of character lores and AU timelines is flexing the exact same obsessive archival muscle as a 55 year old _Traveller_ veteran cross referencing 1979 planetary trade codes (both of you need to go outside, respectfully).
+
+So...if we're basically estranged cousins, why does walking into the broader indie tabletop space still give us massive culture shock?
+
+Because even if we act the same _off_ the table, different corners of the hobby expect totally different things _at_ the table. Back in 2021, a blogger named Retired Adventurer wrote this really famous essay called _Six Cultures of Play_ (please forgive me for bringing this up) that explains the whole mess. Modern 5e (which he calls "neo trad") overlaps super heavily with youth fandom's OC culture: you show up with a pre written backstory and a Spotify playlist, and everyone protects your character's big personal arc. Classic simulationist games like _Traveller_ do the exact opposite...in old _Traveller_, your character can literally die during character creation before Session 1 even starts. Imagine spending forty minutes building a cool space guy and he just dies of space scurvy in the menu screen. Pure psychic damage for a fandom kiddo.
+
+Both OSR and storygames sit in a way more interesting spot than people assume, because _neither_ of them plays like bubble wrapped 5e OC theater.
+
+Start with OSR, which hits young players with the scariest wall of all: character death. When you grow up in fandom and 5e culture, you usually fall in love with your character _before_ Session 1 even starts. You spend three hours on Picrew or Krita designing their outfit and writing a whole tragic backstory. So when some OSR guy tells you, "cool, your wizard's got 2 HP and a giant rat just bit his ankles off in Room 1," that sounds completely miserable. Why'd I get attached to a guy who dies to a slightly aggressive rodent?
+
+The trick is that OSR actually reverses _when_ character attachment happens. Instead of bringing a pre written OC to the table, you roll up a completely disposable nobody in three minutes. Let's say you get a level 1 turnip farmer with 2 HP and a bent spoon. You don't care about this guy at all. You expect him to get flattened by a rolling boulder in twenty minutes. Except...somehow, he lives. He tricks a goblin boss using that stupid bent spoon and crawls out of the dungeon carrying a stolen crown (minus one eye). By Session 4, the whole table's obsessed with this crusty little turnip farmer. People are drawing fanart of him. I call this the **Earned Scar OC**. You fall in love with them _because_ they somehow survived the meat grinder by sheer luck and audacity.
+
+Storygames (_Masks_, _Monsterhearts_, _Apocalypse World_, _Blades in the Dark_) get misunderstood from the other direction. People assume they're just soft, freeform improv where everyone protects their favorite characters. Nope. Storygames are actually super structured and procedural (somewhat), and their rules are built to deliberately shove your characters into messy, dramatic failure. In fact, that famous tabletop advice about **"driving your character like a stolen car"**? That literally blew up in indie storygame circles right alongside OSR.
+
+Think about that old Tumblr and Twitter meme about "putting your blorbo in a microwave." Fandom loves torturing their favorite characters with endless angst, as long as sacred plot armor keeps them safe at the end. Both OSR and storygames throw that plot armor straight out the window. In OSR, you slam the gas pedal and fling your 2 HP weirdo into a deadly dungeon just to see if they make it out. In storygames, you fling your messy protagonist straight into terrible life choices and ruined friendships just to see what breaks. If you've ever felt lowkey stressed out trying to protect your precious 5e character's scripted "narrative arc," driving a chaotic disaster of a character like a stolen car feels weirdly liberating.
+
+## a newgen's mini field guide to the diy scene
+
+Okay, so maybe the uncs aren't actually gonna bite your head off for not owning a 1979 dungeon manual, and maybe both OSR and storygames sound kinda fun. Still...walking into a brand new corner of the internet with its own vocabulary is intimidating as hell. People start throwing around terms like "playbooks" or "hex crawls" and suddenly your brain just flatlines.
+
+If you've spent any amount of time in online fandom though, you already speak most of this language. You just call it something else. Here's a quick cheat sheet so you don't feel like you're reading ancient Sumerian on your first day:
+
+| **If you know this from Fandom...** | **In Indie / DIY TTRPGs, we call it...**                                                                                                                  |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Headcanon / Fanon**               | **Homebrew & House Rules** (ignoring the official book because your table's version is cooler, or just making up the lore on the spot)                    |
+| **AO3 Tags & Content Warnings**     | **Safety Tools (Lines & Veils, X Card)** (literally the exact same idea: letting everyone know what heavy or weird stuff's on the table before you start) |
+| **AU (Alternate Universe) Fic**     | **Hacks & Zines** (taking a free ruleset like _Cairn_ or _Powered by the Apocalypse_ and slapping your own bizarre setting onto it)                       |
+| **Shipping & Angst Tropes**         | **Strings & Conditions** (storygame mechanics that literally turn messy crushes and emotional meltdowns into dice modifiers)                              |
+| **Color Coded Lore Spreadsheets**   | **Hex Crawls & Relationship Maps** (charting which goblin faction hates which wizard, or drawing a red yarn conspiracy board of who owes who money)       |
+
+Once you strip away the jargon, it's all the same brainrot wearing different hats.
+
+And honestly...being a newgen is actually a massive unfair advantage in both the OSR and storygame scenes right now.
+
+A lot of the older scene's been recycling the exact same Western medieval fantasy tropes since 1974. Don't get me wrong, I love a good dungeon full of skeletons as much as the next guy...but how many times can we reinvent the exact same tavern in vaguely medieval Europe? Meanwhile, if you're young (and especially if you're from somewhere outside the US or Europe, like Indonesia), you're sitting on an entire goldmine of untapped territory.
+
+Seriously...how many OSR dungeons or messy storygames are drawing from Southeast Asian urban legends or weird late night _warung_ culture? Almost none. Remember Matthew? He's mostly staring at Western elves and dwarves. When a newgen walks into the DIY space bringing folklore from outside the West or weird modern internet humor, the whole scene wakes up immediately. Plus, kids who grew up making Tumblr edits or messing around with indie art zines know how to make a 12 page PDF look _sick_. The TTRPG police aren't real...you're allowed to show up on day one and make something completely weird.
+
+## maybe...maybe being newgen is actually goated
+
+Look, feeling disconnected when you're the youngest person in the room is completely normal, and it's okay to feel weird about it. Impostor syndrome hits hard when you're staring down 50 years of hobby history. Still...the biggest thing I've learned since jumping headfirst into this space is that the people here are actually super friendly to beginners. Like, shockingly welcoming once you get past the scary forum aesthetics. Ennie nominated designers will actually look at your stuff in bluesky or itch and they genuinely support beginners. God, I could never not feel strangely weird about it. 
+
+So if you need a permission slip today, here you go. It's okay if you haven't played all the classic systems out there (I sure as hell haven't). It's okay if you've never touched a 1981 red box or read the original _Apocalypse World_. It's okay if you can't back every (or any in my case) shiny crowdfunding campaign on Kickstarter. It's okay if you don't own fancy resin dice or an expensive leather GM screen, and you're just rolling digital dice on your phone while sitting on the floor. Literally nobody who matters is checking your receipts.
+
+And honestly...I gotta give a massive shoutout to the cool uncs here. Think about how weird the modern internet is right now. Everything's chopped up by algorithms so teenagers and 50 year olds basically never hang out in the same room peacefully (unless they're arguing in a comment section). TTRPGs are one of the last true intergenerational spaces left. Where else are you gonna find a 50 year old veteran patiently explaining how dungeon turn tracking works in an OSR game, just because they're genuinely thrilled someone young cares about the weird math they love? Or an older indie designer hyping up some broke 20 year old's first messy storygame zine on itch.io like it's high art? One of the reason I love hanging in LFGCONs is I get this see unfold, people regardless of age will talk to each other like they the same age. Hanging out with them makes you realize the age gap's kinda cool actually.
+
+Because of that, I'll gladly pay all the kindness I've received straight forward to the next wave of beginners. I want way more people to wander into this hobby. I want my friends and random strangers online to get hooked on roleplaying, regardless of what flavor they're into. Whether you want brutal OSR dungeon crawling where your turnip farmer dies to a trap, or messy emotional storygames where everyone cries over fictional drama...we've got a table for you here. (Or you can be a gremlin and mash both together, I'm certainly doing that).
+
+Yeah, people have wildly different tastes and totally different stages of life. Some of us are stressing over college assignments while our tablemates are stressing over their mortgage. Yet somehow, sitting down with a pencil and a weird little ruleset makes crossing those barriers feel effortless. Being a newgen in an old hobby means you get to inherit 50 years of wild ideas and drag them into the future with your own spin...and honestly, that's pretty goated.
+
+![yay <333](https://i.ibb.co.com/Z1wFKyph/very-happy-man-on-the-beach-with-dolphins-behind-him.png)
+
+### receipts & further reading
+
+
+**Industry & Market Data**
+
+- [RollHoard: Tabletop RPG Statistics Guide](https://rollhoard.com/guides/tabletop-rpg-statistics-2026/) (compiles WotC's 2023–2024 D&D age, gender, and 50M+ fan numbers)
+- [WotC 1999/2000 Market Research Summary by Ryan S. Dancey](http://www.theescapist.com/WotCsummary1.htm) (the 1999 US household survey of ages 12 to 35: 81% male / 19% female baseline and Years 1 to 5 spending curve)
+- [John H. Kim's RPG Demographics Archive](https://www.darkshire.net/jhkim/rpg/whatis/demographics.html) (preserves the 2004 GenCon SoCal 8% under 25 stat and historical surveys)
+- [Roll20: The Orr Group Industry Report (Q4 2020)](https://blog.roll20.net/posts/the-orr-group-industry-report-q4-2020-8-million-users-edition/) & [Paizo Forum Archive of Roll20 Stats](https://paizo.com/threads/rzs43aew&page=2?Future-of-Pathfinder-First-Edition) (VTT campaign shares for D&D 5e, _Pathfinder 1e/2e_, _Call of Cthulhu_, D&D 3.5e, and the growing "Uncategorized" indie bucket)
+- [Foundry VTT: Year in Review (2026)](https://foundryvtt.com/article/year-in-review-2026/) (median user installs 1 system and owns $0 in paid premium modules)
+- [Note.com: D&D Revenue & D&D Beyond Analysis](https://note.com/siseru/n/ncdb7c764c5da?hl=en) (D&D Beyond driving over half of D&D's profit and crossing 30M users by July 2026)
+- [Cannibal Halfling Gaming: Five Tiers of RPG Publishing](https://cannibalhalflinggaming.com/2026/02/11/five-tiers-of-rpg-publishing/) (_Shadowdark_'s ~$3M Kickstarter and indie publishing tiers)
+- [ICv2 Hobby Games White Paper (2026)](https://www.slideshare.net/slideshow/icv2-hobby-games-white-paper-2026-gama-expo-2026/286419722) & [Fall 2025 ICv2 Top Sellers Summary](https://www.reddit.com/r/daggerheart/comments/1rzirlv/via_icv2_daggerheart_was_the_5th_best_selling/) (North American hobby store rankings for D&D, _Pathfinder_, _Starfinder_, and _Daggerheart_)
+
+**Peer Reviewed & University Academic Studies**
+
+- [JARPS: Call of Cthulhu & Solo Gamebook Player Survey](https://jarps.net/journal/article/view/49/82) (n = 116; 83.6% male, 37.9% playing for 21+ years)
+- [_Masculinity at the Table: Untangling the Male Preserve in Indie and Mainstream Gaming_ (ResearchGate)](https://www.researchgate.net/publication/407478596_Masculinity_at_the_Table_Untangling_the_Male_Preserve_in_Indie_and_Mainstream_Gaming) (university interview study on why young women and queer college students gravitate toward indie storygames)
+- [AUT Thesis on OSR Playstyles](https://openrepository.aut.ac.nz/server/api/core/bitstreams/fcab7b09-6fdc-4b98-8a8c-22ea8e83307c/content) (academic framing of OSR as refining pre 2000 TSR styles)
+- [University of Minnesota Oral History of Women Gamers (1970s–1980s)](https://conservancy.umn.edu/bitstreams/ef340ad9-f72e-4686-8ebe-0751365a918b/download) (documents hidden female participation in early private playgroups)
+
+**Community Polls, Forums & Essential Blog Essays**
+
+- [Retired Adventurer: _Six Cultures of Play_](https://retiredadventurer.blogspot.com/2021/04/six-cultures-of-play.html) (historical blog framework for Classic, Trad, Neo Trad, OSR, and Storygames
+- [r/rpg Community Survey (Reddit)](https://www.reddit.com/r/rpg/comments/202z3m/last_week_i_asked_you_to_take_a_survey_today_ill/) (self selected poll showing the inverse relationship between age and rule complexity)
+- [Mongoose Publishing Forums: Traveller Dragonmeet Thread](https://forum.mongoosepublishing.com/threads/how-to-make-traveller-more-popular-with-ttrpg-players.126183/page-7) (informal 9 player convention snapshot: 88.9% male, 66.7% 45+)
