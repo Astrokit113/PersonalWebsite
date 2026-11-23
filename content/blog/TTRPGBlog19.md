@@ -3,11 +3,12 @@ layout: article_1.njk
 title: Gambit Stance is Even Objectively Correct*
 date: 2026-11-23T10:37:04+07:00
 tags: post
-permalink: /blog/Blog-Title.html
+permalink: /blog/TTRPGBlog19.html
 description: "*and if you disagree you're not having fun at all. Pawn Stance was just the opening move. Here's how to throw away character consistency so your friends can pop off."
 preview_image_big: https://i.ibb.co.com/cKsQdW1v/Gambit-Stance.png
 ---
 # Gambit Stance is Even Objectively Correct*
+
 ## preamble
 
 The player advice blogwagon wrapped up recently, and during that whole run there was a lot of awesome advice. One of the more "popular" posts was Sera's [Pawn Stance is Objectively Correct](https://diceexploder.com/posts/pawn-stance-is-objectively-correct) on Dice Exploder! I personally love when a title is bold (and kinda clickbaity (I think I write like this too)). At the time there were a few things I disagreed with in how the main idea was presented, though overall I liked it and ended up applying it in my games here and there afterwards. If you haven't read it yet, you gotta go read it first. This blog essentially builds off it (and innately glazes it). Still, if I can summarize it rq, it boils down to two points:
